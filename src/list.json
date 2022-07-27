@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "choice1":"Danser la tektonik de manière incontrôlable quand t'es énervé",
+        "choice2":"Faire un dab de 5 secondes dès que tu rencontres quelqu'un ",
+        "result1":17,
+        "result2":30
+    },
+    {
+        "id":2,
+        "choice1":"Tomber amoureux.se de Cyril Hanouna et devenir complètement obsessionnel une fois par mois",
+        "choice2":"Ne plus jamais ressentir aucun sentiment amoureux de ta vie ",
+        "result1":12,
+        "result2":31
+    },
+    {
+        "id":3,
+        "choice1":"Être coincé.e irl dans le monde de Zelda Majora's Mask",
+        "choice2":"Être coincé.e dans Habbo hotel",
+        "result1":27,
+        "result2":19
+    }
+]
