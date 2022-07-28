@@ -38,7 +38,14 @@
             </div>
           </div>
           <div class="answer__row">
+            <div class="answer__column">
             <button @click="revealAnswer()" class="button">Dévoiler le %</button>
+            <p class="answer__message">
+              {{message}}
+            </p>
+
+            </div>
+
           </div>
         </div>
 
@@ -60,8 +67,9 @@ export default {
       percentage2:Math.round(100*this.elementRather.result2/(this.elementRather.result1+this.elementRather.result2)).toString(),
       resultOne: this.elementRather.result1,
       resultTwo: this.elementRather.result2,
-      answerOne: '',
-      answerTwo: ''
+      answerOne: 0,
+      answerTwo: 100 - this.answerOne,
+      message:''
     } 
   },
 
@@ -130,10 +138,15 @@ export default {
                   complete: function() {
                     if(vm.answerOne == vm.percentage1){
                       // console.log("PERFECT WIN")
+                      vm.message = "Perfect Win"
                     }else if(vm.answerOne > (vm.percentage1-5) && vm.answerOne < (vm.percentage1+5)){
                       // console.log("WIN")
+                      vm.message = "Win"
+
                     }else{
                       // console.log("LOST")
+                      vm.message = "Lost"
+
                     }
                   }           
                 })
