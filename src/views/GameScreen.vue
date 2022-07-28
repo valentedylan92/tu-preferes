@@ -1,10 +1,13 @@
 <template>
-  <div class="container">
+  <div class="game__container">
     <CardElement 
-      :id="listingRather[getRandom].id"
-      :element="listingRather[getRandom]"
+      v-if="showCard"
+      :elementRather="listingRather[keyElement]"
+      :key="keyElement"
     />
   </div>
+  <button id="newGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
+
 </template>
 
 <script>
@@ -14,17 +17,23 @@ import CardElement from '@/components/CardElement.vue'
 
 export default {
   name: 'GameScreen',
-  props:["listingRather","getRandom"],
+  props:["listingRather","keyRandom"],
+  data(){
+    return{
+      showCard: true,
+      keyElement: this.keyRandom
+    }
+  },
   components: {
     CardElement
   },
 
-  methods: {
-    // getRandom(){
-    //     this.randomNumber= Math.round(Math.random()*this.listing.length-1);
-    //     console.log(this.randomNumber)
-    //     return this.randomNumber
-    // }
+  methods:{
+
+    getNewRandom() {
+      this.keyElement = Math.round(Math.random()*(this.listingRather.length-1))
+    }
   }
+
 }
 </script>

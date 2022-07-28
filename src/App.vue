@@ -1,15 +1,20 @@
 <template>
-  <nav>
+  <!-- <nav> -->
     <!-- <router-link to="/">Tu prèfères</router-link> | -->
     <!-- <router-link to="/about">About</router-link> -->
-  </nav>
-  <router-view :listingRather="listingRather" :getRandom="getRandom" />
+  <!-- </nav> -->
+  <!-- <router-view :listingRather="listingRather" :getRandom="getRandom" /> -->
+  <div class="container">
+    <GameScreen :listingRather="listingRather" :keyRandom="getRandom"  />
+  </div>
 </template>
 
 
 <script>
 
 import listYouRather from "./list.json"
+import GameScreen from '@/views/GameScreen.vue'
+
 
 export default {
   data(){
@@ -20,10 +25,14 @@ export default {
   },
   computed:{
     getRandom(){
-        let randomNumber = Math.round(Math.random()*(this.listingRather.length-1));
-        return  randomNumber;
-    }
+        const newNumber = Math.round(Math.random()*(this.listingRather.length-1));
+        return  newNumber
+    },
   },
+  components: {
+    GameScreen
+  },
+
 }
 
   
