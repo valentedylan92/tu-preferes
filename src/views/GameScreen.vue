@@ -13,13 +13,13 @@
 // @ is an alias to /src
 import CardElement from '@/components/CardElement.vue'
 
-import list from "../list.json"
+import listYouRather from "../list.json"
 
 export default {
   name: 'GameScreen',
   data(){
     return{
-      listing : list
+      listing : listYouRather
     }
   },
   components: {
