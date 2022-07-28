@@ -1,7 +1,6 @@
 <template>
   <div class="game__container">
     <CardElement 
-      v-if="showCard"
       :elementRather="listingRather[keyElement]"
       :key="keyElement"
     />
@@ -20,7 +19,6 @@ export default {
   props:["listingRather","keyRandom"],
   data(){
     return{
-      showCard: true,
       keyElement: this.keyRandom
     }
   },

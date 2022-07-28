@@ -5,7 +5,7 @@
   <!-- </nav> -->
   <!-- <router-view :listingRather="listingRather" :getRandom="getRandom" /> -->
   <div class="container">
-    <GameScreen :listingRather="listingRather" :keyRandom="getRandom"  />
+    <GameScreen :listingRather="listingRather" :keyRandom="5"  />
   </div>
 </template>
 
