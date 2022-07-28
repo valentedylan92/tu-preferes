@@ -1,10 +1,8 @@
 <template>
   <div class="container">
     <CardElement 
-      v-for="(element,index) in listing"
-      :key="element.id"
-      :index="index"
-      :element="element"
+      :id="listingRather[getRandom].id"
+      :element="listingRather[getRandom]"
     />
   </div>
 </template>
@@ -13,17 +11,20 @@
 // @ is an alias to /src
 import CardElement from '@/components/CardElement.vue'
 
-import listYouRather from "../list.json"
 
 export default {
   name: 'GameScreen',
-  data(){
-    return{
-      listing : listYouRather
-    }
-  },
+  props:["listingRather","getRandom"],
   components: {
     CardElement
+  },
+
+  methods: {
+    // getRandom(){
+    //     this.randomNumber= Math.round(Math.random()*this.listing.length-1);
+    //     console.log(this.randomNumber)
+    //     return this.randomNumber
+    // }
   }
 }
 </script>
