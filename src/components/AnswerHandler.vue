@@ -61,7 +61,7 @@ export default {
           targets:targetsBar,
           scaleY: 1,
           transformOrigin:"50% 100%",
-          duration:100,
+          duration:2000,
           easing: 'linear',
         })
         anime({
@@ -74,7 +74,7 @@ export default {
                   targets:targetOneResult,
                   textContent:  [0,vm.resultOne],
                   round: 1,
-                  duration:100,
+                  duration:1800,
                   easing: 'linear',
                   complete: function() {
                     anime({
@@ -88,7 +88,7 @@ export default {
                   targets:targetTwoResult,
                   textContent:  [0,vm.resultTwo],
                   round: 1,
-                  duration:100,
+                  duration:1800,
                   easing: 'linear',
                   complete: function() {
                     vm.handleAnswer()
