@@ -166,5 +166,537 @@
         "choice2":"Midona, qui te manque de respect mais qui te propose des plans culs réguliers",
         "result1":31,
         "result2":13
+    },
+    {
+        "id":25,
+        "choice1":"Continuer ta vie normalement",
+        "choice2":"Tout recommencer",
+        "result1":28,
+        "result2":15
+    },
+    {
+        "id":26,
+        "choice1":"Avoir une grande carrière",
+        "choice2":"Vivre le grand amour",
+        "result1":13,
+        "result2":25
+    },
+    {
+        "id":27,
+        "choice1":"Être teubé mais le plus rigolo de la bande",
+        "choice2":"Ëtre intelligent mais tu ne maîtrises que les blagues de Toto",
+        "result1":10,
+        "result2":32
+    },
+    {
+        "id":28,
+        "choice1":"Ne pouvoir plus jouer qu'à des jeux d'horreur toute ta vie",
+        "choice2":"Vivre dans un jeu d'horreur une fois pendant 1 mois, sans mourir juste tu flippes, ensuite t'es tranquille tu joues à ce que tu veux",
+        "result1":3,
+        "result2":37
+    },
+    {
+        "id":29,
+        "choice1":"Pouvoir revivre un souvenir du passé",
+        "choice2":"Pouvoir assister à une scène du futur",
+        "result1":23,
+        "result2":16
+    },
+    {
+        "id":30,
+        "choice1":"Être marié avec quelqu'un que tu aimes mais qui ne t'aime pas ",
+        "choice2":"Être marié à quelqu'un qui t'aime mais que toi tu n'aimes pas",
+        "result1":8,
+        "result2":19
+    },
+    {
+        "id":31,
+        "choice1":"Avoir un date avec Bigard dans une maison de retraite loin des décideurs",
+        "choice2":"Avoir un date avec Tex dans un magasin Brico Dépôt afin d'acheter des clous divers ",
+        "result1":10,
+        "result2":21
+    },
+    {
+        "id":32,
+        "choice1":"Que la nature reprenne complètement ses droits et les humains restent là mais le subissent un peu (plus de route, ville envahie par les plantes, les animaux sauvages, etc)",
+        "choice2":"Que l'humain se développe énormément technologiquement, une situation confortable et des avancées scientifiques mais aux dépens de la nature",
+        "result1":29,
+        "result2":5
+    },
+    {
+        "id":33,
+        "choice1":"Avoir tes cordes vocales remplacées par un kazoo",
+        "choice2":"Avoir une tonsure de cheveux comme dans chaussée aux moines",
+        "result1":7,
+        "result2":27
+    },
+    {
+        "id":34,
+        "choice1":"Vivre des événements épiques mais stresser ta race au quotidien",
+        "choice2":"Avoir une vie sans aventure mais paisible",
+        "result1":10,
+        "result2":26
+    },
+    {
+        "id":35,
+        "choice1":"Avoir pour moyen de locomotion l'âne de Shrek",
+        "choice2":"Avoir une Tousla, c'est comme une Tesla, mais qui tousse",
+        "result1":15,
+        "result2":25
+    },
+    {
+        "id":36,
+        "choice1":"Coucher avec l'âme de Scooby-Doo dans le corps de ton crush",
+        "choice2":"Coucher avec l'âme de ton crush dans le corps de Scooby Doo ",
+        "result1":38,
+        "result2":2
+    },
+    {
+        "id":37,
+        "choice1":"Être comme Luffy dans One Piece et avoir un corps tout élastique mais impossible de faire une brasse coulée",
+        "choice2":"Te transformer toutes les 5 heures en Magical girl (donc avec la danse de transformation, la robe courte rose et les oreilles de chat)",
+        "result1":27,
+        "result2":14
+    },
+    {
+        "id":38,
+        "choice1":"Avoir un super pouvoir mais devoir t'en servir pour sauver les gens et faire régner la justice",
+        "choice2":"Rester un humain lambda",
+        "result1":18,
+        "result2":20
+    },
+    {
+        "id":39,
+        "choice1":"Perdre la capacité de mentir",
+        "choice2":"croire tout ce qu'on te dit",
+        "result1":38,
+        "result2":5
+    },
+    {
+        "id":40,
+        "choice1":"Que ta vie devienne un Disney, donc t'es obligé de chanter ta meilleure chanson dès que tu vas acheter du pain et tu parles avec les pigeons",
+        "choice2":"Que ta vie devienne un Marvel, où tous les trois jours un immeuble de ta ville explose à cause d'un super méchant mais au moins le JT devient bien plus croustillant ",
+        "result1":30,
+        "result2":11
+    },
+    {
+        "id":41,
+        "choice1":"Te lancer dans la musique en faisant ton premier album en feat avec Keen V",
+        "choice2":"Faire ton premier film en donnant la réplique à Kev Adams",
+        "result1":23,
+        "result2":18
+    },
+    {
+        "id":42,
+        "choice1":"Que la vraie nouvelle fête de l'année devienne Halloween, tout le monde participe et se déguise, un max de citrouilles et de bonbons, mais en échange Noël tombe dans l'oubli",
+        "choice2":"Que Noël reste MOTHERFUCKING NOËL RIEN À FOUTRE DE TES CITROUILLES CONNASSE",
+        "result1":10,
+        "result2":33
+    },
+    {
+        "id":43,
+        "choice1":"Avoir une villa en bord de mer",
+        "choice2":"Avoir un chalet à la montagne",
+        "result1":25,
+        "result2":17
+    },
+    {
+        "id":44,
+        "choice1":"Que tout Twitch ne fasse que du react Koh Lanta",
+        "choice2":"Que tous les streameurs basent tout leur contenu sur l'interview d'hommes et de femmes politiques",
+        "result1":9,
+        "result2":23
+    },
+    {
+        "id":45,
+        "choice1":"Faire des bruits de bouche TOUT LE TEMPS",
+        "choice2":"Dire 'han' à la fin de chaque phrase-han",
+        "result1":8,
+        "result2":29
+    },
+    {
+        "id":46,
+        "choice1":"Dire tout le temps tout ce que tu penses",
+        "choice2":"Ne plus jamais parler ",
+        "result1":32,
+        "result2":10
+    },
+    {
+        "id":47,
+        "choice1":"Faire Secret Story",
+        "choice2":"Faire Koh Lanta ",
+        "result1":12,
+        "result2":26
+    },
+    {
+        "id":48,
+        "choice1":"Être Mewtwo en fait",
+        "choice2":"Ëtre un Magicarpe",
+        "result1":25,
+        "result2":16
+    },
+    {
+        "id":49,
+        "choice1":"Ne pas avoir de papilles gustatives",
+        "choice2":"Ëtre daltonien  ",
+        "result1":8,
+        "result2":23
+    },
+    {
+        "id":50,
+        "choice1":"Avoir des champignons sous les ongles de pied comme dans la pub horrible",
+        "choice2":"Avoir des croûtes qui suintent sous les aisselles ",
+        "result1":22,
+        "result2":4
+    },
+    {
+        "id":51,
+        "choice1":"Faire du camping en pleine nature dans un endroit magnifique",
+        "choice2":"Petit hôtel 4 étoiles piscine all inclusive transat et serveur/se mims ",
+        "result1":22,
+        "result2":19
+    },
+    {
+        "id":52,
+        "choice1":"Faire un métier que t'aimes pas mais être ultra bien payé",
+        "choice2":"Faire un métier de la pa$$ion mais être payé le minimum du minimum",
+        "result1":14,
+        "result2":28
+    },
+    {
+        "id":53,
+        "choice1":"Faire pipi sur ton père",
+        "choice2":"faire caca sur ta mère",
+        "result1":27,
+        "result2":2
+    },
+    {
+        "id":54,
+        "choice1":"Avoir une diarrhée douloureuse après chaque repas",
+        "choice2":"Faire des horribles cauchemars avec sueur froide et compagnie toutes les nuits",
+        "result1":13,
+        "result2":19
+    },
+    {
+        "id":55,
+        "choice1":"Vivre dans le monde du dessin animé qui a marqué ton enfance",
+        "choice2":"Vivre dans le monde de ton actuelle série préférée",
+        "result1":19,
+        "result2":15
+    },
+    {
+        "id":56,
+        "choice1":"Avoir hyper mal au cul quand t'es assis",
+        "choice2":"Avoir hyper mal aux jambes quand t'es debout",
+        "result1":7,
+        "result2":29
+    },
+    {
+        "id":57,
+        "choice1":"Avoir des klaxons puissants sur la plante des pieds qui s'activent à chaque fois que tu marches",
+        "choice2":"Avoir un kazoo dans la gorge qui s'active à chaque fois que tu parles ",
+        "result1":27,
+        "result2":8
+    },
+    {
+        "id":58,
+        "choice1":"Ne pouvoir plus jamais manger autre chose que ton plat préféré",
+        "choice2":"Pouvoir manger ce que tu veux sauf les trucs que t'aimes",
+        "result1":29,
+        "result2":6
+    },
+    {
+        "id":59,
+        "choice1":"Porter toujours ton slip AU DESSUS de ton pantalon",
+        "choice2":"Toujours porter un tshirt de supporter de Trump",
+        "result1":30,
+        "result2":7
+    },
+    {
+        "id":60,
+        "choice1":"Montrer tout ton historique de cette dernière semaine à tes parents (navigation privée INCLUE)",
+        "choice2":"Montrer absolument toutes tes photos depuis 6 mois à tes parents ",
+        "result1":9,
+        "result2":26
+    },
+    {
+        "id":61,
+        "choice1":"Avoir comme unique moyen de transport le véloooooooooo pour pédaler le nez dans le vent",
+        "choice2":"Le pédalo, au risque d'avoir les pieds dans l'eau",
+        "result1":28,
+        "result2":10
+    },
+    {
+        "id":62,
+        "choice1":"Aller en terrasse avec tes copaines",
+        "choice2":"Te faire une petite séance ciné tout seul ",
+        "result1":28,
+        "result2":10
+    },
+    {
+        "id":63,
+        "choice1":"Avoir un meilleur ami qui s'appelle Purin",
+        "choice2":"Que la Terre devienne Minecraft ",
+        "result1":28,
+        "result2":12
+    },
+    {
+        "id":64,
+        "choice1":"Que ta mère devienne une star de Tiktok en faisant de l'ASMR",
+        "choice2":"Que ton père fasse du hot tub sur Twitch",
+        "result1":27,
+        "result2":9
+    },
+    {
+        "id":65,
+        "choice1":"Devenir roi/reine du monde avec toutes les responsabilités et le pouvoir qui s'en suit",
+        "choice2":"Voir quelqu'un que t'aimes pas du tout devenir roi/reine du monde",
+        "result1":22,
+        "result2":13
+    },
+    {
+        "id":66,
+        "choice1":"Avoir le physique dont tu as toujours rêvé",
+        "choice2":"Avoir le compte bancaire dont tu as toujours rêvé",
+        "result1":9,
+        "result2":29
+    },
+    {
+        "id":67,
+        "choice1":"Une soirée où les gens sont cons mais la playlist est insane",
+        "choice2":"Une soirée où les gens sont trop pipous mais la playlist est clakoss et ambiance PAS DU TOUT",
+        "result1":7,
+        "result2":36
+    },
+    {
+        "id":68,
+        "choice1":"Que personne ne vienne à ton mariage",
+        "choice2":"Que personne ne vienne à tes funérailles",
+        "result1":14,
+        "result2":25
+    },
+    {
+        "id":69,
+        "choice1":"Marquer l'histoire",
+        "choice2":"Ëtre oublié ",
+        "result1":20,
+        "result2":16
+    },
+    {
+        "id":70,
+        "choice1":"Faire un plan à 3 avec quelqu'un qui te dégoûte et quelqu'un sur qui tu maxi crush (et tu dois t'occuper des deux)",
+        "choice2":"Coucher avec quelqu'un que tu trouves un peu osef mais bon ça passe ",
+        "result1":6,
+        "result2":33
+    },
+    {
+        "id":71,
+        "choice1":"Trouver le grand amour et vivre toute ta vie avec la même personne",
+        "choice2":"Avoir plusieurs belles expériences mais jamais sur le très long terme",
+        "result1":30,
+        "result2":9
+    },
+    {
+        "id":72,
+        "choice1":"Avoir 10 chats",
+        "choice2":"Avoir 10 chiens",
+        "result1":35,
+        "result2":8
+    },
+    {
+        "id":73,
+        "choice1":"Commencer ta journée à 6h",
+        "choice2":"Commencer ta journée à 13h",
+        "result1":27,
+        "result2":17
+    },
+    {
+        "id":74,
+        "choice1":"Être sur-habillé tout le temps (sauf quand tu es nu) donc smoking, robe de soirée etc",
+        "choice2":"Être en shlagoss tout confort h24 (sauf quand tu es nu) donc jogging troué et pyjama moche",
+        "result1":28,
+        "result2":14
+    },
+    {
+        "id":75,
+        "choice1":"Devenir acteur porno et que tes parents le découvrent",
+        "choice2":"Découvrir que tes parents sont acteurs pornos",
+        "result1":29,
+        "result2":12
+    },
+    {
+        "id":76,
+        "choice1":"Faire du télétravail tout le temps",
+        "choice2":"Être en présentiel tout le temps ",
+        "result1":8,
+        "result2":35
+    },
+    {
+        "id":77,
+        "choice1":"Qu'il ne fasse plus jamais nuit",
+        "choice2":"Qu'il ne fasse plus jamais jour",
+        "result1":31,
+        "result2":10
+    },
+    {
+        "id":78,
+        "choice1":"Vivre dans la ville où tu habites actuellement toute ta vie",
+        "choice2":"Changer d'appartement / maison tous les 6 mois pendant toute la vie, jusqu'à ce que ta santé ne te l'autorise plus",
+        "result1":26,
+        "result2":14
+    },
+    {
+        "id":79,
+        "choice1":"Être nu sur scène devant 50 000 personnes",
+        "choice2":"Être nul sur scène devant 50 000 personnes",
+        "result1":20,
+        "result2":16
+    },
+    {
+        "id":80,
+        "choice1":"Avoir constamment des miettes dans ton lit",
+        "choice2":"Avoir constamment une étiquette qui te gratte et qui s'enlève pas, peu importe le vêtement",
+        "result1":30,
+        "result2":4
+    },
+    {
+        "id":81,
+        "choice1":"Vivre dans une grande maison tout confort avec tout ce dont tu as besoin mais très peu voyager",
+        "choice2":"Vivre dans un petit appart mais être en voyage très souvent ",
+        "result1":28,
+        "result2":15
+    },
+    {
+        "id":82,
+        "choice1":"Avoir une calvitie",
+        "choice2":"Avoir une coupe mullet (que tu ne peux JAMAIS couper / coiffer autrement)",
+        "result1":30,
+        "result2":11
+    },
+    {
+        "id":83,
+        "choice1":"Perdre 500 euros",
+        "choice2":"Voler 100 euros à un sans abri",
+        "result1":26,
+        "result2":3
+    },
+    {
+        "id":84,
+        "choice1":"Être immortel sur Terre ",
+        "choice2":"Vivre 20 ans sur une planète extraterrestre pacifique",
+        "result1":13,
+        "result2":27
+    },
+    {
+        "id":85,
+        "choice1":"Vivre sans téléphone",
+        "choice2":"Vivre sans musique ",
+        "result1":32,
+        "result2":6
+    },
+    {
+        "id":86,
+        "choice1":"Faire un film sur ton histoire la plus honteuse",
+        "choice2":"Faire publier ton journal intime",
+        "result1":19,
+        "result2":19
+    },
+    {
+        "id":87,
+        "choice1":"Ne plus jamais pouvoir embrasser quelqu'un",
+        "choice2":"Ne plus jamais pouvoir prendre quelqu'un dans tes bras",
+        "result1":36,
+        "result2":4
+    },
+    {
+        "id":88,
+        "choice1":"Avoir un enfant dès demain ",
+        "choice2":"Ne jamais pouvoir avoir d'enfant",
+        "result1":7,
+        "result2":37
+    },
+    {
+        "id":89,
+        "choice1":"Ne plus pouvoir chanter",
+        "choice2":"Ne plus pouvoir danser",
+        "result1":6,
+        "result2":36
+    },
+    {
+        "id":90,
+        "choice1":"Rentrer dans une voiture qui est restée trop longtemps au soleil",
+        "choice2":"Avoir la sensation du cerveau gelé parce que t'as mangé trop de glace",
+        "result1":21,
+        "result2":16
+    },
+    {
+        "id":91,
+        "choice1":"Vivre sans café",
+        "choice2":"Vivre sans chocolat",
+        "result1":37,
+        "result2":10
+    },
+    {
+        "id":92,
+        "choice1":"Que Nintendo ne sorte désormais QUE des nouvelles licences et délaissent COMPLÈTEMENT les anciennes (bisous Mario, Pokémon, etc)",
+        "choice2":"Que Nintendo ne produise que du contenu issu de ses quelques licences à succès mais sans jamais innover",
+        "result1":24,
+        "result2":15
+    },
+    {
+        "id":93,
+        "choice1":"Repasser ton bac tous les 3 ans",
+        "choice2":"Te faire arracher une dent tous les ans (en admettant que tes dents repoussent à l'infini",
+        "result1":21,
+        "result2":24
+    },
+    {
+        "id":94,
+        "choice1":"Ne plus pouvoir te laver les dents pendant 2 mois",
+        "choice2":"Ne plus pouvoir laver ton intimité pendant 2 mois ",
+        "result1":30,
+        "result2":8
+    },
+    {
+        "id":95,
+        "choice1":"Qu'une forme intelligente de vie extraterrestre vienne nous rendre visite sur Terre",
+        "choice2":"Que tranquille, E.T. ne reste qu'une fiction",
+        "result1":22,
+        "result2":20
+    },
+    {
+        "id":96,
+        "choice1":"Avoir des mains en ciseaux",
+        "choice2":"Avoir une tête de poulpe",
+        "result1":27,
+        "result2":13
+    },
+    {
+        "id":97,
+        "choice1":"Une randonnée de 8 heures",
+        "choice2":"Un footing de 4 heures",
+        "result1":41,
+        "result2":3
+    },
+    {
+        "id":98,
+        "choice1":"Avoir un piercing sur le gland/le clitoris",
+        "choice2":"Avoir 20 piercings sur le visage do.c nez, sourcils, bouche, langue...",
+        "result1":13,
+        "result2":18
+    },
+    {
+        "id":99,
+        "choice1":"Assister à un match de l'Euro dans des loges VIP",
+        "choice2":"Assister à un concert au stade de France dans des loges VIP",
+        "result1":4,
+        "result2":39
+    },
+    {
+        "id":100,
+        "choice1":"Mourir sans avoir fait du sexe",
+        "choice2":"Mourir sans avoir connu ce que ça faisait d'être amoureux",
+        "result1":36,
+        "result2":6
     }
 ]
