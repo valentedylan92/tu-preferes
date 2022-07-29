@@ -1,6 +1,4 @@
-- GENERATE SCORE
-        - PASSING ROM CHILD TO PARENT ?
-        - CHANGE STRUCTURE OF COMPONENT
+
 - SHOW MESSAGE ERROR       
 - CREATE HISTORY MODE
 - FINISH THE DATA FILE
@@ -8,6 +6,7 @@
 - Create Pop Up Rules
 - Responsive PC only
 - OPTIMIZE THAT SHIT
+- AUTO COMPLETE INPUT ANSWER ( 100 - FirstAnswer) 
 
 
 
@@ -16,8 +15,8 @@
 
 
 FIND BETTER NAMING FOR ELEMENT / COMPONENENT / VARIABLE
-AUTO COMPLETE INPUT ANSWER ( 100 - FirstAnswer)
 Find Where to host that shit
 Find a name for that shit
 Find how to deploy that shit
+SCSS RESTRUCTURE / OPTIMIZATION
 

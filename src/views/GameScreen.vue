@@ -1,9 +1,14 @@
 <template>
   <div class="game__container">
-    <CardElement 
+    <CardelementRather 
       :elementRather="listingRather[keyElement]"
       :key="keyElement"
     />
+    <AnswerHandler 
+      :elementRather="listingRather[keyElement]"
+      :key="keyElement"
+    />
+    <ScorePanel />
   </div>
   <button id="newGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
 
@@ -11,7 +16,9 @@
 
 <script>
 // @ is an alias to /src
-import CardElement from '@/components/CardElement.vue'
+import CardelementRather from '@/components/CardelementRather.vue'
+import AnswerHandler from '@/components/AnswerHandler.vue'
+import ScorePanel from '@/components/ScorePanel.vue'
 
 
 export default {
@@ -19,18 +26,19 @@ export default {
   props:["listingRather","keyRandom"],
   data(){
     return{
-      keyElement: this.keyRandom
+      keyElement: this.keyRandom,
     }
   },
   components: {
-    CardElement
+    CardelementRather,
+    AnswerHandler,
+    ScorePanel
   },
 
   methods:{
-
     getNewRandom() {
       this.keyElement = Math.round(Math.random()*(this.listingRather.length-1))
-    }
+    },
   }
 
 }
