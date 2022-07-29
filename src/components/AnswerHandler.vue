@@ -7,7 +7,7 @@
             </div>
             <div class="answer__column">
               <label class="answer__label" for="anwser2">% du 2</label>
-              <input class="answer__input" id="#answer2" type="number" v-model="answerTwo" name="answer2">
+              <input class="answer__input" id="#answer2" type="number" disabled v-model="answerTwo" name="answer2">
             </div>
           </div>
           <div class="answer__row">
@@ -38,12 +38,19 @@ export default {
             percentage2:Math.round(100*this.elementRather.result2/(this.elementRather.result1+this.elementRather.result2)).toString(),
             resultOne: this.elementRather.result1,
             resultTwo: this.elementRather.result2,
-            answerOne: 100,
+            answerOne: 0,
             answerTwo: 0,
             answerIsShown:false,
             message:'',
         }
     },
+    // computed: {
+    //   answerTwo: {
+    //      get(){
+    //         return 100 - this.answerOne
+    //      }
+    //   }
+    // },
     methods:{
     revealAnswer(){
       const targetsBar = document.querySelectorAll('.js-bar')
@@ -110,6 +117,10 @@ export default {
         this.emitter.emit('score',"Lost")
       }
     }
+  },
+  updated(){
+    this.answerTwo = 100 - this.answerOne
+    // this.answerOne = 100 - this.answerTwo
   }
 }
 
