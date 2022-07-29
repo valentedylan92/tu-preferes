@@ -1,17 +1,17 @@
 <template>
   <div class="game__container">
     <CardelementRather 
-      :elementRather="listingRather[keyElement]"
+      :elementRather="listingRatherFinal[keyElement]"
       :key="keyElement"
     />
     <AnswerHandler 
-      :elementRather="listingRather[keyElement]"
+      :elementRather="listingRatherFinal[keyElement]"
       :key="keyElement"
     />
     <ScorePanel />
   </div>
   <button id="newGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
-
+  <p class="message">{{message}}</p>
 </template>
 
 <script>
@@ -27,6 +27,9 @@ export default {
   data(){
     return{
       keyElement: this.keyRandom,
+      listingRatherFinal: this.listingRather,
+      ListingRatherUsed : [],
+      message:''
     }
   },
   components: {
@@ -37,8 +40,24 @@ export default {
 
   methods:{
     getNewRandom() {
-      this.keyElement = Math.round(Math.random()*(this.listingRather.length-1))
+      if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
+            var notInArray = true
+            while (notInArray) {
+              this.keyElement = Math.round(Math.random()*(this.listingRatherFinal.length-1))
+              if(!this.ListingRatherUsed.includes(this.keyElement)){
+                console.log(this.keyElement,this.ListingRatherUsed)
+                notInArray = false
+              }
+            }
+      }else{
+        this.message = "No more "
+      }
     },
+  },
+  mounted(){
+    this.emitter.on('updateListing', data => {
+      this.ListingRatherUsed.push(data-1);
+    })
   }
 
 }

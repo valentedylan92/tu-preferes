@@ -16,10 +16,6 @@
             <p class="answer__message">
               {{message}}
             </p>
-                <p class="answer__message">
-              Votre Score : {{score}}
-            </p>
-
             </div>
 
           </div>
@@ -42,10 +38,10 @@ export default {
             percentage2:Math.round(100*this.elementRather.result2/(this.elementRather.result1+this.elementRather.result2)).toString(),
             resultOne: this.elementRather.result1,
             resultTwo: this.elementRather.result2,
-            answerOne: 0,
+            answerOne: 100,
             answerTwo: 0,
+            answerIsShown:false,
             message:'',
-            score:0
         }
     },
     methods:{
@@ -57,12 +53,15 @@ export default {
       const targetTwoResult = document.querySelectorAll('#result2')
       const vm = this
 
-      if(this.answerOne + this.answerTwo == 100){
+      if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown){
+
+        this.emitter.emit('updateListing',vm.elementRather.id)
+        this.answerIsShown = true
         anime({
           targets:targetsBar,
           scaleY: 1,
           transformOrigin:"50% 100%",
-          duration:2000,
+          duration:100,
           easing: 'linear',
         })
         anime({
@@ -75,7 +74,7 @@ export default {
                   targets:targetOneResult,
                   textContent:  [0,vm.resultOne],
                   round: 1,
-                  duration:1800,
+                  duration:100,
                   easing: 'linear',
                   complete: function() {
                     anime({
@@ -89,7 +88,7 @@ export default {
                   targets:targetTwoResult,
                   textContent:  [0,vm.resultTwo],
                   round: 1,
-                  duration:1800,
+                  duration:100,
                   easing: 'linear',
                   complete: function() {
                     vm.handleAnswer()
@@ -103,7 +102,7 @@ export default {
       if(this.answerOne == this.percentage1){
         this.message = "Perfect Win"
         this.emitter.emit('score',"PerfectWin")
-      }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5)){
+      }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
         this.message = "Win"
         this.emitter.emit('score',"Win")
       }else{
