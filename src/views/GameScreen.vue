@@ -1,17 +1,21 @@
 <template>
   <div class="game__container">
-    <CardelementRather 
-      :elementRather="listingRatherFinal[keyElement]"
-      :key="keyElement"
-    />
-    <AnswerHandler 
-      :elementRather="listingRatherFinal[keyElement]"
-      :key="keyElement"
-    />
-    <ScorePanel />
+    <div class="game__score">
+     <ScorePanel />
+    </div>
+    <div class="game__inner">
+      <CardelementRather 
+        :elementRather="listingRatherFinal[keyElement]"
+        :key="keyElement"
+      />
+      <AnswerHandler 
+        :elementRather="listingRatherFinal[keyElement]"
+        :key="keyElement"
+      />
+      <button id="newGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
+      <p class="message">{{message}}</p>
+    </div>
   </div>
-  <button id="newGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
-  <p class="message">{{message}}</p>
 </template>
 
 <script>
