@@ -3,11 +3,11 @@
           <div class="answer__row">
             <div class="answer__column">
               <label class="answer__label" for="anwser1">% du 1</label>
-              <input class="answer__input" id="#answer1" type="number" v-model="answerOne" name="answer1">
+              <input class="answer__input" id="#answer1" ref="answerOne" type="number" v-model="answerOne" name="answer1">
             </div>
             <div class="answer__column">
               <label class="answer__label" for="anwser2">% du 2</label>
-              <input class="answer__input" id="#answer2" type="number" disabled v-model="answerTwo" name="answer2">
+              <input class="answer__input" ref="answerTwo" id="#answer2" type="number" v-model="answerTwo" name="answer2">
             </div>
           </div>
           <div class="answer__row">
@@ -61,6 +61,7 @@ export default {
       const vm = this
 
       if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown){
+          console.log("prelaunchpout")
 
         this.emitter.emit('updateListing',vm.elementRather.id)
         this.answerIsShown = true
@@ -119,8 +120,13 @@ export default {
     }
   },
   updated(){
-    this.answerTwo = 100 - this.answerOne
-    // this.answerOne = 100 - this.answerTwo
+    const answerElemOne = this.$refs.answerOne
+    const answerElemTwo = this.$refs.answerTwo
+    if (answerElemOne === document.activeElement) {
+      this.answerTwo = 100 - this.answerOne
+    } else if (answerElemTwo === document.activeElement) {
+      this.answerOne = 100 - this.answerTwo
+    }
   }
 }
 
