@@ -38,7 +38,7 @@
         "id":6,
         "choice1":"Que David Guetta fasse un DJ set dans ta chambre tous les matins à 6h",
         "choice2":"Que Mathieu Delormeau te mette des nouilles dans le slip tous les soirs avant de dormir",
-        "result1":44,
+        "result1":45,
         "result2":1
     },
     {
@@ -88,7 +88,7 @@
         "choice1":"Partir en vacances dans ta destination de rêve avec quelqu'un que tu peux pas blairer",
         "choice2":"Partir en vacances à Dunkerque avec ta personne préférée",
         "result1":3,
-        "result2":40
+        "result2":41
     },
     {
         "id":14,
@@ -116,7 +116,7 @@
         "choice1":"Maîtriser 3 nouvelles langues étrangères parfaitement",
         "choice2":"Comprendre ce que disent les animaux",
         "result1":27,
-        "result2":17
+        "result2":16
     },
     {
         "id":18,
@@ -171,7 +171,7 @@
         "id":25,
         "choice1":"Continuer ta vie normalement",
         "choice2":"Tout recommencer",
-        "result1":28,
+        "result1":29,
         "result2":15
     },
     {
@@ -179,12 +179,12 @@
         "choice1":"Avoir une grande carrière",
         "choice2":"Vivre le grand amour",
         "result1":13,
-        "result2":25
+        "result2":26
     },
     {
         "id":27,
         "choice1":"Être teubé mais le plus rigolo de la bande",
-        "choice2":"Ëtre intelligent mais tu ne maîtrises que les blagues de Toto",
+        "choice2":"Être intelligent mais tu ne maîtrises que les blagues de Toto",
         "result1":10,
         "result2":32
     },
@@ -331,14 +331,14 @@
     {
         "id":48,
         "choice1":"Être Mewtwo en fait",
-        "choice2":"Ëtre un Magicarpe",
+        "choice2":"Être un Magicarpe",
         "result1":25,
         "result2":16
     },
     {
         "id":49,
         "choice1":"Ne pas avoir de papilles gustatives",
-        "choice2":"Ëtre daltonien  ",
+        "choice2":"Être daltonien  ",
         "result1":8,
         "result2":23
     },
@@ -346,7 +346,7 @@
         "id":50,
         "choice1":"Avoir des champignons sous les ongles de pied comme dans la pub horrible",
         "choice2":"Avoir des croûtes qui suintent sous les aisselles ",
-        "result1":22,
+        "result1":23,
         "result2":4
     },
     {
@@ -367,7 +367,7 @@
         "id":53,
         "choice1":"Faire pipi sur ton père",
         "choice2":"faire caca sur ta mère",
-        "result1":27,
+        "result1":28,
         "result2":2
     },
     {
@@ -375,7 +375,7 @@
         "choice1":"Avoir une diarrhée douloureuse après chaque repas",
         "choice2":"Faire des horribles cauchemars avec sueur froide et compagnie toutes les nuits",
         "result1":13,
-        "result2":19
+        "result2":20
     },
     {
         "id":55,
@@ -478,7 +478,7 @@
     {
         "id":69,
         "choice1":"Marquer l'histoire",
-        "choice2":"Ëtre oublié ",
+        "choice2":"Être oublié ",
         "result1":20,
         "result2":16
     },
@@ -654,7 +654,7 @@
         "id":94,
         "choice1":"Ne plus pouvoir te laver les dents pendant 2 mois",
         "choice2":"Ne plus pouvoir laver ton intimité pendant 2 mois ",
-        "result1":30,
+        "result1":31,
         "result2":8
     },
     {
@@ -668,14 +668,14 @@
         "id":96,
         "choice1":"Avoir des mains en ciseaux",
         "choice2":"Avoir une tête de poulpe",
-        "result1":27,
+        "result1":28,
         "result2":13
     },
     {
         "id":97,
         "choice1":"Une randonnée de 8 heures",
         "choice2":"Un footing de 4 heures",
-        "result1":41,
+        "result1":42,
         "result2":3
     },
     {
@@ -698,5 +698,1834 @@
         "choice2":"Mourir sans avoir connu ce que ça faisait d'être amoureux",
         "result1":36,
         "result2":6
+    },
+    {
+        "id":101,
+        "choice1":"Ne jamais connaître le sentiment d'apesanteur",
+        "choice2":"Que tous les habitants de la Terre vive 6 mois en apesanteur d'un coup",
+        "result1":29,
+        "result2":15
+    },
+    {
+        "id":102,
+        "choice1":"Ne pouvoir écouter que des chansons sorties avant les années 2000",
+        "choice2":"Ne pouvoir écouter que des chansons sorties après les années 2000",
+        "result1":21,
+        "result2":19
+    },
+    {
+        "id":103,
+        "choice1":"Partir vivre en l'an 400 après JC",
+        "choice2":"Partir vivre en l'an 2400 après JC",
+        "result1":9,
+        "result2":26
+    },
+    {
+        "id":104,
+        "choice1":"Ne pouvoir porter que des vêtements noir et blanc",
+        "choice2":"Ne pouvoir porter que des vêtements de couleurs",
+        "result1":28,
+        "result2":16
+    },
+    {
+        "id":105,
+        "choice1":"Être comme la majorité et te fondre dans la masse",
+        "choice2":"Être un original, un marginal ",
+        "result1":14,
+        "result2":33
+    },
+    {
+        "id":106,
+        "choice1":"Ne plus jamais voir ton reflet",
+        "choice2":"Ne plus jamais savoir ce que tu sens",
+        "result1":19,
+        "result2":23
+    },
+    {
+        "id":107,
+        "choice1":"Vivre dans une villa énorme avec piscine mais la partager avec la personne au dessous de toi dans la liste des gens de ce discord",
+        "choice2":"Avoir une petite maison tout seul",
+        "result1":30,
+        "result2":12
+    },
+    {
+        "id":108,
+        "choice1":"Avoir une famille présente et aimante mais pas d'amis",
+        "choice2":"Ne pas avoir de famille mais des amis présents et aimants",
+        "result1":13,
+        "result2":30
+    },
+    {
+        "id":109,
+        "choice1":"Que ton futur enfant soit méchant mais intelligent",
+        "choice2":"Que ton futur enfant soit gentil mais un peu beaucoup concon",
+        "result1":7,
+        "result2":33
+    },
+    {
+        "id":110,
+        "choice1":"Devenir le sosie officiel de Claude François (donc tu dois adopter tous ses looks et prendre sa voix au quotidien) ",
+        "choice2":" devenir le sosie officiel de à que Johnny (tout pareil : mêmes vêtements, même dégaine, même voix)",
+        "result1":16,
+        "result2":26
+    },
+    {
+        "id":111,
+        "choice1":"Savoir quand tu vas mourir",
+        "choice2":"Savoir comment tu vas mourir ",
+        "result1":27,
+        "result2":14
+    },
+    {
+        "id":112,
+        "choice1":"Être le premier humain à poser le pied sur une nouvelle planète",
+        "choice2":"Être le premier humain à découvrir la cité d'Atlantide sous la mer",
+        "result1":16,
+        "result2":28
+    },
+    {
+        "id":113,
+        "choice1":"Dans le lore de Shrek être Marraine la bonne fée",
+        "choice2":"Dans le lore de Shrek être le Chat Potté",
+        "result1":6,
+        "result2":37
+    },
+    {
+        "id":114,
+        "choice1":"Mentir constamment mais être PUTAIN DE RICHE",
+        "choice2":"Rester honnête avec toi-meme et les autres mais orovoir les sous",
+        "result1":13,
+        "result2":28
+    },
+    {
+        "id":115,
+        "choice1":"Avoir des amis calmes, posés, qui canalisent ton énergie",
+        "choice2":"Avoir des amis hyper dynamiques avec plein d'idées folles",
+        "result1":11,
+        "result2":34
+    },
+    {
+        "id":116,
+        "choice1":"Vivre dans l'univers du dernier film que tu as regardé",
+        "choice2":"Te marier avec le dernier streameur que tu as regardé ",
+        "result1":25,
+        "result2":15
+    },
+    {
+        "id":117,
+        "choice1":"Revivre l'année 2020",
+        "choice2":"Repasser l'année scolaire la plus stressante de ta vie",
+        "result1":38,
+        "result2":3
+    },
+    {
+        "id":118,
+        "choice1":"Être une âme d'enfant bloqué dans un corps d'adulte",
+        "choice2":"Être une âme d'adulte bloquée dans un corps d'enfant ",
+        "result1":26,
+        "result2":11
+    },
+    {
+        "id":119,
+        "choice1":"Voir nu toutes les personnes que tu regardes",
+        "choice2":"Lire les pensées de toutes les personnes que tu regardes",
+        "result1":12,
+        "result2":30
+    },
+    {
+        "id":120,
+        "choice1":"Avoir le hoquet en continu",
+        "choice2":"Avoir des poux en continu sans pouvoir tous les buter",
+        "result1":15,
+        "result2":25
+    },
+    {
+        "id":121,
+        "choice1":"Perdre la vue",
+        "choice2":"Perdre l'ouïe",
+        "result1":24,
+        "result2":20
+    },
+    {
+        "id":122,
+        "choice1":"Porter des chaussettes mouillées toute l'année",
+        "choice2":"Avoir tout le temps un bout de salade entre les dents impossible à enlever",
+        "result1":23,
+        "result2":15
+    },
+    {
+        "id":123,
+        "choice1":"Qu'on te demande en mariage au KFC en cachant une ring dans une wing",
+        "choice2":"qu'on te demande en mariage dans un PMU en accompagnant la bague d'un ticket à gratter",
+        "result1":27,
+        "result2":16
+    },
+    {
+        "id":124,
+        "choice1":"Vivre dans un appartement sans fenêtre mais calme",
+        "choice2":"vivre dans un appartement avec fenêtre où il y a systématiquement des hurlements, des bruits de pas, des travaux ultra bruyants du côté des voisins",
+        "result1":36,
+        "result2":9
+    },
+    {
+        "id":125,
+        "choice1":"Avoir des piqûres de moustiques sur tout le corps",
+        "choice2":"Avoir un énorme coup de soleil sur tout le corps",
+        "result1":31,
+        "result2":11
+    },
+    {
+        "id":126,
+        "choice1":"Souffrir de plus en plus de perte de mémoire tout au long de ta vie jusqu'à ne plus te souvenir de grand-chose une fois vieux",
+        "choice2":"Souffrir de plus en plus physiquement tout au long de ta vie jusqu'à être alité à cause de la douleur une fois âgé ",
+        "result1":19,
+        "result2":15
+    },
+    {
+        "id":127,
+        "choice1":"Revivre ton meilleur souvenir d'enfance",
+        "choice2":"Vivre un fou rire d'une heure avec tes potes ou vous pouvez pas vous arrêter",
+        "result1":14,
+        "result2":33
+    },
+    {
+        "id":128,
+        "choice1":"Te réorienter dans un métier qui t'a toujours intrigué / passionné secrètement",
+        "choice2":"Te replonger dans des études d'un domaine dont tu es curieux",
+        "result1":34,
+        "result2":12
+    },
+    {
+        "id":129,
+        "choice1":"Avoir un câlin de quelqu'un de cher dès que tu te sens triste",
+        "choice2":"Que quelqu'un te cuisine un plat réconfortant après chaque dure journée",
+        "result1":33,
+        "result2":14
+    },
+    {
+        "id":130,
+        "choice1":"Devenir un grand acteur",
+        "choice2":"Devenir une star de la chanson",
+        "result1":22,
+        "result2":21
+    },
+    {
+        "id":131,
+        "choice1":"Perdre la mémoire de ta précédente expérience de jeu pour redécouvrir ton jeu préféré",
+        "choice2":"Découvrir un nouveau jeu favoris de tous les temps",
+        "result1":15,
+        "result2":25
+    },
+    {
+        "id":132,
+        "choice1":"Être un Pokémon dans un monde d'humains",
+        "choice2":"Être un humain dans un monde de Pokémons",
+        "result1":8,
+        "result2":37
+    },
+    {
+        "id":133,
+        "choice1":"Passer une nuit torride avec le personnage de fiction qui te fait le plus fantasmer",
+        "choice2":"Avoir ton date idéal avec ton vrai crush de la vraie vie",
+        "result1":15,
+        "result2":29
+    },
+    {
+        "id":134,
+        "choice1":"Participer à Question pour un champion, mais toutes les questions portent sur la mascarpone",
+        "choice2":"Participer à N'oubliez pas les paroles, mais toutes les chansons sont celles de Squeezie et Norman",
+        "result1":14,
+        "result2":28
+    },
+    {
+        "id":135,
+        "choice1":"Aller à l'école des sorciers",
+        "choice2":"Aller à l'école de C'est pas sorcier (avec Fred et Jamy en prof, et sachant que tous les élèves ont un gros camion à la fin) ",
+        "result1":25,
+        "result2":22
+    },
+    {
+        "id":136,
+        "choice1":"Te réincarner en canard, pour voler, nager, et vivre avec plein de bros",
+        "choice2":"Te réincarner en chat d'appartement pour dormir, dormir, chier, dormir ",
+        "result1":16,
+        "result2":26
+    },
+    {
+        "id":137,
+        "choice1":"Avoir super froid le jour et super chaud la nuit",
+        "choice2":"Avoir super chaud le jour et super froid la nuit ",
+        "result1":5,
+        "result2":42
+    },
+    {
+        "id":138,
+        "choice1":"Boire un verre de lait qui a tourné DEPUIIIIS très longtemps",
+        "choice2":"Manger une poignée de poils",
+        "result1":8,
+        "result2":30
+    },
+    {
+        "id":139,
+        "choice1":"Avoir un dragon",
+        "choice2":"Être un dragon",
+        "result1":28,
+        "result2":20
+    },
+    {
+        "id":140,
+        "choice1":"Tomber enceinte ou enceint de triplés et le parent qui t'a fécondé c'est ton meilleur poto et tu dois garder les bébés",
+        "choice2":"Tomber enceinte ou enceint d'un bébé mais l'autre parent c'est quelqu'un que tu peux pas piffrer et pareil, tu dois garder le bébé",
+        "result1":34,
+        "result2":3
+    },
+    {
+        "id":141,
+        "choice1":"Vivre sans café",
+        "choice2":"Vivre sans bière",
+        "result1":32,
+        "result2":23
+    },
+    {
+        "id":142,
+        "choice1":"Avoir tout le temps la sensation d'envie de faire pipi",
+        "choice2":"Avoir tout le temps la sensation d'envie de faire caca",
+        "result1":27,
+        "result2":19
+    },
+    {
+        "id":143,
+        "choice1":"Ne pouvoir voir que les Tuches quand tu vas au cinéma (mais tu peux voir toute la série)",
+        "choice2":"Ne pouvoir voir que Julien Clerc quand tu vas voir un concert",
+        "result1":19,
+        "result2":20
+    },
+    {
+        "id":144,
+        "choice1":"Ne pas être capable de faire des compliments",
+        "choice2":"Ne pas être capable de te plaindre",
+        "result1":9,
+        "result2":41
+    },
+    {
+        "id":145,
+        "choice1":"Voir une pluie d'étoiles filantes au bord d'une plage où y a personne et où le ciel est maxidégagé",
+        "choice2":"Voir des aurores boréales en Norvège",
+        "result1":11,
+        "result2":41
+    },
+    {
+        "id":146,
+        "choice1":"Avoir un bouclier invincible genre le bouclier de Captain America",
+        "choice2":"Avoir une arme trop stylée comme le marteau de Thor",
+        "result1":11,
+        "result2":34
+    },
+    {
+        "id":147,
+        "choice1":"Dormir dans une voiture avec une mini couverture et te peler le cul",
+        "choice2":"Dormir dans ta baignoire où tu n'es jamais confortable mais au moins il fait pas froid",
+        "result1":21,
+        "result2":24
+    },
+    {
+        "id":148,
+        "choice1":"Être toujours très en retard à tes rendez-vous",
+        "choice2":"Que les gens que tu attends soient toujours très en retard à tes rendez-vous",
+        "result1":6,
+        "result2":39
+    },
+    {
+        "id":149,
+        "choice1":"Nettoyer tout seul tout un appartement hyper dégueu après une soirée très festive",
+        "choice2":"Avoir passé toute cette soirée à t'occuper d'un pote bourré qui était malade dès 21h30",
+        "result1":26,
+        "result2":28
+    },
+    {
+        "id":150,
+        "choice1":"Prendre ta douche le matin, et donc dormir en étant tout dégueu",
+        "choice2":"Prendre ta douche le soir, et commencer ta journée sans être complètement clean",
+        "result1":18,
+        "result2":30
+    },
+    {
+        "id":151,
+        "choice1":"Porter un short (qui moule bien ton boule hmmm) en hiver",
+        "choice2":"Porter une doudoune en été",
+        "result1":40,
+        "result2":9
+    },
+    {
+        "id":152,
+        "choice1":"T'évanouir en live et perdre connaissance 5 minutes",
+        "choice2":"péter en live ET ÇA S'ENTEND",
+        "result1":8,
+        "result2":39
+    },
+    {
+        "id":153,
+        "choice1":"Roter chaque fois que tu dis un truc sérieux et important ",
+        "choice2":"Péter pendant un moment émotion (film triste, enterrement...)",
+        "result1":8,
+        "result2":38
+    },
+    {
+        "id":154,
+        "choice1":"Embrasser tous les jours tes collègues sur la bouche",
+        "choice2":"Leur serrer le pied ( c'est comme se serrer la main mais avec les pieds, et pour ça faut retirer ses chaussettes)",
+        "result1":8,
+        "result2":41
+    },
+    {
+        "id":155,
+        "choice1":"Ne plus pouvoir te laver les dents",
+        "choice2":"Ne plus pouvoir laver tes toilettes",
+        "result1":8,
+        "result2":33
+    },
+    {
+        "id":156,
+        "choice1":"Vivre à Disneyland",
+        "choice2":"Vivre dans un zoo qui s'occupe bien des animaux",
+        "result1":16,
+        "result2":29
+    },
+    {
+        "id":157,
+        "choice1":"Participer à Danse avec les stars",
+        "choice2":"Participer à N'oubliez pas les paroles",
+        "result1":14,
+        "result2":37
+    },
+    {
+        "id":158,
+        "choice1":"Être un Goomba et ne pas avoir de tronc mais un esprit (presque) vif ",
+        "choice2":"Être un Pokey  et ne pas avoir de cerveau mais un grand corps beau gosse",
+        "result1":30,
+        "result2":8
+    },
+    {
+        "id":159,
+        "choice1":"Avoir une insomnie en début de nuit mais ensuite dormir comme un bébé jusqu'au matin",
+        "choice2":"Dormir comme un bébé en début de nuit et te réveiller au milieu sans pouvoir te rendormir",
+        "result1":44,
+        "result2":8
+    },
+    {
+        "id":160,
+        "choice1":"Marcher toute la vie avec des chaussures neuves qui sont hyper douloureuses et vont te niquer les pieds genre t'as le pied vraiment en sang à la fin",
+        "choice2":"Être pieds nus et c'est socialement accepté mais bon tu touches le sol tout degueu",
+        "result1":2,
+        "result2":42
+    },
+    {
+        "id":161,
+        "choice1":"Que ton meilleur pote sorte avec ta mère et devienne ton beau-papa",
+        "choice2":"Que le dernier streameur que tu as regardé devienne ton beau-papa ou ta belle-maman",
+        "result1":6,
+        "result2":41
+    },
+    {
+        "id":162,
+        "choice1":"Vivre dans une belle maison mais dans une ville qui craint et qui est moche",
+        "choice2":"Vivre dans un appartement tout claqué et VÉTUSTE mais dans une ville sympa",
+        "result1":35,
+        "result2":9
+    },
+    {
+        "id":163,
+        "choice1":"Voir un film d'horreur vraiment flippant de 5 HEURES au cinéma",
+        "choice2":"Voir une comédie pas drôle et très cringymaxi de 5 heures au cinéma ",
+        "result1":22,
+        "result2":27
+    },
+    {
+        "id":164,
+        "choice1":"Être en top tweet monde sur Twitter parce que tout le monde t'insulte et tu te prends une giga shitstorm pendant 1 mois",
+        "choice2":"Te faire agresser verbalement une fois par jour pendant 2 mois IRL",
+        "result1":19,
+        "result2":19
+    },
+    {
+        "id":165,
+        "choice1":"Partir en vacances vers une destination complètement inconnue",
+        "choice2":"Partir vers un endroit réconfortant",
+        "result1":24,
+        "result2":25
+    },
+    {
+        "id":166,
+        "choice1":"Être nu dans les transports pour faire un trajet Brest - Nice en train",
+        "choice2":"Être nu pour la rentrée des classes au collège",
+        "result1":43,
+        "result2":4
+    },
+    {
+        "id":167,
+        "choice1":"Avoir une statue à ton effigie devant la mairie de ta ville",
+        "choice2":"Avoir une rue à ton nom dans ta ville",
+        "result1":12,
+        "result2":40
+    },
+    {
+        "id":168,
+        "choice1":"Te faire tromper dans une relation amoureuse passionnelle et devoir rester avec la personne",
+        "choice2":"T'ennuyer dans ton couple et devoir rester avec la personne",
+        "result1":31,
+        "result2":11
+    },
+    {
+        "id":169,
+        "choice1":"Faire un premier date avec ton maxi crush, tout se passe hyper bien mais tu te rends compte à la fin que t'avais un énorme bout de salade entre les dents",
+        "choice2":"Faire un date avec ton maxi crush qui, au cours du date, s'avère être un maxi con",
+        "result1":51,
+        "result2":3
+    },
+    {
+        "id":170,
+        "choice1":"Passer une semaine dans ta ville avec la personne de tes rêves",
+        "choice2":"Passer une semaine tout seul dans l'endroit de tes rêves",
+        "result1":33,
+        "result2":24
+    },
+    {
+        "id":171,
+        "choice1":"Être attaqué.e par un tigre",
+        "choice2":"Être attaqué.e par 1000 manchots",
+        "result1":25,
+        "result2":21
+    },
+    {
+        "id":172,
+        "choice1":"Faire partie de la bande de potes de la série Friends ",
+        "choice2": "Habiter être un père/ mère au foyer sexy à Wisteria Lane au milieu des Desperate Housewifes",
+        "result1":41,
+        "result2":3
+    },
+    {
+        "id":173,
+        "choice1":"Te brosser les dents avec toute une semaine avec la brosse à dents de quelqu'un d'autre",
+        "choice2":"Mettre des sous-vêtements déjà portés une fois par quelqu'un d'autre toute une semaine",
+        "result1":32,
+        "result2":10
+    },
+    {
+        "id":174,
+        "choice1":"Perdre tout l'argent que tu as gagné cette année",
+        "choice2":"Perdre tous les souvenirs que tu as gagné cette année",
+        "result1":37,
+        "result2":8
+    },
+    {
+        "id":175,
+        "choice1":"Ne plus te souvenir de tes amis",
+        "choice2":"que tes amis ne se souviennent plus de toi",
+        "result1":24,
+        "result2":17
+    },
+    {
+        "id":176,
+        "choice1":"Qu'on soit en pénurie mondiale de bière",
+        "choice2":"Qu'on soit en pénurie mondiale de Coca",
+        "result1":14,
+        "result2":40
+    },
+    {
+        "id":178,
+        "choice1":"Voir les gens qui sont morts",
+        "choice2":"Pouvoir prédire les catastrophes à venir",
+        "result1":15,
+        "result2":35
+    },
+    {
+        "id":179,
+        "choice1":"Faire un piercing à la langue",
+        "choice2":"Faire un piercing à l'arcade du sourcil ou sourcilière et d'aujourd'hui",
+        "result1":16,
+        "result2":25
+    },
+    {
+        "id":180,
+        "choice1":"Porter au quotidien la tenue de ton personnage de jeu vidéo préféré",
+        "choice2":"Porter au quotidien le costume de ton super héros préféré",
+        "result1":38,
+        "result2":7
+    },
+    {
+        "id":181,
+        "choice1":"Exercer le métier que tu rêvais de faire quand tu étais petit",
+        "choice2":"Exercer ton métier actuel / le métier vers lequel tu t'orientes aujourd'hui",
+        "result1":22,
+        "result2":28
+    },
+    {
+        "id":182,
+        "choice1":"Travailler sous pression avec des deadlines et des horaires décalées",
+        "choice2":"Ne pas hésiter à faire des heures supplémentaires le week-end qui ne seront potentiellement pas payées car tu es passionné par ton travail",
+        "result1":2,
+        "result2":41
+    },
+    {
+        "id":183,
+        "choice1":"Te réincarner en chien",
+        "choice2":"Te réincarner en chat",
+        "result1":11,
+        "result2":42
+    },
+    {
+        "id":184,
+        "choice1":"Avoir 3 tonnes de devoirs mais être rapidement chez toi",
+        "choice2":"Sortir un peu tard du boulot tous les soirs et t'habites genre à 45 min de ton boulot ",
+        "result1":7,
+        "result2":41
+    },
+    {
+        "id":185,
+        "choice1":"Péter à la télé et finir dans les bêtisiers",
+        "choice2":"Que ton adresse soir divulguée à la télé",
+        "result1":45,
+        "result2":6
+    },
+    {
+        "id":186,
+        "choice1":"Manger ton propre cérumen (une petite cuillère)",
+        "choice2":"Ronger l'ongle d'un pote (pendant une heure)",
+        "result1":21,
+        "result2":17
+    },
+    {
+        "id":187,
+        "choice1":"Ne plus manger de fromage",
+        "choice2":"Ne plus manger de charcuterie",
+        "result1":19,
+        "result2":30
+    },
+    {
+        "id":188,
+        "choice1":"Fêter Noël à New York",
+        "choice2":"Fêter Noël dans le village du Père Noël en Finlande ",
+        "result1":8,
+        "result2":44
+    },
+    {
+        "id":189,
+        "choice1":"Rentrer chez toi et retrouver une biche dans ton appart",
+        "choice2":"Rentrer chez toi et retrouver une araignée GIGANTESQUE sur ton lit",
+        "result1":45,
+        "result2":5
+    },
+    {
+        "id":190,
+        "choice1":"Ne plus pouvoir toucher un livre",
+        "choice2":"Ne plus pouvoir regarder de films ",
+        "result1":36,
+        "result2":10
+    },
+    {
+        "id":191,
+        "choice1":"Qu'il n'y ait plus de guerre dans le monde",
+        "choice2":"Qu'il n'y ait plus de maladie",
+        "result1":32,
+        "result2":14
+    },
+    {
+        "id":192,
+        "choice1":"Méditer 2 heures par jour",
+        "choice2":"Faire du sport 2 heures par jour",
+        "result1":13,
+        "result2":38
+    },
+    {
+        "id":193,
+        "choice1":"Tromper 1000 fois une personne",
+        "choice2":"Tromper 1000 personnes une fois",
+        "result1":12,
+        "result2":25
+    },
+    {
+        "id":194,
+        "choice1":"Partir en vacances dans la jungle amazonienne",
+        "choice2":"Partir dans une destination touristique pleine de monde",
+        "result1":22,
+        "result2":24
+    },
+    {
+        "id":195,
+        "choice1":"Être pompier",
+        "choice2":"Être infirmier",
+        "result1":27,
+        "result2":15
+    },
+    {
+        "id":196,
+        "choice1":"Mourir jeune mais très riche",
+        "choice2":"Vivre jusqu'à 111 ans dans la classe moyenne mais euh pas ouf genre pas trop de revenus",
+        "result1":25,
+        "result2":19
+    },
+    {
+        "id":197,
+        "choice1":"Un whisky avec des glaçons au cum",
+        "choice2":"Boire  un bon drink avec une paille tissée à partir de poils pubiens (propres)",
+        "result1":10,
+        "result2":29
+    },
+    {
+        "id":198,
+        "choice1":"N'avoir que des jeux PC",
+        "choice2":"N'avoir que des jeux Nintend",
+        "result1":34,
+        "result2":21
+    },
+    {
+        "id":199,
+        "choice1":"Voyager au centre de la Terre",
+        "choice2":"Découvrir vingt milles lieues sous les mers",
+        "result1":11,
+        "result2":44
+    },
+    {
+        "id":200,
+        "choice1":"Être débordée par ton travail",
+        "choice2":"Te faire chier tout le temps",
+        "result1":35,
+        "result2":15
+    },
+    {
+        "id":201,
+        "choice1":"Être coincé en soirée avec des gens qui ne parlent que comme dans la vidéo 'bébouuuu'",
+        "choice2":"Être coincé en soirée avec des gens qui ne ressortent que des punchlines de Norman et Cyprien ",
+        "result1":11,
+        "result2":40
+    },
+    {
+        "id":202,
+        "choice1":"Ne plus avoir Discord",
+        "choice2":"Ne plus avoir Twitch",
+        "result1":16,
+        "result2":37
+    },
+    {
+        "id":203,
+        "choice1":"Ne jamais pouvoir voc sur discord",
+        "choice2":"Voc 5 nuits sur 7 et enchainer les nuits blanches sans dormir",
+        "result1":30,
+        "result2":19
+    },
+    {
+        "id":204,
+        "choice1":"Devoir faire caca dans une litière pour chat",
+        "choice2":"Ne plus pouvoir manger que des croquettes pour humain mais qui ont la dégaine des croquettes pour chat",
+        "result1":42,
+        "result2":7
+    },
+    {
+        "id":205,
+        "choice1":"Fêter Noël en famille",
+        "choice2":"Fêter Noël entre amis",
+        "result1":38,
+        "result2":16
+    },
+    {
+        "id":206,
+        "choice1":"Ne pas avoir de pouce",
+        "choice2":"Que tous tes doigts de la main soient des pouces",
+        "result1":9,
+        "result2":37
+    },
+    {
+        "id":207,
+        "choice1":"Ne plus voir de films et de séries d'animation japonaise",
+        "choice2":"Ne plus voir de films et de séries Disney",
+        "result1":21,
+        "result2":35
+    },
+    {
+        "id":208,
+        "choice1":"Avoir un tout petit appartement (12 m2) avec un beau jardin",
+        "choice2":"Avoir un énorme appartement mais très peu de fenêtres et d'ouvertures vers l'extérieur",
+        "result1":27,
+        "result2":22
+    },
+    {
+        "id":209,
+        "choice1":"Perdre 5 ans de vie et obtenir le physique dont tu rêves ",
+        "choice2":"Rester comme tu es actuellement ",
+        "result1":25,
+        "result2":30
+    },
+    {
+        "id":210,
+        "choice1":"Avoir un fou rire à des moments inappropriés",
+        "choice2":"Pleurer à gros sanglots à des moments inappropriés",
+        "result1":43,
+        "result2":9
+    },
+    {
+        "id":211,
+        "choice1":"Être une superstar",
+        "choice2":"Rester un anonyme",
+        "result1":18,
+        "result2":37
+    },
+    {
+        "id":212,
+        "choice1":"Mourir dans un accident de voiture",
+        "choice2":"Tuer un enfant dans un accident de voiture",
+        "result1":36,
+        "result2":12
+    },
+    {
+        "id":213,
+        "choice1":"Que Yalda te fasse une chanson d'amour",
+        "choice2":"Que Sinay te fasse un clash de rap",
+        "result1":20,
+        "result2":25
+    },
+    {
+        "id":214,
+        "choice1":"Mettre trop d'autobronzant et être orange pendant un mois",
+        "choice2":"Que ton coiffeur te rate et que t'aies la coupe de cheveux de Godefroy de Montmirail pendant un mois",
+        "result1":3,
+        "result2":44
+    },
+    {
+        "id":215,
+        "choice1":"Adopter Wall-E",
+        "choice2":"Adopter Baymax",
+        "result1":16,
+        "result2":32
+    },
+    {
+        "id":216,
+        "choice1":"Participer à Squid Game pour éponger tes dettes",
+        "choice2":"Être endetté et dans la sauce financièrement toute ta vie",
+        "result1":21,
+        "result2":14
+    },
+    {
+        "id":217,
+        "choice1":"Faire du sport tous les matins midis et soirs",
+        "choice2":"Ne faire aucun exercice physique à part la marche et le FUCK",
+        "result1":13,
+        "result2":38
+    },
+    {
+        "id":218,
+        "choice1":"Faire un spectacle d'humour et bider devant 1500 personnes",
+        "choice2":"Faire un podcast qui fait un badbuzz tellement il est pas drôle et recevoir 50 000 pouces rouges",
+        "result1":16,
+        "result2":29
+    },
+    {
+        "id":219,
+        "choice1":"Faire systématiquement rire tout le monde peu importe ce que tu dis ",
+        "choice2":"exciter systématiquement tout le monde peu importe ce que tu dis",
+        "result1":32,
+        "result2":20
+    },
+    {
+        "id":220,
+        "choice1":"Devoir dormir toutes les nuits avec quelqu'un qui RONFLE SA RACE",
+        "choice2":"Devoir dormir sur un petit matelas inconfortable, tout fin à même le sol",
+        "result1":30,
+        "result2":22
+    },
+    {
+        "id":221,
+        "choice1":"En tant que streameur, avoir beaucoup de dons mais un chat inactif",
+        "choice2":"N'avoir aucune moula mais un chat très présent",
+        "result1":5,
+        "result2":47
+    },
+    {
+        "id":222,
+        "choice1":"Un collègue hyper sympa et rigolo MAIS NUL À CHIER dans son travail et qui ne remplit pas ses responsabilités",
+        "choice2":"Un collègue froid, désagréable voire méchant mais très sérieux et efficace",
+        "result1":24,
+        "result2":26
+    },
+    {
+        "id":223,
+        "choice1":"Passer 5 ans en prison",
+        "choice2":"Faire un round de roulette russe",
+        "result1":17,
+        "result2":26
+    },
+    {
+        "id":224,
+        "choice1":"Ne plus avoir d'eau chaude chez toi ",
+        "choice2":"Avoir des toilettes turques",
+        "result1":21,
+        "result2":32
+    },
+    {
+        "id":225,
+        "choice1":"Que ton crush te laisse en vu après que tu lui aies dit 'Je t'aime'",
+        "choice2":"Que tout un discord très actif ne réagisse pas après que tu aies fait une blague très risquée",
+        "result1":13,
+        "result2":36
+    },
+    {
+        "id":226,
+        "choice1":"Participer à un événement caritatif en petit comité avec plein de potes en réunissant in fine 100 000 euros",
+        "choice2":"Participer à un événement caritatif avec plein de monde dont des gens qui font pas du bon esprit mais réunir 1 million d'euros",
+        "result1":53,
+        "result2":1
+    },
+    {
+        "id":227,
+        "choice1":"Partir en vacances avec quelqu'un qui n'a pas du tout les mêmes attentes que toi",
+        "choice2":"Partir tout seul en vacance",
+        "result1":11,
+        "result2":43
+    },
+    {
+        "id":228,
+        "choice1":"Prendre l'avion 24 heures vers une destination de rêve",
+        "choice2":"Faire 1 heure de train pour une destination pas ouf",
+        "result1":45,
+        "result2":11
+    },
+    {
+        "id":229,
+        "choice1":"T'asseoir sur un gâteau et manger une bite",
+        "choice2":"T'asseoir sur une bite et manger un gâteau",
+        "result1":6,
+        "result2":40
+    },
+    {
+        "id":230,
+        "choice1":"Vivre dans un pays où la gastronomie est éclatée au sol mais les paysages sont jolis",
+        "choice2":"Vivre dans un pays relativement médiocre esthétiquement mais où la bouffe est masterclass",
+        "result1":32,
+        "result2":20
+    },
+    {
+        "id":230,
+        "choice1":"Avoir une vue incroyable et pouvoir déceler de nouvelles couleurs",
+        "choice2":"Avoir un goût ultra-développé et découvrir de nouvelles saveurs uniques ",
+        "result1":42,
+        "result2":15
+    },
+    {
+        "id":232,
+        "choice1":"Avoir une infection urinaire permanente",
+        "choice2":"Avoir des hémorroïdes permanents ",
+        "result1":25,
+        "result2":8
+    },
+    {
+        "id":233,
+        "choice1":"Travailler de nuit",
+        "choice2":"Travailler les week-ends",
+        "result1":27,
+        "result2":21
+    },
+    {
+        "id":234,
+        "choice1":"Fêter ton anniversaire en tout petit comité en faisant un pique-nique",
+        "choice2":"Faire une énorme soirée dont tu es la star avec des paillettes et du gros son",
+        "result1":53,
+        "result2":6
+    },
+    {
+        "id":235,
+        "choice1":"N'avoir aucune confiance en toi, te dégoûter physiquement et psychologiquement",
+        "choice2":"Être extrêmement narcissique et imbu de toi-même, en te sentant supérieur à tout le monde",
+        "result1":25,
+        "result2":28
+    },
+    {
+        "id":236,
+        "choice1":"Te réincarner en vache",
+        "choice2":"Te réincarner en poule",
+        "result1":38,
+        "result2":18
+    },
+    {
+        "id":237,
+        "choice1":"Changer ton plus gros complexe physique",
+        "choice2":"Changer ton pire défaut psychologique",
+        "result1":13,
+        "result2":39
+    },
+    {
+        "id":238,
+        "choice1":"Un piercing sur ton appareil génital ",
+        "choice2":"Un tatouage d'un extrait du Temps des tempêtes sur ton cou mais bien visible",
+        "result1":17,
+        "result2":32
+    },
+    {
+        "id":239,
+        "choice1":"Qu'on t'offre 200 euros par mois à vie",
+        "choice2":"Qu'on t'offre 10 millions d'euros mais à 70 ans",
+        "result1":53,
+        "result2":4
+    },
+    {
+        "id":240,
+        "choice1":"Faire un saut en parachute",
+        "choice2":"Faire un stage de plongée",
+        "result1":32,
+        "result2":26
+    },
+    {
+        "id":241,
+        "choice1":"Devoir déménager dans un pays différent chaque année",
+        "choice2":"Ne jamais plus pouvoir voyager",
+        "result1":40,
+        "result2":17
+    },
+    {
+        "id":242,
+        "choice1":"Être lâché dans la nature et devoir survivre pendant 15 jours (sans eau ni vêtements au départ) mais au bout il y a une grosse récompense",
+        "choice2":"Vivre ta meilleure vie pendant 15 jours, faire tout ce que tu veux sans aucune répercutions, même des choses illégales, mais au bout de ces 15 jours tu décèdes",
+        "result1":43,
+        "result2":10
+    },
+    {
+        "id":243,
+        "choice1":"Un week-end spa, massages et hammam pour te détendre la nouille",
+        "choice2":"Un week-end dans un chalet en montagne à manger des plats chauds et lire des livres",
+        "result1":22,
+        "result2":31
+    },
+    {
+        "id":244,
+        "choice1":"Avoir réalisé tous tes rêves très tôt et ne plus en avoir",
+        "choice2":"Ne jamais en réaliser aucun, mais qu'ils t'accompagnent toute ta vie ",
+        "result1":38,
+        "result2":15
+    },
+    {
+        "id":245,
+        "choice1":"Maîtriser l'un des 4 éléments",
+        "choice2":"Avoir l'un de tes cinq sens de ton choix AMPLIFIÉ et surpuissant",
+        "result1":38,
+        "result2":18
+    },
+    {
+        "id":246,
+        "choice1":"Gravir une montagne tout seul",
+        "choice2":"Traverser un bras de mer en bateau à voile tout seul",
+        "result1":42,
+        "result2":18
+    },
+    {
+        "id":247,
+        "choice1":"Te faire cramer par tes parents en train de te masturber",
+        "choice2":"Cramer un de tes parents en train de se masturber",
+        "result1":40,
+        "result2":5
+    },
+    {
+        "id":248,
+        "choice1":"Faire une séance de ouija /spiritisme avec tes potes chez toi",
+        "choice2":"Visiter un lieu réputé hanté tout seul",
+        "result1":30,
+        "result2":21
+    },
+    {
+        "id":249,
+        "choice1":"Repartir pour deux mois de confinement ",
+        "choice2":"Ne plus jamais faire de télétravai",
+        "result1":37,
+        "result2":20
+    },
+    {
+        "id":250,
+        "choice1":"Que ton voisin te fasse des avances sexuelles tous les jours",
+        "choice2":"Qu'il fasse caca sur ton paillasson tous les jours ",
+        "result1":41,
+        "result2":9
+    },
+    {
+        "id":251,
+        "choice1":"Être bloqué dans un ascenseur pendant trois heures avec un inconnu ",
+        "choice2":"Subir trois heures de date avec un  connard / une connasse qui fait que parler de lui ou elle en étant désagréable",
+        "result1":54,
+        "result2":5
+    },
+    {
+        "id":252,
+        "choice1":"En temps de guerre, devoir manger ton animal de compagnie car il ne te reste plus que ça de comestible",
+        "choice2":"Mourir de faim",
+        "result1":18,
+        "result2":29
+    },
+    {
+        "id":253,
+        "choice1":"Être reconnu par chaque personnes que tu croise dans la rue à chaque fois que tu sors",
+        "choice2":"Te faire insulter tout les jours sur Internet par plusieurs personnes différentes",
+        "result1":47,
+        "result2":8
+    },
+    {
+        "id":254,
+        "choice1":"Révéler tes sentiments et histoires très intimes à une foule de 100 personnes pendant 30 minutes",
+        "choice2":"Faire un shooting de photos de toi nu avec un inconnu pendant 1 heure",
+        "result1":19,
+        "result2":28
+    },
+    {
+        "id":255,
+        "choice1":"Aller à Disneyland avec la dernière personne à qui t'as envoyé un mp discord au moment où tu lis ce message",
+        "choice2":"Aller en date dans un restaurant avec la dernière personne à qui t'as envoyé un mp discord",
+        "result1":44,
+        "result2":8
+    },
+    {
+        "id":256,
+        "choice1":"Passer Noël avec ta famille / tes amis sans recevoir de cadeaux",
+        "choice2":"Ne pas fêter Noël avec tes proches mais recevoir plein de cadeaux ",
+        "result1":45,
+        "result2":14
+    },
+    {
+        "id":257,
+        "choice1":"Avoir un calendrier de l'avent avec des chocolats",
+        "choice2":"Avoir un calendrier de l'avent avec des nudes de ton crush",
+        "result1":29,
+        "result2":32
+    },
+    {
+        "id":258,
+        "choice1":"Vivre le même jour en boucle pour l'éternité",
+        "choice2":"N'avoir plus qu'une journée à vivre",
+        "result1":38,
+        "result2":17
+    },
+    {
+        "id":259,
+        "choice1":"Ne pas avoir de toilettes et faire tes besoins dans une litière",
+        "choice2":"Ne pas avoir de lit et dormir sur une couverture à même le sol",
+        "result1":41,
+        "result2":17
+    },
+    {
+        "id":260,
+        "choice1":"Devoir changer de pseudo",
+        "choice2":"Devoir changer de prénom",
+        "result1":39,
+        "result2":22
+    },
+    {
+        "id":261,
+        "choice1":"Avoir Twitch en clair",
+        "choice2":"Avoir Discord en clair",
+        "result1":59,
+        "result2":7
+    },
+    {
+        "id":262,
+        "choice1":"Sortir avec quelqu'un qui est persuadé qu'iel est mieux que toi en tout point",
+        "choice2":"Sortir avec quelqu'un où tu es persuadé que tu es mieux qu'iel en tout point",
+        "result1":19,
+        "result2":31
+    },
+    {
+        "id":263,
+        "choice1":"Vivre un incroyable coup de foudre, une histoire d'amour passionnelle et un HORRIBLE chagrin d'amour",
+        "choice2":"Ne jamais rien vivre de tout ça pour ne pas souffrir",
+        "result1":25,
+        "result2":36
+    },
+    {
+        "id":264,
+        "choice1":"Nager avec les dauphins dans une mer trop belle",
+        "choice2":"Faire du chien de traineau en Scandinavie",
+        "result1":26,
+        "result2":36
+    },
+    {
+        "id":265,
+        "choice1":"Vivre dans une maison qui absorbe toute la lumière et donc complètement dans l'obscurité",
+        "choice2":"Vivre dans une maison où tous les meubles sont phosphorescents et donc où il n'y a jamais d'obscurité",
+        "result1":34,
+        "result2":25
+    },
+    {
+        "id":266,
+        "choice1":"Qu'on ne te souhaite pas ton anniversaire",
+        "choice2":"Qu'on te le souhaite tous les jours",
+        "result1":51,
+        "result2":7
+    },
+    {
+        "id":267,
+        "choice1":"Travailler en gueule de bois mais en ayant bien dormi",
+        "choice2":"Travailler sobre mais en ayant fait une insomnie",
+        "result1":17,
+        "result2":38
+    },
+    {
+        "id":268,
+        "choice1":"Faire une séance d'urbex dans un hôpital psychiatrique abandonné",
+        "choice2":"Faire une  séance de spiritisme dans ta chambre",
+        "result1":40,
+        "result2":18
+    },
+    {
+        "id":269,
+        "choice1":"Passer toute  une année déréglée climatiquement et donc 100%  hivernale : froid, chocolat chaud et plaid",
+        "choice2":"Passer une année estivale : chaleurs, hits de l'été et bermuda",
+        "result1":39,
+        "result2":22
+    },
+    {
+        "id":270,
+        "choice1":"Que ta moitié te demande en mariage DURANT LE MARIAGE DE TON POTE",
+        "choice2":"Que ta moitié te demande en mariage AU MACDO",
+        "result1":14,
+        "result2":35
+    },
+    {
+        "id":271,
+        "choice1":"Être le fils ou la fille d'Apollon et être maxi frais",
+        "choice2":"Être le fils ou la fille de Dyonisos et avoir du pinard ET DE LA BOUFFE à volonté",
+        "result1":25,
+        "result2":32
+    },
+    {
+        "id":272,
+        "choice1":"Faire la fête avec la dernière personne dans tes mp discord",
+        "choice2":"Faire la fête avec la dernière personne que tu as vu irl",
+        "result1":39,
+        "result2":12
+    },
+    {
+        "id":273,
+        "choice1":"Faire un jeu de la bouteille",
+        "choice2":"Faire un strip poker",
+        "result1":29,
+        "result2":28
+    },
+    {
+        "id":274,
+        "choice1":"Avoir un grand jardin avec une cascade avec un point d'eau pour te baigner",
+        "choice2":"Avoir dans ton énorme jardin ta petite forêt perso pour te promener",
+        "result1":43,
+        "result2":16
+    },
+    {
+        "id":275,
+        "choice1":"Vivre dans l'univers de Star Wars",
+        "choice2":"Vivre dans l'univers du Seigneur des anneaux",
+        "result1":21,
+        "result2":35
+    },
+    {
+        "id":276,
+        "choice1":"Partir en classe de neige avec toute la commu",
+        "choice2":"Partir en classe de mer avec toute la commu",
+        "result1":42,
+        "result2":20
+    },
+    {
+        "id":277,
+        "choice1":"Ne pas avoir de cadeaux de Noël mais avoir un maxi REPAS de Noël",
+        "choice2":"Avoir des maxi cadeaux mais pas de repas",
+        "result1":29,
+        "result2":37
+    },
+    {
+        "id":278,
+        "choice1":"Devoir constamment porter un chapeau",
+        "choice2":"Devoir constamment porter un monocle",
+        "result1":55,
+        "result2":8
+    },
+    {
+        "id":279,
+        "choice1":"Avoir plein de petits cadeaux à 10 euros",
+        "choice2":"Avoir un vrai beau cadeau à 100 euros ",
+        "result1":18,
+        "result2":37
+    },
+    {
+        "id":280,
+        "choice1":"Avoir un tatouage de gang sur le bras alors que tu fais pas du tout partie d'un gang",
+        "choice2":"Avoir un tatouage d'un portrait réaliste moche d'un de tes proches sur le bras",
+        "result1":45,
+        "result2":7
+    },
+    {
+        "id":281,
+        "choice1":"Coucher avec quelqu'un de très beau genre pile dans tes critères de beauté mais NUL AU BED",
+        "choice2":"coucher avec quelqu'un qui te repousse mais au final c'est le meilleur coup de ta vie",
+        "result1":36,
+        "result2":15
+    },
+    {
+        "id":282,
+        "choice1":"Te faire passer pour mort auprès de tes proches en échange de 100 millions d'euros (donc devoir vivre à l'étranger et perdre tout contact avec ton entourage)",
+        "choice2":"Garder ta vie actuelle",
+        "result1":13,
+        "result2":47
+    },
+    {
+        "id":283,
+        "choice1":"Devoir vendre tous les meubles et toute la décoration que tu possèdes mais garder l'appartement dans lequel tu vis actuellement ",
+        "choice2":"Déménager et garder tous tes objets",
+        "result1":12,
+        "result2":51
+    },
+    {
+        "id":284,
+        "choice1":"Voir une météorite s'abattre sur la Terre et savoir que nous sommes tous condamnés dans 6 mois, donc vivre la fin du monde",
+        "choice2":"Te suicider avant",
+        "result1":50,
+        "result2":5
+    },
+    {
+        "id":285,
+        "choice1":"Qu'il y ait des caméras partout dans la rue pour la sécurité",
+        "choice2":"Qu'il n'y ait pas de caméra dehors ",
+        "result1":27,
+        "result2":22
+    },
+    {
+        "id":286,
+        "choice1":"Avoir la voix de Garou",
+        "choice2":"Ala voix de Jordy dans C'est dur dur d'être un bébé",
+        "result1":53,
+        "result2":1
+    },
+    {
+        "id":287,
+        "choice1":"Savoir voler avec aisance et souplesse",
+        "choice2":"Savoir te téléporter",
+        "result1":14,
+        "result2":46
+    },
+    {
+        "id":289,
+        "choice1":"Avoir une femme ou un homme de ménage",
+        "choice2":"Avoir ton propre chef cuisto à la maison",
+        "result1":37,
+        "result2":20
+    },
+    {
+        "id":290,
+        "choice1":"Passer la nuit dans un musée",
+        "choice2":"Passer la nuit dans un grand magasin genre Galerie Lafayett",
+        "result1":40,
+        "result2":11
+    },
+    {
+        "id":291,
+        "choice1":"Voir un extra terrestre",
+        "choice2":"Voir un T rex en admettant que la science les fasse revivre",
+        "result1":40,
+        "result2":13
+    },
+    {
+        "id":292,
+        "choice1":"Ne pouvoir prononcer que 50 mots par jour",
+        "choice2":"Ne pouvoir entendre qu'une heure par jour",
+        "result1":48,
+        "result2":4
+    },
+
+    {
+        "id":294,
+        "choice1":"Faire un saut en parachute",
+        "choice2":"Faire du ski hors piste",
+        "result1":40,
+        "result2":12
+    },
+    {
+        "id":295,
+        "choice1":"Avoir des pouvoirs télékinésiques",
+        "choice2":"Savoir faire de la télépathie",
+        "result1":43,
+        "result2":18
+    },
+    {
+        "id":296,
+        "choice1":"Être médecin",
+        "choice2":"Être sapeur pompier",
+        "result1":32,
+        "result2":15
+    },
+    {
+        "id":297,
+        "choice1":"Vivre en van pendant 1 mois ",
+        "choice2":"Vivre dans une maison hyper luxueuse pendant 1 mois",
+        "result1":19,
+        "result2":40
+    },
+    {
+        "id":298,
+        "choice1":"Pouvoir voir à travers tout ce que tu veux, quand tu veux",
+        "choice2":"Pouvoir zoomer avec tes yeux jusqu'au niveau microscopique",
+        "result1":29,
+        "result2":27
+    },
+    {
+        "id":299,
+        "choice1":"Faire partie de la royauté il y a 600 ans",
+        "choice2":"Être quelqu'un de lambda de nos jours",
+        "result1":4,
+        "result2":53
+    },
+    {
+        "id":300,
+        "choice1":"Être un pirate dans l'équipage de Luffy et euh manger des fruits",
+        "choice2":"Être un ninja comme Naruto et te cloner en combi orange",
+        "result1":39,
+        "result2":16
+    },
+    {
+        "id":302,
+        "choice1":"Avoir un talent artistique incroyable de ton choix qui t'apporte le succès et l'admiration de tous mais être totalement chiant et gênant en société",
+        "choice2":"Être nul en tout mais avoir un charisme de dingue et être ultra populaire auprès de tout le monde",
+        "result1":35,
+        "result2":16
+    },
+    {
+        "id":303,
+        "choice1":"Rencontrer ton âme sœur dans ton enfance et passer toute ta vie avec",
+        "choice2":"vivre plusieurs autres expériences avant de la rencontrer autour de tes 60 ans",
+        "result1":38,
+        "result2":18
+    },
+    {
+        "id":304,
+        "choice1":"Vivre dans un igloo dans la banquise",
+        "choice2":"Vivre dans une cabane dans la jungle tropicale",
+        "result1":24,
+        "result2":35
+    },
+    {
+        "id":305,
+        "choice1":"Faire ton mariage sur le thème de South Park",
+        "choice2":"Que tes funérailles soient sur le thème des Simpson",
+        "result1":9,
+        "result2":47
+    },
+    {
+        "id":306,
+        "choice1":"Que ta comédie musicale préférée revienne sur scène",
+        "choice2":"Que ton film préféré ressorte en salle de cinéma",
+        "result1":14,
+        "result2":44
+    },
+    {
+        "id":307,
+        "choice1":"Te réincarner en l'animal de tes rêves",
+        "choice2":"Te réincarner en l'être humain avec la vie de tes rêves",
+        "result1":22,
+        "result2":35
+    },
+    {
+        "id":308,
+        "choice1":"Qu'un nude de toi circule sur internet",
+        "choice2":"Qu'un de tes secrets les plus intimes soient révélés et que tout le monde l'apprenne",
+        "result1":46,
+        "result2":13
+    },
+    {
+        "id":309,
+        "choice1":"Devoir faire une mission des fonds marins d'une semaine où tu habites dans une base subaquatique et tu fais de la plongée toute la journée dans les abysses sans jamais remonter à la surface",
+        "choice2":"Faire une mission d'exploration de sous-terrains inconnus pendant une semaine, où tu dois faire des prélèvements toute la journée et rentrer dans ta base souterraine le soir",
+        "result1":26,
+        "result2":24
+    },
+    {
+        "id":310,
+        "choice1":"Que tes parents arrangent ton mariage et donc choisissent ton futur époux ou épouse",
+        "choice2":"Que tu épouses la premiere personne dont tu es tombé amoureux.se",
+        "result1":12,
+        "result2":32
+    },
+    {
+        "id":311,
+        "choice1":"Faire une chute très spectaculaire et humiliante devant une vingtaine de personnes",
+        "choice2":"Faire un trajet de 20 minutes à pieds dans la rue où ton pantalon tombe / ta jupe remonte beaucoup, de sorte qu'on voit entièrement ton petit ASS",
+        "result1":38,
+        "result2":18
+    },
+    {
+        "id":312,
+        "choice1":"Te balader en furry toute la journée pendant un an",
+        "choice2":"Pendant un an, devoir toujours sortir et faire ta vie avec sous le bras ou attaché à toi un énorme coussin de ta waifu ou ton husbando d'animé",
+        "result1":26,
+        "result2":18
+    },
+    {
+        "id":313,
+        "choice1":"Ne pas manger pendant 3 jours",
+        "choice2":"Manger que des trucs qui te DEGOUTENT pendant 3 jours",
+        "result1":50,
+        "result2":7
+    },
+    {
+        "id":314,
+        "choice1":"Ne jamais plus prendre pouvoir de photos/captures d'écran",
+        "choice2":"Devoir conserver chez toi éternellement toutes photo/capture d'écran prises et prises dans le futur au format papier",
+        "result1":16,
+        "result2":42
+    },
+    {
+        "id":315,
+        "choice1":"Tomber amoureux ou amoureuse de ton (ou ta) meilleur ami, sortir ensemble quelques mois et perdre tout contact",
+        "choice2":"Tomber amoureux ou amoureuse de ton (ou ta) meilleur ami, ne jamais sortir avec et ravaler tes sentiments dans l'espoir que ça passe",
+        "result1":15,
+        "result2":40
+    },
+    {
+        "id":316,
+        "choice1":"Pouvoir connaître l'histoire de chaque objet que tu touches",
+        "choice2":"Pouvoir voyager à travers les miroirs, qui sont comme des portails pour toi  ",
+        "result1":9,
+        "result2":46
+    },
+    {
+        "id":317,
+        "choice1":"Faire une année d'études où il n'y a que des travaux de groupes",
+        "choice2":"Faire une année d'études où tous les rendus et travaux sont à faire seul ",
+        "result1":25,
+        "result2":35
+    },
+    {
+        "id":318,
+        "choice1":"Sur Discord, ne jamais pouvoir lire tes mentions, mais voir combien tu en as (que ce soit everyone ou mp) en haut à gauche de l'écran ",
+        "choice2":"Pouvoir tout lire mais ne jamais pouvoir répondre ",
+        "result1":6,
+        "result2":44
+    },
+    {
+        "id":319,
+        "choice1":"Être professeur.e de maths",
+        "choice2":"Être professeur.e d'histoire",
+        "result1":32,
+        "result2":29
+    },
+    {
+        "id":320,
+        "choice1":"Devenir le Pokémon de ton choix ",
+        "choice2":"Devenir dresseur de Pokémons mais ne pouvoir en capturer que 3 durant toute ta carrière ",
+        "result1":18,
+        "result2":36
+    },
+    {
+        "id":321,
+        "choice1":"Que l'être aimé te trompe avec ton pire ennemi / la personne que t'aimes le moins",
+        "choice2":"Que l'être aimé te trompe avec ton meilleur ami",
+        "result1":35,
+        "result2":14
+    },
+    {
+        "id":322,
+        "choice1":"Qu'il y ait encore un dernier mois de vrai confinement",
+        "choice2":"Qu'on ne se confine plus jamais ",
+        "result1":29,
+        "result2":25
+    },
+    {
+        "id":323,
+        "choice1":"Participer à N'oubliez pas les paroles",
+        "choice2":"Participer à Fort Boyard",
+        "result1":21,
+        "result2":37
+    },
+    {
+        "id":324,
+        "choice1":"Avoir un tapis volant ",
+        "choice2":"Avoir un robot majordome",
+        "result1":40,
+        "result2":19
+    },
+    {
+        "id":325,
+        "choice1":"Partir vers une destination au soleil dans un hôtel all inclusive, au programme transat piscine transat mer",
+        "choice2":"Partir vers une destination où y a PLEIN DE TRUCS à visiter, des musées des monuments des randonnées...",
+        "result1":15,
+        "result2":44
+    },
+    {
+        "id":326,
+        "choice1":"Devoir peindre tous les murs de ta maison en noir",
+        "choice2":"Devoir peindre chaque mur d'une couleur différente",
+        "result1":16,
+        "result2":41
+    },
+    {
+        "id":327,
+        "choice1":"Qu'on t'offre des fleurs",
+        "choice2":"Qu'on t'offre des chocolats",
+        "result1":19,
+        "result2":32
+    },
+    {
+        "id":328,
+        "choice1":"En tant que prof, être ivre et devoir gérer une classe",
+        "choice2":"être sobre et devoir gérer une classe d'élèves ivres",
+        "result1":18,
+        "result2":37
+    },
+    {
+        "id":329,
+        "choice1":"Te perdre une fois par jour et devoir demander ton chemin",
+        "choice2":"Que quelqu'un te demande le chemin chaque jour",
+        "result1":11,
+        "result2":44
+    },
+    {
+        "id":330,
+        "choice1":"Faire un dons au paradons de 100K mais être obligé de faire un emprunt",
+        "choice2":"Ne pas faire de dons au paradons",
+        "result1":6,
+        "result2":40
+    },
+    {
+        "id":331,
+        "choice1":"Que le Paradons devienne un évènement plus en plus grand chaque année",
+        "choice2":"Que ça reste un évènement 'familial' à petite échelle",
+        "result1":17,
+        "result2":37
+    },
+    {
+        "id":332,
+        "choice1":"Changer ta couleur naturelle de cheveux",
+        "choice2":"changer ta couleur naturelle d'yeux ",
+        "result1":34,
+        "result2":23
+    },
+    {
+        "id":333,
+        "choice1":"Ne pouvoir que faire des bisous et pas en recevoir",
+        "choice2":"Ne pouvoir que recevoir des bisous et pas en faire",
+        "result1":37,
+        "result2":15
+    },
+    {
+        "id":334,
+        "choice1":"Adopter un style vestimentaire gothique le temps d'un mois : crayon noir aux yeux, vêtements noirs, dentelle, vanités, granités",
+        "choice2":"Que chaque vêtement porté pendant ce même mois soit de couleur TRÈS flashy et tape à l'œil",
+        "result1":30,
+        "result2":29
+    },
+    {
+        "id":335,
+        "choice1":"Tuer quelqu'un pour sauver ta vie",
+        "choice2":"Que quelqu'un te tue pour sauver sa vie",
+        "result1":34,
+        "result2":18
+    },
+    {
+        "id":336,
+        "choice1":"Devoir reporter 3 jours d'affilée les mêmes chaussettes qui smell un max",
+        "choice2":"Ne pas mettre de chaussettes avec tes baskets pendant 3 jours et donc smell un max",
+        "result1":46,
+        "result2":6
+    },
+    {
+        "id":337,
+        "choice1":"Te faire enterrer vivant pendant une heure dans une boîte avec un tuyau d'air relié à l'extérieur pour ne pas que tu t'étouffes",
+        "choice2":"Mettre ta tête pendant une heure dans un casque (avec des mini trous style apiculteurs), rempli d'insectes (phasmes, criquets, blattes)",
+        "result1":52,
+        "result2":5
+    },
+    {
+        "id":338,
+        "choice1":"Si tu pouvais fuir ton quotidien le temps d'une journée :  Faire une journée couette réconfortante où tu te reposes",
+        "choice2":"Faire une journée plus physique, avec une randonnée de 4 heures pour aller te ressourcer face à un beau paysage",
+        "result1":23,
+        "result2":33
+    },
+    {
+        "id":339,
+        "choice1":"Sortir avec quelqu'un qui est exactement ton style physiquement mais qui n'a pas du tout le genre de personnalité que tu aimes",
+        "choice2":"Sortir avec quelqu'un qui n'est pas à ton goût physiquement MAIS qui a une super personnalité",
+        "result1":2,
+        "result2":59
+    },
+    {
+        "id":340,
+        "choice1":"Découvrir que tu es en fait l'enfant d'une famille noble et très riche, donc que toute ta vie familiale est un mensonge depuis le début MAIS tu es un.e riche héritier.e",
+        "choice2":"Ne rien découvrir du tout, et garder ta vie telle qu'elle est",
+        "result1":36,
+        "result2":20
+    },
+    {
+        "id":341,
+        "choice1":"Vomir dans ton masque",
+        "choice2":"Te chier dessus",
+        "result1":36,
+        "result2":16
+    },
+    {
+        "id":342,
+        "choice1":"Que ton meilleur ami parle tout le temps",
+        "choice2":"Que ton meilleur ami ne parle jamais ",
+        "result1":41,
+        "result2":15
+    },
+    {
+        "id":343,
+        "choice1":"Ne pouvoir communiquer qu'en emoji par message et toutes plateformes confondues",
+        "choice2":"Ne pouvoir envoyer que 3 messages par jour, toutes plateformes confondues",
+        "result1":16,
+        "result2":43
+    },
+    {
+        "id":344,
+        "choice1":"Que toutes les personnes autour de toi soient franches mais toi tu peux ne répondre que de manière hypocrite",
+        "choice2":"Que toutes les personnes autour de toi soient hypocrites et que tu sois la seule personne franche",
+        "result1":12,
+        "result2":29
+    },
+    {
+        "id":345,
+        "choice1":"Être clown dans une compagnie de cirque, et faire une tournée en roulotte dans toute la France",
+        "choice2":"Être trapéziste dans cette même tournée",
+        "result1":29,
+        "result2":23
+    },
+    {
+        "id":346,
+        "choice1":"Que ta série préférée n'ait qu'une saison, simple mais efficace",
+        "choice2":"Que ta série préférée ait 3 saisons dont 2 excellentes mais la dernière turbo mauvaise donc la série se finit mal",
+        "result1":52,
+        "result2":9
+    },
+    {
+        "id":347,
+        "choice1":"Avoir un délicieux petit déjeuner au lit tous les matins",
+        "choice2":"Avoir un repas cuisiné par un chef tous les soirs ",
+        "result1":13,
+        "result2":46
+    },
+    {
+        "id":348,
+        "choice1":"Faire une coloc dans un 80 mètres carrés avec ton ou ta meilleur.e ami.e",
+        "choice2":"Vivre tout seul dans un 40 mètres carrés",
+        "result1":27,
+        "result2":30
+    },
+    {
+        "id":349,
+        "choice1":"Que tout le monde te trouve hilarant mais que toi personne ne te fasse rire",
+        "choice2":"Que tout le monde te trouve pas drôle mais toi tu es très bon public",
+        "result1":29,
+        "result2":26
+    },
+    {
+        "id":350,
+        "choice1":"Avoir une maison qui se nettoie toute seule",
+        "choice2":"Avoir une voiture qui se conduit toute seule ",
+        "result1":52,
+        "result2":7
+    },
+    {
+        "id":351,
+        "choice1":"Faire le Z event, mais être tout seul et ne te faire pote avec personne",
+        "choice2":"Faire un petit évènement caritatif à deux avec ton best bro",
+        "result1":4,
+        "result2":53
+    },
+    {
+        "id":352,
+        "choice1":"Être amoureux.se de ton/ta cousin.e et que ce soit réciproque",
+        "choice2":"Être fou amoureux de quelqu'un que tu ne connais pas et qui ne te connaîtra jamais",
+        "result1":7,
+        "result2":46
+    },
+    {
+        "id":353,
+        "choice1":"En tant que chanteur, que ta chanson buzz sur Tiktok mais que personne ne connaisse ton nom",
+        "choice2":"Ne jamais percer mais avoir une petite fanbase hyper assidue de 30 personnes",
+        "result1":15,
+        "result2":41
+    },
+    {
+        "id":354,
+        "choice1":"Mal indiquer le chemin a une petite mamie trop gentille et mignonne uwu",
+        "choice2":"Qu'on t'indique mal ton chemin et que tu sois très en retard ",
+        "result1":23,
+        "result2":25
+    },
+    {
+        "id":355,
+        "choice1":"Finir en premier le nouveau jeu qui vient de sortir. T'es vu comme le crack mondial et tout le monde te trouve giga skillé, mais tu rates tout le contenu communautaire sympa, et ta découverte est solitaire",
+        "choice2":"Prendre ton temps, découvrir le jeu à ton rythme avec tous les messages communautaires, la hype communautaire etc, mais tu reste un random pas très fort au jeu",
+        "result1":16,
+        "result2":36
+    },
+    {
+        "id":356,
+        "choice1":"Apprendre que ta moitié t'a trompé dans une orgie",
+        "choice2":"Apprendre que ta moitié t'a trompé avec une seule personne",
+        "result1":19,
+        "result2":29
+    },
+    {
+        "id":357,
+        "choice1":"Vivre près de tes proches mais à 2 heures de ton travail",
+        "choice2":"Vivre loin de tes proches mais à 10 minutes de ton travail ",
+        "result1":4,
+        "result2":50
+    },
+    {
+        "id":358,
+        "choice1":"Qu'un artiste que tu aimes reste underground et peu connu ",
+        "choice2":"Qu'il finisse par percer mais qu'il perde complètement son authenticité et son originalité",
+        "result1":47,
+        "result2":7
+    },
+    {
+        "id":359,
+        "choice1":"Accoucher naturellement et ressentir tout, par volonté d'être en harmonie avec le Bébé",
+        "choice2":"Avoir un accouchement très médicalisé, avec le moins de souffrance possible",
+        "result1":8,
+        "result2":43
+    },
+    {
+        "id":360,
+        "choice1":"Être trop effacé dans tes relations sociales et avoir du mal à parler",
+        "choice2":"Savoir t'imposer mais parfois te mettre trop en avant",
+        "result1":36,
+        "result2":25
+    },
+    {
+        "id":361,
+        "choice1":"Avoir une salle de sport dans les locaux de ton bureau / ton école",
+        "choice2":"Avoir une salle toute cocooning pour faire la sieste",
+        "result1":20,
+        "result2":40
+    },
+    {
+        "id":362,
+        "choice1":"Avoir un massage d'une heure qui cible pile tes endroits où t'es noué ",
+        "choice2":"Passer une heure dans un jacuzzi, juste toi, les bubulles, ta musique et ta boisson préférée",
+        "result1":36,
+        "result2":22
+    },
+    {
+        "id":363,
+        "choice1":"Participer à Motus",
+        "choice2":"Participer à Des chiffres et des lettres",
+        "result1":44,
+        "result2":15
+    },
+    {
+        "id":364,
+        "choice1":"Dormir avec quelqu'un qui te vole tout le temps la couette",
+        "choice2":"Dormir avec le nez bouché",
+        "result1":34,
+        "result2":25
+    },
+    {
+        "id":365,
+        "choice1":"Que le  channel #tu-préfères reste comme il est et ne change pas",
+        "choice2":"Que le tu preferes s'arrête et laisse place à un nouveau format",
+        "result1":15,
+        "result2":40
     }
+    
 ]
