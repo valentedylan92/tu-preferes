@@ -2,7 +2,7 @@
     <div class="card">
       <div class="card__inner">
         <div class="card__intro">
-          <h2 class="card__title">TU PRÉFÈRES #{{this.elementRather.id}}</h2>
+          <h2 class="card__title">TU PRÉFÈRES {{this.lengthGame}} / {{this.limitGame}}</h2>
           <h3 class="card__subtitle">Sur un total de {{(this.elementRather.result1+this.elementRather.result2)}} votes.</h3>
         </div>
         <div class="card__choice">
@@ -29,21 +29,6 @@
                 </div>
           </div>
         </div>
-<!-- 
-        <div class="choice__container">
-          <ChoiceElement
-            :result="this.elementRather.result1"
-            :percentage="percentage1"
-            keyChoice="1"
-            colorBar="primary"
-           />
-           <ChoiceElement
-            :result="this.elementRather.result2"
-            :percentage="percentage2"
-            keyChoice="2"
-            colorBar="secondary"
-           />
-        </div> -->
       </div>
     </div>
 </template>
@@ -58,7 +43,7 @@ export default {
     ChoiceElement
   },
 
-  props:["elementRather"],
+  props:["elementRather","lengthGame","limitGame"],
 
   data() {
     return {
@@ -77,7 +62,6 @@ export default {
         easing: 'easeOutElastic(1, .6)'
       })
   }
-
 }
 </script>
 

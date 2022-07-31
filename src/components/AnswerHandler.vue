@@ -38,32 +38,26 @@ export default {
             percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
             resultOne: this.element.result1,
             resultTwo: this.element.result2,
-            answerOne: 100,
+            answerOne: 0,
             answerTwo: 0,
             answerIsShown:false,
             message:'',
         }
     },
-    // computed: {
-    //   answerTwo: {
-    //      get(){
-    //         return 100 - this.answerOne
-    //      }
-    //   }
-    // },
+
     methods:{
     revealAnswer(){
       const targetBarOne = document.querySelector('#bar-result1')
       const targetBarTwo = document.querySelector('#bar-result2')
+      const targetOnePercentage = document.querySelector('#bar-percentage1')
+      const targetTwoPercentage = document.querySelector('#bar-percentage2')
       const targetsResult = document.querySelectorAll('.js-result')
       const targetsPercentage = document.querySelectorAll('.js-percentage')
-      const targetOneResult = document.querySelectorAll('#result1')
-      const targetTwoResult = document.querySelectorAll('#result2')
+      // const targetOneResult = document.querySelectorAll('#result1')
+      // const targetTwoResult = document.querySelectorAll('#result2')
       const vm = this
 
       if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown){
-          console.log("prelaunchpout")
-
         this.emitter.emit('updateListing',vm.element.id)
         this.answerIsShown = true
         anime({
@@ -81,28 +75,28 @@ export default {
           easing: 'linear',
         })
         anime({
-              targets:targetsResult,
+              targets:targetsPercentage,
               opacity: 1,
               duration:0,
               easing: 'easeOutExpo',
               complete: function() {
                 anime({
-                  targets:targetOneResult,
-                  textContent:  [0,vm.resultOne],
+                  targets:targetOnePercentage,
+                  textContent:  ["0%",vm.percentage1+"%"],
                   round: 1,
                   duration:1800,
                   easing: 'linear',
                   complete: function() {
                     anime({
-                      targets:targetsPercentage,
+                      targets:targetsResult,
                       opacity: 1,
                       duration:500,
                     })
                   }
                 })
                 anime({
-                  targets:targetTwoResult,
-                  textContent:  [0,vm.resultTwo],
+                  targets:targetTwoPercentage,
+                  textContent:  ["0%",vm.percentage2+"%"],
                   round: 1,
                   duration:1800,
                   easing: 'linear',

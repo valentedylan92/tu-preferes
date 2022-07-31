@@ -2,12 +2,12 @@
     <div class="choice">
       <div class="bar__container">
         <div class="bar">
-            <div :id="'bar-result'+keyChoice" ref="bar" :class="'bar__inner js-bar height-'+percentage +' bar-'+colorBar">
-            </div>
-            <p :id="'result'+keyChoice" ref="resultElement" class="choice__result js-result">0</p>
+          <div :id="'bar-result'+keyChoice" ref="bar" :class="'bar__inner js-bar height-'+percentage +' bar-'+colorBar">
+          </div>
+          <p :id="'bar-percentage'+keyChoice" ref="percentage" class="choice__percentage js-percentage">{{percentage}} %</p>
         </div>
       </div>
-        <p ref="percentage" class="choice__percentage js-percentage">{{percentage}} %</p>
+            <p :id="'result'+keyChoice" ref="resultElement" class="choice__result js-result">{{result}} votes</p>
     </div>
 </template>
 <script>
