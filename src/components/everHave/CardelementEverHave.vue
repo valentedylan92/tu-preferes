@@ -9,11 +9,13 @@
             :result="this.elementEverHave.result1"
             :percentage="percentage1"
             keyChoice="1"
+            colorBar="primary"
            />
            <ChoiceElement
             :result="this.elementEverHave.result2"
             :percentage="percentage2"
             keyChoice="2"
+            colorBar="secondary"
            />
         </div>
       </div>

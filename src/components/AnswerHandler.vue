@@ -38,7 +38,7 @@ export default {
             percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
             resultOne: this.element.result1,
             resultTwo: this.element.result2,
-            answerOne: 0,
+            answerOne: 100,
             answerTwo: 0,
             answerIsShown:false,
             message:'',
@@ -53,7 +53,8 @@ export default {
     // },
     methods:{
     revealAnswer(){
-      const targetsBar = document.querySelectorAll('.js-bar')
+      const targetBarOne = document.querySelector('#bar-result1')
+      const targetBarTwo = document.querySelector('#bar-result2')
       const targetsResult = document.querySelectorAll('.js-result')
       const targetsPercentage = document.querySelectorAll('.js-percentage')
       const targetOneResult = document.querySelectorAll('#result1')
@@ -66,9 +67,16 @@ export default {
         this.emitter.emit('updateListing',vm.element.id)
         this.answerIsShown = true
         anime({
-          targets:targetsBar,
-          scaleY: 1,
-          transformOrigin:"50% 100%",
+          targets:targetBarOne,
+          width: vm.percentage1+"%",
+          transformOrigin:"0% 50%",
+          duration:2000,
+          easing: 'linear',
+        })
+        anime({
+          targets:targetBarTwo,
+          width: vm.percentage2+"%",
+          transformOrigin:"0% 50%",
           duration:2000,
           easing: 'linear',
         })
