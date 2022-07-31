@@ -4,12 +4,12 @@
      <ScorePanel />
     </div>
     <div class="game__inner">
-      <CardelementRather 
-        :elementRather="listingRatherFinal[keyElement]"
+      <CardelementEverHave 
+        :elementEverHave="listingEverHaveFinal[keyElement]"
         :key="keyElement"
       />
       <AnswerHandler 
-        :elementRather="listingRatherFinal[keyElement]"
+        :element="listingEverHaveFinal[keyElement]"
         :key="keyElement"
       />
       <button id="newGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
@@ -20,36 +20,37 @@
 
 <script>
 // @ is an alias to /src
-import CardelementRather from '@/components/CardelementRather.vue'
+import CardelementEverHave from '@/components/everHave/CardelementEverHave.vue'
 import AnswerHandler from '@/components/AnswerHandler.vue'
 import ScorePanel from '@/components/ScorePanel.vue'
+import listEverHave from "../listEverHave.json"
+
 
 
 export default {
-  name: 'GameScreen',
-  props:["listingRather","keyRandom"],
+  name: 'GameScreenEverHave',
   data(){
     return{
-      keyElement: this.keyRandom,
-      listingRatherFinal: this.listingRather,
-      ListingRatherUsed : [],
+      keyElement: 0,
+      listingEverHaveFinal: listEverHave,
+      ListingEverHaveUsed : [],
       message:''
     }
   },
   components: {
-    CardelementRather,
+    CardelementEverHave,
     AnswerHandler,
     ScorePanel
   },
 
   methods:{
     getNewRandom() {
-      if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
+      if(this.listingEverHaveFinal.length != this.ListingEverHaveUsed.length){
             var notInArray = true
             while (notInArray) {
-              this.keyElement = Math.round(Math.random()*(this.listingRatherFinal.length-1))
-              if(!this.ListingRatherUsed.includes(this.keyElement)){
-                console.log(this.keyElement,this.ListingRatherUsed)
+              this.keyElement = Math.round(Math.random()*(this.listingEverHaveFinal.length-1))
+              if(!this.ListingEverHaveUsed.includes(this.keyElement)){
+                console.log(this.keyElement,this.ListingEverHaveUsed)
                 notInArray = false
               }
             }
@@ -60,8 +61,12 @@ export default {
   },
   mounted(){
     this.emitter.on('updateListing', data => {
-      this.ListingRatherUsed.push(data-1);
+      this.ListingEverHaveUsed.push(data-1);
     })
+  },
+  beforeMount(){
+    const newNumber = Math.round(Math.random()*(this.listingEverHaveFinal.length-1));
+    this.keyElement = newNumber
   }
 
 }

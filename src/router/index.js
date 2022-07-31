@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import GameScreen from '../views/GameScreen.vue'
+import GameScreenRather from '@/views/GameScreenRather.vue'
+import GameScreenEverHave from '@/views/GameScreenEverHave.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'GameScreen',
-    component: GameScreen
-  }
+    name: 'GameScreenRather',
+    component: GameScreenRather
+  },
+  {
+    path: '/jai-deja',
+    name: 'GameScreenEverHave',
+    component: GameScreenEverHave
+  },
 ]
 
 const router = createRouter({

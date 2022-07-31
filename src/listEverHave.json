@@ -1,0 +1,788 @@
+[
+    {
+        "id":1,
+        "proposition":"Je suis déjà passé.e à la radio ou la télévision",
+        "result1":40,
+        "result2":35
+    },
+    {
+        "id":2,
+        "proposition":"Voulu changer de prénom",
+        "result1":30,
+        "result2":44
+    },
+    {
+        "id":3,
+        "proposition":"Maintenu une plante en vie plus d'un an",
+        "result1":38,
+        "result2":35
+    },
+    {
+        "id":4,
+        "proposition":"Vu IRL quelqu'un rencontré sur Twitch",
+        "result1":49,
+        "result2":25
+    },
+    {
+        "id":5,
+        "proposition":"Voyagé en Asie ",
+        "result1":13,
+        "result2":56
+    },
+    {
+        "id":6,
+        "proposition":"Eu des poux",
+        "result1":54,
+        "result2":18
+    },
+    {
+        "id":7,
+        "proposition":"Eu une fête d'anniversaire surprise ",
+        "result1":20,
+        "result2":51
+    },
+    {
+        "id":8,
+        "proposition":"Rencontré une star",
+        "result1":49,
+        "result2":24
+    },
+    {
+        "id":9,
+        "proposition":"Eu plusieurs crushs en même temps",
+        "result1":37,
+        "result2":32
+    },
+    {
+        "id":10,
+        "proposition":"Eu un accident de voiture ",
+        "result1":35,
+        "result2":33
+    },
+    {
+        "id":11,
+        "proposition":"Pranké des gens car vive le rire",
+        "result1":57,
+        "result2":12
+    },
+    {
+        "id":12,
+        "proposition":"Eu un rêve un peu +18 avec quelqu'un de très inattendu",
+        "result1":58,
+        "result2":9
+    },
+    {
+        "id":13,
+        "proposition":"Eu un animal de compagnie exotique ou original ",
+        "result1":19,
+        "result2":47
+    },
+    {
+        "id":14,
+        "proposition":"Gardé un objet appartenant à mon crush pour avoir un petit bout de lui/elle",
+        "result1":27,
+        "result2":40
+    },
+    {
+        "id":15,
+        "proposition":"Fait une coloration / décoloration de mes cheveux",
+        "result1":26,
+        "result2":44
+    },
+    {
+        "id":16,
+        "proposition":"Dormi dans un endroit très inconfortable",
+        "result1":66,
+        "result2":4
+    },
+    {
+        "id":17,
+        "proposition":"Mangé du piment",
+        "result1":59,
+        "result2":11
+    },
+    {
+        "id":18,
+        "proposition":"Été au restaurant seul",
+        "result1":34,
+        "result2":31
+    },
+    {
+        "id":19,
+        "proposition":"Participé à une compétition sportive",
+        "result1":51,
+        "result2":21
+    },
+    {
+        "id":20,
+        "proposition":"Participé à un Escape Game ",
+        "result1":45,
+        "result2":23
+    },
+    {
+        "id":21,
+        "proposition":"Lu un livre en une journée / une nuit",
+        "result1":49,
+        "result2":18
+    },
+    {
+        "id":22,
+        "proposition":"Fait du babysitting",
+        "result1":23,
+        "result2":42
+    },
+    {
+        "id":23,
+        "proposition":"Fait un date avec quelqu'un découvert sur une application de rencontre",
+        "result1":23,
+        "result2":42
+    },
+    {
+        "id":24,
+        "proposition":"Fait du bénévolat dans une association",
+        "result1":41,
+        "result2":23
+    },
+    {
+        "id":25,
+        "proposition":"Été à un rassemblement de geekoss / pop culture genre Japon Expo, Paris Manga... ",
+        "result1":50,
+        "result2":17
+    },
+    {
+        "id":26,
+        "proposition":"Pas dormi pendant plus de 48 heures d'affilée",
+        "result1":28,
+        "result2":37
+    },
+    {
+        "id":27,
+        "proposition":"Reçu le petit-déjeuner au lit",
+        "result1":33,
+        "result2":33
+    },
+    {
+        "id":28,
+        "proposition":"Fait une partie de Jeu de Rôle style D&D",
+        "result1":37,
+        "result2":28
+    },
+    {
+        "id":29,
+        "proposition":"Quitté une salle de cinéma tellement le film était nul / déplaisant",
+        "result1":13,
+        "result2":57
+    },
+    {
+        "id":30,
+        "proposition":"Ri du malheur de quelqu'un",
+        "result1":61,
+        "result2":6
+    },
+    {
+        "id":31,
+        "proposition":"Regardé plus de 10 fois le même film",
+        "result1":51,
+        "result2":16
+    },
+    {
+        "id":32,
+        "proposition":"Collectionné des objets genre des timbres, des figurines... ",
+        "result1":58,
+        "result2":11
+    },
+    {
+        "id":33,
+        "proposition":"Été à un festival de musique",
+        "result1":41,
+        "result2":23
+    },
+    {
+        "id":34,
+        "proposition":"Eu un plâtre",
+        "result1":20,
+        "result2":47
+    },
+    {
+        "id":35,
+        "proposition":"Eu une page Facebook , genre pas un profil mais vraiment une page",
+        "result1":19,
+        "result2":48
+    },
+    {
+        "id":36,
+        "proposition":"Dormi en cours ",
+        "result1":48,
+        "result2":17
+    },
+    {
+        "id":37,
+        "proposition":"Accueilli un correspondant étranger chez moi / ou je suis déjà parti chez une famille étrangère pour un séjour linguistique",
+        "result1":37,
+        "result2":30
+    },
+    {
+        "id":38,
+        "proposition":"Eu un coup de foudre pour quelqu'un, amical ou amoureux",
+        "result1":54,
+        "result2":14
+    },
+    {
+        "id":39,
+        "proposition":"Fait un piercing (ailleurs qu'aux lobes d'oreille)",
+        "result1":6,
+        "result2":63
+    },
+    {
+        "id":40,
+        "proposition":"Été en boîte de nuit ",
+        "result1":35,
+        "result2":33
+    },
+    {
+        "id":41,
+        "proposition":"Trouvé un trèfle à quatre feuilles ",
+        "result1":42,
+        "result2":24
+    },
+    {
+        "id":42,
+        "proposition":"Essayé de speedrun un jeu",
+        "result1":37,
+        "result2":33
+    },
+    {
+        "id":43,
+        "proposition":"Construit une cabane",
+        "result1":52,
+        "result2":16
+    },
+    {
+        "id":44,
+        "proposition":"Eu un très long fou rire",
+        "result1":67,
+        "result2":2
+    },
+    {
+        "id":45,
+        "proposition":"Été nu / peu vêtu dans un endroit qui n'était pas prévu à cet effet",
+        "result1":35,
+        "result2":28
+    },
+    {
+        "id":46,
+        "proposition":"Eu une chaîne YouTube avec des vidéos dedans , en ayant l'ambition d'être un youtoubeure",
+        "result1":22,
+        "result2":45
+    },
+    {
+        "id":47,
+        "proposition":"Volé un truc dans un magasin ",
+        "result1":37,
+        "result2":23
+    },
+    {
+        "id":48,
+        "proposition":"Mangé un truc périmé depuis au moins une semaine",
+        "result1":59,
+        "result2":7
+    },
+    {
+        "id":49,
+        "proposition":"Été à la salle de sport ",
+        "result1":49,
+        "result2":16
+    },
+    {
+        "id":50,
+        "proposition":"Dormi dans un hôtel étoilé ",
+        "result1":49,
+        "result2":16
+    },
+    {
+        "id":51,
+        "proposition":"Eu un poster avec une star dessus sur les murs de ma chambre",
+        "result1":25,
+        "result2":41
+    },
+    {
+        "id":52,
+        "proposition":"Été victime de catfish sur internet : autrement dit quelqu'un qui prétend être une personne qu'il n'est pas",
+        "result1":10,
+        "result2":47
+    },
+    {
+        "id":53,
+        "proposition":"Fini un jeu à 100 %",
+        "result1":54,
+        "result2":12
+    },
+    {
+        "id":54,
+        "proposition":"Reçu un cadeau vraiment nul, offert premier degré ",
+        "result1":48,
+        "result2":18
+    },
+    {
+        "id":55,
+        "proposition":"Grimpé un arbre à mains nues",
+        "result1":55,
+        "result2":12
+    },
+    {
+        "id":56,
+        "proposition":"Eu une coupe de merde suite à un passage chez le coiffeur",
+        "result1":32,
+        "result2":33
+    },
+    {
+        "id":57,
+        "proposition":"Essuyé un énorme RÂTEAU violent ",
+        "result1":28,
+        "result2":36
+    },
+    {
+        "id":58,
+        "proposition":"Fait de la plongée sous-marine",
+        "result1":12,
+        "result2":54
+    },
+    {
+        "id":59,
+        "proposition":"Participé à une compétition 'intellectuelle' genre concours de maths, d'éloquence, d'orthographe... ",
+        "result1":28,
+        "result2":37
+    },
+    {
+        "id":60,
+        "proposition":"Assisté à ce que j'estime être un événement paranormal",
+        "result1":17,
+        "result2":45
+    },
+    {
+        "id":61,
+        "proposition":"Ramené un objet insolite de soirée : un panneau de signalisation, un enjoliveur...",
+        "result1":23,
+        "result2":41
+    },
+    {
+        "id":62,
+        "proposition":"Été au casino",
+        "result1":22,
+        "result2":44
+    },
+    {
+        "id":63,
+        "proposition":"Menti à mes parents sur l'endroit où j'étais",
+        "result1":53,
+        "result2":11
+    },
+    {
+        "id":64,
+        "proposition":"Voyagé en Afrique ",
+        "result1":19,
+        "result2":50
+    },
+    {
+        "id":65,
+        "proposition":"Eu un crush sur quelqu'un sur qui il ne fallait pas crusher (bon ami, personne en couple, prof...)",
+        "result1":49,
+        "result2":15
+    },
+    {
+        "id":66,
+        "proposition":"Joué au jeu de la bouteille",
+        "result1":30,
+        "result2":32
+    },
+    {
+        "id":67,
+        "proposition":"Dormi avec un doudou en étant âgé de plus de 16 ans et vacciné",
+        "result1":36,
+        "result2":31
+    },
+    {
+        "id":68,
+        "proposition":"Fait du ventriglisse ",
+        "result1":28,
+        "result2":39
+    },
+    {
+        "id":69,
+        "proposition":"Fait du ski",
+        "result1":52,
+        "result2":16
+    },
+    {
+        "id":70,
+        "proposition":"Fait une crise de somnambulisme ",
+        "result1":20,
+        "result2":45
+    },
+    {
+        "id":71,
+        "proposition":"Passé l'examen du permis",
+        "result1":43,
+        "result2":24
+    },
+    {
+        "id":72,
+        "proposition":"Fait une crise d'angoisse",
+        "result1":43,
+        "result2":26
+    },
+    {
+        "id":73,
+        "proposition":"Triché en jouant à un jeu entre amis, que le jeu soit vidéo ou de société",
+        "result1":60,
+        "result2":9
+    },
+    {
+        "id":74,
+        "proposition":"Fait du cosplay ",
+        "result1":21,
+        "result2":52
+    },
+    {
+        "id":75,
+        "proposition":"Participé à une marche des fiertés",
+        "result1":14,
+        "result2":58
+    },
+    {
+        "id":76,
+        "proposition":"Perdu un objet de grande valeur sentimentale",
+        "result1":42,
+        "result2":16
+    },
+    {
+        "id":77,
+        "proposition":"Pris des cours de danse ",
+        "result1":23,
+        "result2":43
+    },
+    {
+        "id":78,
+        "proposition":"Vu l'intégralité (ou la très grande majorité) des films Star Wars ",
+        "result1":38,
+        "result2":29
+    },
+    {
+        "id":79,
+        "proposition":"Mangé un insecte",
+        "result1":41,
+        "result2":21
+    },
+    {
+        "id":80,
+        "proposition":"Vu une étoile filante",
+        "result1":44,
+        "result2":15
+    },
+    {
+        "id":81,
+        "proposition":"Eu zéro à un contrôle ",
+        "result1":41,
+        "result2":21
+    },
+    {
+        "id":82,
+        "proposition":"Été en colonie de vacances",
+        "result1":29,
+        "result2":34
+    },
+    {
+        "id":83,
+        "proposition":"Été enfermé dehors",
+        "result1":54,
+        "result2":9
+    },
+    {
+        "id":84,
+        "proposition":"Pleuré à cause (ou grâce?) à un jeu vidéo",
+        "result1":43,
+        "result2":19
+    },
+    {
+        "id":85,
+        "proposition":"Eu un amour de vacances",
+        "result1":25,
+        "result2":40
+    },
+    {
+        "id":86,
+        "proposition":"Eu plus de 10 plantes en même temps à la maison",
+        "result1":26,
+        "result2":38
+    },
+    {
+        "id":87,
+        "proposition":"Été humilié.e par un prof",
+        "result1":45,
+        "result2":20
+    },
+    {
+        "id":88,
+        "proposition":"Eu une trop bonne expérience avec un prof",
+        "result1":62,
+        "result2":4
+    },
+    {
+        "id":89,
+        "proposition":"Dit un très gros mensonge ",
+        "result1":55,
+        "result2":10
+    },
+    {
+        "id":90,
+        "proposition":"Consulté un.e voyant.e",
+        "result1":2,
+        "result2":62
+    },
+    {
+        "id":91,
+        "proposition":"Embrassé 2 personnes (ou plus) le même jour",
+        "result1":28,
+        "result2":41
+    },
+    {
+        "id":92,
+        "proposition":"Utilisé la brosse à dents de quelqu'un d'autre",
+        "result1":28,
+        "result2":38
+    },
+    {
+        "id":93,
+        "proposition":"Travaillé dans un bar / un restaurant / une buvette",
+        "result1":24,
+        "result2":44
+    },
+    {
+        "id":94,
+        "proposition":"Participé à un pogo/ wall of death dans un concert",
+        "result1":31,
+        "result2":34
+    },
+    {
+        "id":95,
+        "proposition":"Menti pour annuler un plan et rester glander ",
+        "result1":55,
+        "result2":13
+    },
+    {
+        "id":96,
+        "proposition":"Causé la rupture amoureuse ou amicale de quelqu'un d'autre (genre pas ton couple ou ton amitié)",
+        "result1":22,
+        "result2":45
+    },
+    {
+        "id":97,
+        "proposition":"Touché un reptile",
+        "result1":50,
+        "result2":15
+    },
+    {
+        "id":98,
+        "proposition":"Fait un saut en parachute",
+        "result1":1,
+        "result2":65
+    },
+    {
+        "id":99,
+        "proposition":"Chanté sur une scène",
+        "result1":43,
+        "result2":24
+    },
+    {
+        "id":100,
+        "proposition":"Fumé une cigarette",
+        "result1":30,
+        "result2":38
+    },
+    {
+        "id":101,
+        "proposition":"Conduit un bateau (une barque, à voile, à moteur... peu importe le bateau)",
+        "result1":41,
+        "result2":26
+    },
+    {
+        "id":102,
+        "proposition":"Eu la tourista",
+        "result1":10,
+        "result2":52
+    },
+    {
+        "id":103,
+        "proposition":"Été hypnotisé",
+        "result1":12,
+        "result2":54
+    },
+    {
+        "id":104,
+        "proposition":"Fait un job d'été",
+        "result1":36,
+        "result2":29
+    },
+    {
+        "id":105,
+        "proposition":"Eu une piqûre de guêpe ou d'abeille bzzz bzzz",
+        "result1":49,
+        "result2":21
+    },
+    {
+        "id":106,
+        "proposition":"Écrit une lettre d'amour",
+        "result1":37,
+        "result2":28
+    },
+    {
+        "id":107,
+        "proposition":"Démissionné",
+        "result1":22,
+        "result2":43
+    },
+    {
+        "id":108,
+        "proposition":"Dormi chez un (quasi) inconnu : une personne rencontrée il y a très peu de temps, un ami d'ami, ... sans qu'il y ait forcément seks in fine",
+        "result1":40,
+        "result2":21
+    },
+    {
+        "id":109,
+        "proposition":"Planté une fleur, un arbre, une graine...",
+        "result1":59,
+        "result2":5
+    },
+    {
+        "id":110,
+        "proposition":"Reçu des cours d'éducation sexuelle à l'école",
+        "result1":53,
+        "result2":13
+    },
+    {
+        "id":111,
+        "proposition":"Peint ou customisé un meuble ",
+        "result1":39,
+        "result2":25
+    },
+    {
+        "id":112,
+        "proposition":"Consulté un psy ",
+        "result1":35,
+        "result2":31
+    },
+    {
+        "id":113,
+        "proposition":"Fait des graffitis",
+        "result1":15,
+        "result2":48
+    },
+    {
+        "id":114,
+        "proposition":"Fait un bain de minuit (donc nu.e dans l'eau durant la nuit)",
+        "result1":30,
+        "result2":32
+    },
+    {
+        "id":115,
+        "proposition":"Fait caca dans la nature",
+        "result1":37,
+        "result2":24
+    },
+    {
+        "id":116,
+        "proposition":"Changé le pneu / la roue d'une voiture",
+        "result1":25,
+        "result2":36
+    },
+    {
+        "id":117,
+        "proposition":"Eu une insolation",
+        "result1":28,
+        "result2":32
+    },
+    {
+        "id":118,
+        "proposition":"Eu une cartouche R4 ou quelque chose de similaire pour avoir plein de jeux sur une même cartouche et TRICHER",
+        "result1":35,
+        "result2":27
+    },
+    {
+        "id":119,
+        "proposition":"Acheté un skin dans un jeu vidéo avec des vrais euros de la vraie vie",
+        "result1":39,
+        "result2":24
+    },
+    {
+        "id":120,
+        "proposition":"Eu le crâne rasé",
+        "result1":15,
+        "result2":48
+    },
+    {
+        "id":121,
+        "proposition":"Cru au Père Noël après mes 8 ans",
+        "result1":13,
+        "result2":39
+    },
+    {
+        "id":122,
+        "proposition":"Joué à un MEUPORG",
+        "result1":40,
+        "result2":17
+    },
+    {
+        "id":123,
+        "proposition":"Fait de la randonnée",
+        "result1":48,
+        "result2":8
+    },
+    {
+        "id":124,
+        "proposition":"Capturé délicatement un insecte présent chez moi pour le relâcher dans la nature avec volupté",
+        "result1":50,
+        "result2":6
+    },
+    {
+        "id":125,
+        "proposition":"Fait de l'acupuncture",
+        "result1":7,
+        "result2":50
+    },
+    {
+        "id":126,
+        "proposition":"Suivi avec assiduité une émission de télé-réalité",
+        "result1":35,
+        "result2":24
+    },
+    {
+        "id":127,
+        "proposition":"Gagné un jeu concours / giveaway ",
+        "result1":46,
+        "result2":10
+    },
+    {
+        "id":128,
+        "proposition":"Fait un maquillage un peu artistique (même si approximatif)",
+        "result1":14,
+        "result2":39
+    },
+    {
+        "id":129,
+        "proposition":"Subi du harcelement scolaire",
+        "result1":37,
+        "result2":19
+    },
+    {
+        "id":130,
+        "proposition":"Fait du scooter / de la moto",
+        "result1":28,
+        "result2":25
+    },
+    {
+        "id":131,
+        "proposition":"Vécu plus d'un mois à l'étranger ",
+        "result1":13,
+        "result2":29
+    }
+]

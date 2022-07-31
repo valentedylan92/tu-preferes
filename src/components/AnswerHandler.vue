@@ -30,14 +30,14 @@ import anime from 'animejs'
 export default {
     name: 'AnswerHandler',
 
-    props:["elementRather"],
+    props:["element"],
 
     data(){
         return{
-            percentage1: Math.round(100*this.elementRather.result1/(this.elementRather.result1+this.elementRather.result2)).toString(),
-            percentage2:Math.round(100*this.elementRather.result2/(this.elementRather.result1+this.elementRather.result2)).toString(),
-            resultOne: this.elementRather.result1,
-            resultTwo: this.elementRather.result2,
+            percentage1: Math.round(100*this.element.result1/(this.element.result1+this.element.result2)).toString(),
+            percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
+            resultOne: this.element.result1,
+            resultTwo: this.element.result2,
             answerOne: 0,
             answerTwo: 0,
             answerIsShown:false,
@@ -63,7 +63,7 @@ export default {
       if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown){
           console.log("prelaunchpout")
 
-        this.emitter.emit('updateListing',vm.elementRather.id)
+        this.emitter.emit('updateListing',vm.element.id)
         this.answerIsShown = true
         anime({
           targets:targetsBar,
