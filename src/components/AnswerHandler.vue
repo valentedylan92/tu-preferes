@@ -9,11 +9,14 @@
               <label class="answer__label" for="anwser2">% du 2</label>
               <input class="answer__input" ref="answerTwo" id="#answer2" type="number" v-model="answerTwo" name="answer2">
             </div>
+            <div class="answer__column">
+              <button @click="revealAnswer()" class="button">Dévoiler le %</button>
+            </div>
+
           </div>
           <div class="answer__row">
             <div class="answer__column">
-            <button @click="revealAnswer()" class="button">Dévoiler le %</button>
-            <p class="answer__message">
+            <p ref="message" class="answer__message">
               {{message}}
             </p>
             </div>
@@ -25,8 +28,7 @@
 
 
 <script>
-// import anime from 'animejs'
-
+import anime from 'animejs'
 export default {
   name: 'AnswerHandler',
 
@@ -38,20 +40,29 @@ export default {
           percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
           resultOne: this.element.result1,
           resultTwo: this.element.result2,
-          answerOne: 0,
-          answerTwo: 0,
+          answerOne: '',
+          answerTwo: '',
           answerIsShown:false,
+          answerIsCorrect:false,
           message:'',
       }
   },
 
   methods:{
     revealAnswer(){
-      if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown){
+      this.checkAnswer(this.answerOne,this.answerTwo)
+      const vm = this
+      if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown && this.answerIsCorrect){
         this.emitter.emit('updateListing',this.element.id)
         this.answerIsShown = true
         this.emitter.emit('launchTheAnimation',"launched")
         this.handleAnswer()
+        anime({
+          targets:vm.$refs.message,
+          opacity: [0,1],
+          duration:10,
+          delay:2500
+        })       
       }
     },
     handleAnswer(){
@@ -65,13 +76,14 @@ export default {
         this.message = "Lost"
         this.emitter.emit('score',"Lost")
       }
+    },
+    checkAnswer(value1,value2){
+      if( value1>=0 && value1 <= 100 && value2>=0 && value2 <= 100 ){
+        this.answerIsCorrect = true
+      }else{
+        this.message = "La réponse doit être comprise entre 0 et 100"
+      }
     }
-  },
-  mounted(){
-      // this.emitter.on('launchAnswer',data => {
-      //   console.log(data)
-      //   this.handleAnswer()
-      // })
   },
 
   updated(){

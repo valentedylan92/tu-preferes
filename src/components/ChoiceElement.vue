@@ -1,6 +1,9 @@
 <template>
   <div ref="item" class="choice__element js-choice-title">
-    <h3 id="choice2" ref="title" class="choice__title">{{title}}</h3>
+    <div class="choice__header">
+    <img class="choice__number" :src="require('@/assets/img/' + imgIcon + '.png')" alt="">
+    <h3 ref="title" class="choice__title">{{title}}</h3>
+    </div>
       <div class="choice__container">
         <div class="choice">
           <div class="bar__container">
@@ -20,7 +23,11 @@ import anime from 'animejs'
 
 export default {
     name: 'ChoiceElement',
-    props:["percentage","result","keyChoice","colorBar","title"],
+    props:["percentage","result","keyChoice","colorBar","title","imgIcon"],
+    data(){
+      return{
+      }
+    },
     beforeMount(){
       this.emitter.off("launchTheAnimation")
     },

@@ -1,6 +1,9 @@
-.game__score{
-    width: 300px;
-    box-sizing: border-box;
-    background-color: rgba(255,255,255,.6);
-    padding: 20px;
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__text{
+        margin: 0 15px;
+    }
 }

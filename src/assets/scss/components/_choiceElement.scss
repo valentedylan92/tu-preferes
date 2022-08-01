@@ -12,20 +12,12 @@
         border-radius: 20px;
         width: 100%;
         box-sizing: border-box;
-        max-width: 800px;
+        max-width: 1000px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    // &__result{
-    //     margin: 0;
-    //     position: relative;
-    //     font-size: 22px;
-    //     margin: 5px;
-    //     color: black;
-    //     font-weight: 500;
-
-    // }
     &__percentage{
         margin: 0;
         position: relative;
@@ -36,9 +28,9 @@
 
     }
     &__title{
-        padding: 20px 0;
+        padding: 0 0 20px 0;
         margin: 0;
-        max-width: 550px;
+        max-width: 750px;
         font-size: 22px;
         font-family: "IndieFlower";
         line-height: 1.5;
@@ -47,10 +39,19 @@
             font-size: 16px;
         }
     }
+    &__header{
+        display: flex;
+        flex-direction: column;
+    }
+    &__number{
+        width:50px;
+        align-self: center;
+        margin: 20px 0;
+    }
 }
 
 .bar{
-    width: 650px;
+    width: 750px;
     // height: 30px;
     background: rgba(0,0,0,0.2);
     position: relative;

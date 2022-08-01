@@ -1,11 +1,9 @@
 <template> 
     <div class="score">
-        <div class="score__inner">
-            <p class="score__text">Votre Score : {{score}}</p>
-            <p class="score__text">Bonnes réponses parfaites : {{perfectWin}}</p>
-            <p class="score__text">Bonnes réponses : {{win}}</p>
-            <p class="score__text">Mauvaises réponses : {{lost}}</p>
-        </div>
+        <p class="score__text">Votre Score : {{score}}</p>
+        <p class="score__text">Bonnes réponses parfaites : {{perfectWin}}</p>
+        <p class="score__text">Bonnes réponses : {{win}}</p>
+        <p class="score__text">Mauvaises réponses : {{lost}}</p>
     </div>
 </template>
 

@@ -39,7 +39,7 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame:15,
+      limitGame:3,
       message:'',
       currentGame:false,
       newGame:false

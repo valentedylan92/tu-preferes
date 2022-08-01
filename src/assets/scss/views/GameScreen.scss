@@ -5,10 +5,20 @@
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-
+    max-width: 1000px;
+    position: relative;
 }
 .game__inner{
+    width: 100%;
+}
+.game__score{
     max-width: 1000px;
     width: 100%;
-    
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.6);
+    padding: 20px;
+    position: absolute;
+    width: 300px;
+    right: -300px;
+    top:140px;
 }
