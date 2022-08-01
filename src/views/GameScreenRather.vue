@@ -105,6 +105,7 @@ export default {
     }),
     this.emitter.on('hideThePopUp', data => {
         console.log(data)
+        this.limitGame = data
         this.popupDisplay = false
     })
   },

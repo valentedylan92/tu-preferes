@@ -16,7 +16,26 @@
             <p class="popup__text">
                 BONNE CHANCE À VOUS !
             </p>
+            <div class="radio__list">
+                <div class="radio__element">
+                    <input type="radio" id="rapide" name="valueLength" value="15"
+                            >
+                    <label for="rapide">Rapide(15)</label>
+                </div>
 
+                <div class="radio__element">
+                    <input type="radio" id="moyenne" name="valueLength" value="30" checked>
+                    <label for="moyenne">Moyenne(30)</label>
+                </div>
+                <div class="radio__element">
+                    <input type="radio" id="longue" name="valueLength" value="45">
+                    <label for="longue">Longue(45)</label>
+                </div>
+                <div class="radio__element">
+                    <input type="radio" id="complete" name="valueLength" value="361">
+                    <label for="complete">Complète(361)</label>
+                </div>
+            </div>
 
             <button @click="hidePopup()">Lets go</button>
               <p class="popup__disclaimer">
@@ -34,7 +53,8 @@
         name: 'PopupRules',
         methods:{
             hidePopup(){
-                this.emitter.emit("hideThePopUp")
+                const valueLength = document.querySelector('input[name="valueLength"]:checked').value;
+                this.emitter.emit("hideThePopUp",valueLength)
             }
         }
     }

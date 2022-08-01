@@ -31,4 +31,34 @@
     &__disclaimer{
         font-size: 13px;
     }
+    button{
+        margin-bottom: 20px;
+    }
+}
+
+.radio__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 40px;
+    label{
+        background-color: white;
+        border: 1px solid $secondary-color;
+        padding: 10px 25px;
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        &:hover{
+            background-color: $secondary-color;
+            transform: scale(1.1);
+        }
+    }
+    input[type="radio"]{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    input:checked + label {
+        background-color: $secondary-color;
+    }
 }
