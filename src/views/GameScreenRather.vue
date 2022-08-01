@@ -1,6 +1,5 @@
 <template>
   <div class="game__container">
-
     <div class="game__inner">
       <CardelementRather 
         :elementRather="listingRatherFinal[keyElement]"
@@ -21,6 +20,7 @@
         <button id="newGame" @click="getNewGame()" class="button">Nouvelle partie</button>
       </div>
     </div>
+    <PopupRules v-if="popupDisplay" />
   </div>
 </template>
 
@@ -29,6 +29,7 @@
 import CardelementRather from '@/components/youRather/CardelementRather.vue'
 import AnswerHandler from '@/components/AnswerHandler.vue'
 import ScorePanel from '@/components/ScorePanel.vue'
+import PopupRules from '@/components/PopupRules.vue'
 import listYouRather from "../listRather.json"
 
 
@@ -44,6 +45,7 @@ export default {
       limitGame: 15,
       session:1,
       message:'',
+      popupDisplay:true,
       currentGame:false,
       newGame:false
     }
@@ -51,7 +53,8 @@ export default {
   components: {
     CardelementRather,
     AnswerHandler,
-    ScorePanel
+    ScorePanel,
+    PopupRules
   },
   methods:{
     getNewRandom() {
@@ -99,6 +102,10 @@ export default {
         this.currentGame = true
       }
       this.ListingRatherUsed.push(data-1)
+    }),
+    this.emitter.on('hideThePopUp', data => {
+        console.log(data)
+        this.popupDisplay = false
     })
   },
   beforeMount(){

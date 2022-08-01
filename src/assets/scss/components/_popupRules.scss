@@ -1,0 +1,34 @@
+.popup{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px;
+    position: fixed;
+    right: 0px;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__inner{
+        background: white;
+        padding: 50px;
+        border-radius: 30px;
+        max-width: 700px;
+    }
+    &__text{
+        font-size: 20px;
+        line-height: 1.5;
+        &:first-child{
+            margin-top: 0;
+        }
+        a{
+            color:black
+        }
+    }
+    &__disclaimer{
+        font-size: 13px;
+    }
+}
