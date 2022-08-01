@@ -2,12 +2,14 @@
         <div class="answer">
           <div class="answer__row">
             <div class="answer__column">
-              <label class="answer__label" for="anwser1">% du 1</label>
-              <input class="answer__input" id="#answer1" ref="answerOne" type="number" v-model="answerOne" name="answer1">
+              <!-- <label class="answer__label" for="anwser1">% du </label> -->
+              <img class="answer__icon" answer__icon :src="require('@/assets/img/number-1.png')" />
+              <input placeholder="%" class="answer__input" id="#answer1" ref="answerOne" type="number" v-model="answerOne" name="answer1">
             </div>
             <div class="answer__column">
-              <label class="answer__label" for="anwser2">% du 2</label>
-              <input class="answer__input" ref="answerTwo" id="#answer2" type="number" v-model="answerTwo" name="answer2">
+              <!-- <label class="answer__label" for="anwser2">% du </label> -->
+              <img class="answer__icon" answer__icon :src="require('@/assets/img/number-2.png')" />
+              <input placeholder="%" class="answer__input" ref="answerTwo" id="#answer2" type="number" v-model="answerTwo" name="answer2">
             </div>
             <div class="answer__column">
               <button @click="revealAnswer()" class="button">Dévoiler le %</button>

@@ -11,10 +11,14 @@
     &__title{
         margin: 0;
         margin-bottom: 10px;
+        font-family: "IndieFlower";
+        font-size: 35px;
     }
     &__subtitle{
         margin: 0;
         margin-bottom: 20px;
+        font-family: "IndieFlower";
+        line-height: 1.5;
     }
     &__choice{
         display: flex;

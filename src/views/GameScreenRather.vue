@@ -12,12 +12,14 @@
         :element="listingRatherFinal[keyElement]"
         :key="keyElement"
       />
-      <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
-      <button id="newGame" v-if="newGame" @click="getNewGame()" class="button">Nouveau jeu</button>
+      <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">Tu préfères suivant</button>
       <p class="message">{{message}}</p>
     </div>
-    <div class="game__score">
-      <ScorePanel />
+    <div class="game__score"  v-show="newGame">
+      <div class="game__score__inner">
+        <ScorePanel :session="session" />
+        <button id="newGame" @click="getNewGame()" class="button">Nouvelle partie</button>
+      </div>
     </div>
   </div>
 </template>
@@ -39,7 +41,8 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame:3,
+      limitGame: 15,
+      session:1,
       message:'',
       currentGame:false,
       newGame:false
@@ -79,6 +82,8 @@ export default {
         this.ListingRatherCurrent = []
         this.getNewRandom()
         this.ListingRatherCurrent = [this.keyElement]
+        this.emitter.emit('resetScore')
+        this.session =+ 1
       }else{
         this.message = "No more "
       }

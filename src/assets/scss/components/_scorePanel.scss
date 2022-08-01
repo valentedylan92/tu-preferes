@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: center;
     &__text{
-        margin: 0 15px;
+        margin: 0 0 15px;
+    }
+    &__subtext{
+        margin: 0 0 15px;
+        font-size: 22px;
+        &:last-child{
+            margin: 0 0 45px;
+            
+        }
     }
 }
