@@ -69,13 +69,13 @@ export default {
     },
     handleAnswer(){
       if(this.answerOne == this.percentage1){
-        this.message = "Perfect Win"
+        this.message = "Réponse Parfaite OMG !"
         this.emitter.emit('score',"PerfectWin")
       }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
-        this.message = "Win"
+        this.message = "Bonne réponse !"
         this.emitter.emit('score',"Win")
       }else{
-        this.message = "Lost"
+        this.message = "Mauvaise réponse :( !"
         this.emitter.emit('score',"Lost")
       }
     },

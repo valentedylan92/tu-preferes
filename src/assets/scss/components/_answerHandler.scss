@@ -38,6 +38,11 @@
     &__icon{
       width: 30px;
     }
+    &__message{
+      opacity: 1;
+      font-size: 25px;
+      margin: 40px 0;
+    }
 
 }
 input::-webkit-outer-spin-button,
