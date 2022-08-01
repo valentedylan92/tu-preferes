@@ -25,87 +25,33 @@
 
 
 <script>
-import anime from 'animejs'
+// import anime from 'animejs'
 
 export default {
-    name: 'AnswerHandler',
+  name: 'AnswerHandler',
 
-    props:["element"],
+  props:["element"],
 
-    data(){
-        return{
-            percentage1: Math.round(100*this.element.result1/(this.element.result1+this.element.result2)).toString(),
-            percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
-            resultOne: this.element.result1,
-            resultTwo: this.element.result2,
-            answerOne: 0,
-            answerTwo: 0,
-            answerIsShown:false,
-            message:'',
-        }
-    },
+  data(){
+      return{
+          percentage1: Math.round(100*this.element.result1/(this.element.result1+this.element.result2)).toString(),
+          percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
+          resultOne: this.element.result1,
+          resultTwo: this.element.result2,
+          answerOne: 0,
+          answerTwo: 0,
+          answerIsShown:false,
+          message:'',
+      }
+  },
 
-    methods:{
+  methods:{
     revealAnswer(){
-      const targetBarOne = document.querySelector('#bar-result1')
-      const targetBarTwo = document.querySelector('#bar-result2')
-      const targetOnePercentage = document.querySelector('#bar-percentage1')
-      const targetTwoPercentage = document.querySelector('#bar-percentage2')
-      const targetsResult = document.querySelectorAll('.js-result')
-      const targetsPercentage = document.querySelectorAll('.js-percentage')
-      // const targetOneResult = document.querySelectorAll('#result1')
-      // const targetTwoResult = document.querySelectorAll('#result2')
-      const vm = this
-
       if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown){
-        this.emitter.emit('updateListing',vm.element.id)
+        this.emitter.emit('updateListing',this.element.id)
         this.answerIsShown = true
-        anime({
-          targets:targetBarOne,
-          width: vm.percentage1+"%",
-          transformOrigin:"0% 50%",
-          duration:2000,
-          easing: 'linear',
-        })
-        anime({
-          targets:targetBarTwo,
-          width: vm.percentage2+"%",
-          transformOrigin:"0% 50%",
-          duration:2000,
-          easing: 'linear',
-        })
-        anime({
-              targets:targetsPercentage,
-              opacity: 1,
-              duration:0,
-              easing: 'easeOutExpo',
-              complete: function() {
-                anime({
-                  targets:targetOnePercentage,
-                  textContent:  ["0%",vm.percentage1+"%"],
-                  round: 1,
-                  duration:1800,
-                  easing: 'linear',
-                  complete: function() {
-                    anime({
-                      targets:targetsResult,
-                      opacity: 1,
-                      duration:500,
-                    })
-                  }
-                })
-                anime({
-                  targets:targetTwoPercentage,
-                  textContent:  ["0%",vm.percentage2+"%"],
-                  round: 1,
-                  duration:1800,
-                  easing: 'linear',
-                  complete: function() {
-                    vm.handleAnswer()
-                  }           
-                })
-              }
-        })
+        this.emitter.emit('launchTheAnimation',"launched")
+        this.handleAnswer()
       }
     },
     handleAnswer(){
@@ -121,6 +67,13 @@ export default {
       }
     }
   },
+  mounted(){
+      // this.emitter.on('launchAnswer',data => {
+      //   console.log(data)
+      //   this.handleAnswer()
+      // })
+  },
+
   updated(){
     const answerElemOne = this.$refs.answerOne
     const answerElemTwo = this.$refs.answerTwo

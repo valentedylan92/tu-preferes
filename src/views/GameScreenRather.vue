@@ -95,15 +95,6 @@ export default {
       }
       this.ListingRatherUsed.push(data-1)
     })
-    this.emitter.on('newGameEnable', e => {
-        console.log(e)
-        this.newGame =true
-        this.currentGame =false
-    })
-
-    
-
-
   },
   beforeMount(){
     const newNumber = Math.round(Math.random()*(this.listingRatherFinal.length-1));

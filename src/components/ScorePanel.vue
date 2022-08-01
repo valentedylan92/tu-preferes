@@ -31,6 +31,7 @@
         },
         mounted () {
              this.emitter.on('score', data => {
+                console.log(data)
                 if(data == 'Lost'){
                     this.lost += 1
                 }else if(data == 'Win'){

@@ -95,15 +95,6 @@ export default {
       }
       this.ListingEverUsed.push(data-1)
     })
-    this.emitter.on('newGameEnable', e => {
-        console.log(e)
-        this.newGame =true
-        this.currentGame =false
-    })
-
-    
-
-
   },
   beforeMount(){
     const newNumber = Math.round(Math.random()*(this.listingEverFinal.length-1));
