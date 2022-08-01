@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter } from 'vue-router'
 import GameScreenRather from '@/views/GameScreenRather.vue'
 import GameScreenEver from '@/views/GameScreenEver.vue'
 
@@ -16,7 +16,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  base: process.env.BASE_URL,
   routes
 })
 
