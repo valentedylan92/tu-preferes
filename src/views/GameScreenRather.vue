@@ -11,16 +11,17 @@
         :element="listingRatherFinal[keyElement]"
         :key="keyElement"
       />
-      <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">Tu préfères suivant</button>
+      <button id="nextItem" v-if="currentGame" @click="getNewRandom()" class="button">Tu préfères suivant</button>
       <p class="message">{{message}}</p>
     </div>
-    <div class="game__score"  v-show="newGame">
+
+    <div class="game__score"  v-show="gameOver">
       <div class="game__score__inner">
         <ScorePanel :session="session" />
-        <button id="newGame" @click="getNewGame()" class="button">Nouvelle partie</button>
       </div>
     </div>
-    <PopupRules v-if="popupDisplay" />
+    
+    <PopupRulesRather v-if="popupDisplay" />
   </div>
 </template>
 
@@ -29,7 +30,7 @@
 import CardelementRather from '@/components/youRather/CardelementRather.vue'
 import AnswerHandler from '@/components/AnswerHandler.vue'
 import ScorePanel from '@/components/ScorePanel.vue'
-import PopupRules from '@/components/PopupRules.vue'
+import PopupRulesRather from '@/components/youRather/PopupRulesRather.vue'
 import listYouRather from "../listRather.json"
 
 
@@ -47,14 +48,14 @@ export default {
       message:'',
       popupDisplay:true,
       currentGame:false,
-      newGame:false
+      gameOver:false
     }
   },
   components: {
     CardelementRather,
     AnswerHandler,
     ScorePanel,
-    PopupRules
+    PopupRulesRather
   },
   methods:{
     getNewRandom() {
@@ -80,8 +81,6 @@ export default {
     },
     getNewGame(){
       if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
-        this.newGame =false
-        this.currentGame =true
         this.ListingRatherCurrent = []
         this.getNewRandom()
         this.ListingRatherCurrent = [this.keyElement]
@@ -97,7 +96,7 @@ export default {
     this.ListingRatherCurrent.push(this.keyElement);
     this.emitter.on('updateListing', data => {
       if(this.ListingRatherCurrent.length == this.limitGame){
-        this.newGame = true
+        this.gameOver = true
       }else{
         this.currentGame = true
       }
@@ -107,6 +106,15 @@ export default {
         console.log(data)
         this.limitGame = data
         this.popupDisplay = false
+    })
+    this.emitter.on('endOfTheGame', data => {
+        console.log(data)
+        if(data=="361"){
+          this.ListingRatherUsed = []
+        }
+        this.limitGame = data
+        this.gameOver =false
+        this.getNewGame()
     })
   },
   beforeMount(){

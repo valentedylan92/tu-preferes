@@ -1,6 +1,5 @@
 <template>
   <div class="game__container">
-
     <div class="game__inner">
       <CardelementEver 
         :elementEver="listingEverFinal[keyElement]"
@@ -12,22 +11,25 @@
         :element="listingEverFinal[keyElement]"
         :key="keyElement"
       />
-      <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">Nouveau tu préfères</button>
-      <button id="newGame" v-if="newGame" @click="getNewGame()" class="button">Nouveau jeu</button>
+      <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">J'ai déjà suivant</button>
       <p class="message">{{message}}</p>
     </div>
-    <div class="game__score">
-      <ScorePanel />
+    <div class="game__score"  v-show="newGame">
+      <div class="game__score__inner">
+        <ScorePanel :session="session" />
+      </div>
     </div>
+    <PopupRulesEver v-if="popupDisplay" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import CardelementEver from '@/components/everHave/CardelementEver.vue'
+import PopupRulesEver from '@/components/everHave/PopupRulesEver.vue'
 import AnswerHandler from '@/components/AnswerHandler.vue'
 import ScorePanel from '@/components/ScorePanel.vue'
-import listEver from "../listEver.json"
+import listYouEver from "../listEver.json"
 
 
 
@@ -36,11 +38,13 @@ export default {
   data(){
     return{
       keyElement: 0,
-      listingEverFinal: listEver,
+      listingEverFinal: listYouEver,
       ListingEverUsed : [],
       ListingEverCurrent: [],
-      limitGame:15,
+      limitGame: 15,
+      session:1,
       message:'',
+      popupDisplay:true,
       currentGame:false,
       newGame:false
     }
@@ -48,7 +52,8 @@ export default {
   components: {
     CardelementEver,
     AnswerHandler,
-    ScorePanel
+    ScorePanel,
+    PopupRulesEver
   },
   methods:{
     getNewRandom() {
@@ -73,12 +78,12 @@ export default {
       }
     },
     getNewGame(){
-      if(this.listingEverFinal.length != this.ListingEverUsed.length){
-        this.newGame =false
-        this.currentGame =true
-        this.ListingEverCurrent = []
+      if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
+        this.ListingRatherCurrent = []
         this.getNewRandom()
-        this.ListingEverCurrent = [this.keyElement]
+        this.ListingRatherCurrent = [this.keyElement]
+        this.emitter.emit('resetScore')
+        this.session =+ 1
       }else{
         this.message = "No more "
       }
@@ -94,6 +99,20 @@ export default {
         this.currentGame = true
       }
       this.ListingEverUsed.push(data-1)
+    }),
+    this.emitter.on('hideThePopUp', data => {
+        console.log(data)
+        this.limitGame = data
+        this.popupDisplay = false
+    }),
+    this.emitter.on('endOfTheGame', data => {
+        console.log(data)
+        if(data=="361"){
+          this.ListingRatherUsed = []
+        }
+        this.limitGame = data
+        this.gameOver =false
+        this.getNewGame()
     })
   },
   beforeMount(){

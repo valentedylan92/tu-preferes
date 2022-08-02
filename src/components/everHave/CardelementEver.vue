@@ -5,24 +5,26 @@
           <h2 class="card__title">J'AI DÉJÀ {{this.lengthGame}} / {{this.limitGame}}</h2>
           <h3 class="card__subtitle">Sur un total de {{(this.elementEver.result1+this.elementEver.result2)}} votes.</h3>
         </div>
+        
         <div class="card__choice">
-          <div class="choice__element js-choice-title">
             <h3 class="choice__title">{{elementEver.proposition}}</h3>
-            <div class="choice__container">
               <ChoiceElement
                 :result="this.elementEver.result1"
                 :percentage="percentage1"
+                title="J'ai déjà"
                 keyChoice="1"
                 colorBar="primary"
+                imgIcon="number-1"
               />
               <ChoiceElement
                 :result="this.elementEver.result2"
                 :percentage="percentage2"
+                title="Je n'ai jamais"
                 keyChoice="2"
                 colorBar="secondary"
+                imgIcon="number-2"
+
               />
-            </div>
-          </div>
         </div>
       </div>
     </div>

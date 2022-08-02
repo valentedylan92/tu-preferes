@@ -8,7 +8,7 @@
           </h3>
         </div>
         <div class="card__choice">
-          <ChoiceElement
+          <ChoiceElementBar
             :result="elementRather.result1"
             :percentage="percentage1"
             :title="elementRather.choice1"
@@ -16,7 +16,7 @@
             colorBar="primary"
             imgIcon="number-1"
           />
-          <ChoiceElement
+          <ChoiceElementBar
             :result="elementRather.result2"
             :percentage="percentage2"
             :title="elementRather.choice2"
@@ -31,12 +31,12 @@
 
 <script>
 // import anime from 'animejs'
-import ChoiceElement from '@/components/ChoiceElement.vue'
+import ChoiceElementBar from '@/components/ChoiceElementBar.vue'
 
 export default {
   name: 'CardelementRather',
   components: {
-    ChoiceElement
+    ChoiceElementBar
   },
 
   props:["elementRather","lengthGame","limitGame"],

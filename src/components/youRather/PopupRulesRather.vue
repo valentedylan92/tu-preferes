@@ -6,33 +6,30 @@
                 Le but du jeu est de voir si vous connaissez bien la communauté dont vous faites partie.
             </p>
             <p class="popup__text">
-                Vous retrouverez ici l'ensemble des 365 "Tu préfères" proposé l'année passée et votre but sera de déterminer , selon vous , le pourcentage des réponses votés.<br>
+                Vous retrouverez ici l'ensemble des 365 "Tu préfères" proposé l'année passée et votre but sera de déterminer , selon vous , le pourcentage des réponses votées.<br>
                 (Vous avez une marge d'erreur de 5%)
             </p>
             <p class="popup__text">
                 Vous gagnerez 1 point par bonne réponse et 2 point par bonne réponse parfaite.<br>
-                Chaque partie est composé de 15 propositions.
             </p>
             <p class="popup__text">
                 BONNE CHANCE À VOUS !
             </p>
             <div class="radio__list">
                 <div class="radio__element">
-                    <input type="radio" id="rapide" name="valueLength" value="15"
-                            >
+                    <input type="radio" id="rapide" name="lengthGameRatherInit" value="15">
                     <label for="rapide">Rapide(15)</label>
                 </div>
-
                 <div class="radio__element">
-                    <input type="radio" id="moyenne" name="valueLength" value="30" checked>
+                    <input type="radio" id="moyenne" name="lengthGameRatherInit" value="30" checked>
                     <label for="moyenne">Moyenne(30)</label>
                 </div>
                 <div class="radio__element">
-                    <input type="radio" id="longue" name="valueLength" value="45">
+                    <input type="radio" id="longue" name="lengthGameRatherInit" value="45">
                     <label for="longue">Longue(45)</label>
                 </div>
                 <div class="radio__element">
-                    <input type="radio" id="complete" name="valueLength" value="361">
+                    <input type="radio" id="complete" name="lengthGameRatherInit" value="361">
                     <label for="complete">Complète(361)</label>
                 </div>
             </div>
@@ -50,10 +47,10 @@
 </template>
 <script>
     export default {
-        name: 'PopupRules',
+        name: 'PopupRulesRather',
         methods:{
             hidePopup(){
-                const valueLength = document.querySelector('input[name="valueLength"]:checked').value;
+                const valueLength = document.querySelector('input[name="lengthGameRatherInit"]:checked').value;
                 this.emitter.emit("hideThePopUp",valueLength)
             }
         }

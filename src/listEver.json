@@ -784,5 +784,18 @@
         "proposition":"Vécu plus d'un mois à l'étranger ",
         "result1":13,
         "result2":29
+    },
+    {
+        "id":132,
+        "proposition":"Dansé le Madison",
+        "result1":32,
+        "result2":18
+    },
+    {
+        "id":133,
+        "proposition":"Fait du montage vidéo",
+        "result1":32,
+        "result2":13
     }
+
 ]
