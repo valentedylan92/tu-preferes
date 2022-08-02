@@ -7,10 +7,10 @@
         :lengthGame="ListingEverCurrent.length"
         :limitGame="limitGame"
       />
-      <AnswerHandler 
+      <!-- <AnswerEverHandler 
         :element="listingEverFinal[keyElement]"
         :key="keyElement"
-      />
+      /> -->
       <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">J'ai déjà suivant</button>
       <p class="message">{{message}}</p>
     </div>
@@ -27,7 +27,7 @@
 // @ is an alias to /src
 import CardelementEver from '@/components/everHave/CardelementEver.vue'
 import PopupRulesEver from '@/components/everHave/PopupRulesEver.vue'
-import AnswerHandler from '@/components/AnswerHandler.vue'
+// import AnswerEverHandler from '@/components/everHave/AnswerEverHandler.vue'
 import ScorePanel from '@/components/ScorePanel.vue'
 import listYouEver from "../listEver.json"
 
@@ -41,17 +41,17 @@ export default {
       listingEverFinal: listYouEver,
       ListingEverUsed : [],
       ListingEverCurrent: [],
-      limitGame: 15,
+      limitGame: 3,
       session:1,
       message:'',
-      popupDisplay:true,
+      popupDisplay:false,
       currentGame:false,
       newGame:false
     }
   },
   components: {
     CardelementEver,
-    AnswerHandler,
+    // AnswerEverHandler,
     ScorePanel,
     PopupRulesEver
   },
@@ -78,10 +78,10 @@ export default {
       }
     },
     getNewGame(){
-      if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
-        this.ListingRatherCurrent = []
+      if(this.listingEverFinal.length != this.ListingEverUsed.length){
+        this.ListingEverCurrent = []
         this.getNewRandom()
-        this.ListingRatherCurrent = [this.keyElement]
+        this.ListingEverCurrent = [this.keyElement]
         this.emitter.emit('resetScore')
         this.session =+ 1
       }else{
@@ -108,7 +108,7 @@ export default {
     this.emitter.on('endOfTheGame', data => {
         console.log(data)
         if(data=="361"){
-          this.ListingRatherUsed = []
+          this.ListingEverUsed = []
         }
         this.limitGame = data
         this.gameOver =false

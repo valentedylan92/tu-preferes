@@ -7,7 +7,7 @@
         :lengthGame="ListingRatherCurrent.length"
         :limitGame="limitGame"
       />
-      <AnswerHandler 
+      <AnswerPercentageHandler 
         :element="listingRatherFinal[keyElement]"
         :key="keyElement"
       />
@@ -28,7 +28,7 @@
 <script>
 // @ is an alias to /src
 import CardelementRather from '@/components/youRather/CardelementRather.vue'
-import AnswerHandler from '@/components/AnswerHandler.vue'
+import AnswerPercentageHandler from '@/components/youRather/AnswerPercentageHandler.vue'
 import ScorePanel from '@/components/ScorePanel.vue'
 import PopupRulesRather from '@/components/youRather/PopupRulesRather.vue'
 import listYouRather from "../listRather.json"
@@ -53,7 +53,7 @@ export default {
   },
   components: {
     CardelementRather,
-    AnswerHandler,
+    AnswerPercentageHandler,
     ScorePanel,
     PopupRulesRather
   },

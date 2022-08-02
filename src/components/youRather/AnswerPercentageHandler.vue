@@ -32,7 +32,7 @@
 <script>
 import anime from 'animejs'
 export default {
-  name: 'AnswerHandler',
+  name: 'AnswerPercentageHandler',
 
   props:["element"],
 

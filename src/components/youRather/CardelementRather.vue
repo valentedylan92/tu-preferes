@@ -1,13 +1,13 @@
 <template>
-    <div class="card">
-      <div class="card__inner">
-        <div class="card__intro">
-          <h2 class="card__title">TU PRÉFÈRES {{lengthGame}} / {{limitGame}}</h2>
-          <h3 class="card__subtitle">Sur un total de {{(elementRather.result1+elementRather.result2)}} votes.<br>
+    <div class="cardRather">
+      <div class="cardRather__inner">
+        <div class="cardRather__intro">
+          <h2 class="cardRather__title">TU PRÉFÈRES {{lengthGame}} / {{limitGame}}</h2>
+          <h3 class="cardRather__subtitle">Sur un total de {{(elementRather.result1+elementRather.result2)}} votes.<br>
             Quel pourcentage a voté pour : 
           </h3>
         </div>
-        <div class="card__choice">
+        <div class="cardRather__choice">
           <ChoiceElementBar
             :result="elementRather.result1"
             :percentage="percentage1"
@@ -31,7 +31,7 @@
 
 <script>
 // import anime from 'animejs'
-import ChoiceElementBar from '@/components/ChoiceElementBar.vue'
+import ChoiceElementBar from '@/components/youRather/ChoiceElementBar.vue'
 
 export default {
   name: 'CardelementRather',
@@ -48,8 +48,6 @@ export default {
     } 
   },
   mounted(){
-    // const targetsTitle = document.querySelectorAll(".js-choice-title")
-
   }
 }
 </script>

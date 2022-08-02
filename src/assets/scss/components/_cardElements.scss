@@ -1,4 +1,4 @@
-.card{
+.cardRather{
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
@@ -25,6 +25,44 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        &__circle{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+.cardEver{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    &__inner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: "IndieFlower";
+        font-size: 35px;
+    }
+    &__subtitle{
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: "IndieFlower";
+        line-height: 1.5;
+    }
+    &__choice{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
     }
 }
 

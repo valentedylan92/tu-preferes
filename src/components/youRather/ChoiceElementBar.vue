@@ -1,14 +1,19 @@
 <template>
-  <div ref="item" class="choice__element js-choice-title">
-    <div class="choice__header">
-    <img class="choice__number" :src="require('@/assets/img/' + imgIcon + '.png')" alt="">
-    <h3 ref="title" class="choice__title">{{title}}</h3>
+  <div ref="item" class="choiceRather__element js-choiceRather-title">
+    <div class="choiceRather__header">
+    <img class="choiceRather__number" :src="require('@/assets/img/' + imgIcon + '.png')" alt="">
+    <h3 ref="title" class="choiceRather__title">{{title}}</h3>
     </div>
-      <div class="choice__container">
-        <div class="choice">
-          <div ref="circle" class="circleStat"></div>
-          <p ref="percentage" class="choice__percentage js-percentage">{{percentage}} %</p>
-          <p :id="'result'+keyChoice" ref="resultElement" class="choice__result js-result">{{result}} votes</p>
+      <div class="choiceRather__container">
+        <div class="choiceRather">
+          <div class="bar__container">
+            <div class="bar">
+              <div :id="'bar-result'+keyChoice" ref="bar" :class="'bar__inner js-bar height-'+percentage +' bar-'+colorBar">
+              </div>
+              <p :id="'bar-percentage'+keyChoice" ref="percentage" class="choiceRather__percentage js-percentage">{{percentage}} %</p>
+            </div>
+          </div>
+          <p :id="'result'+keyChoice" ref="resultElement" class="choiceRather__result js-result">{{result}} votes</p>
         </div>
       </div>
   </div>
@@ -17,7 +22,7 @@
 import anime from 'animejs'
 
 export default {
-    name: 'ChoiceElement',
+    name: 'ChoiceElementBar',
     props:["percentage","result","keyChoice","colorBar","title","imgIcon"],
     data(){
       return{
@@ -31,7 +36,7 @@ export default {
       if(this.title.length > 150){
         this.$refs.title.classList.add('small')
       }
-      // this.initAnimation()  
+      this.initAnimation()  
       this.emitter.on('launchTheAnimation',e => {
         console.log(e)
         this.barAnimation()
@@ -40,13 +45,13 @@ export default {
     },
     methods:{
       barAnimation(){
-        const targetCircle = this.$refs.circle
+        const targetBar = this.$refs.bar
         const targetPercentage = this.$refs.percentage
         const targetResult = this.$refs.resultElement
         const vm = this;
         anime({
-          targets:targetCircle,
-          background: "conic-gradient(red 0 270deg, blue 270deg)",
+          targets:targetBar,
+          width: vm.percentage+"%",
           transformOrigin:"0% 50%",
           duration:2000,
           easing: 'linear',
@@ -78,6 +83,7 @@ export default {
         const targetResult = this.$refs.resultElement
         const targetItem = this.$refs.item
         const targetPercentage = this.$refs.percentage
+        const targetBar = this.$refs.bar
         anime({
           targets:targetItem,
           opacity: [0,1],
@@ -92,6 +98,12 @@ export default {
           duration:0,
         })
 
+        anime({
+          targets:targetBar,
+          transformOrigin:"0% 50%",
+          width: 0,
+          duration:0,
+        })
       }
 
     }
