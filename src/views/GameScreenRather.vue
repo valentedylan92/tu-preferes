@@ -15,9 +15,9 @@
       <p class="message">{{message}}</p>
     </div>
 
-    <div class="game__score"  v-show="gameOver">
+    <div class="game__score"  v-if="gameOver">
       <div class="game__score__inner">
-        <ScorePanel :session="session" />
+        <ScorePanel :limitGame="limitGame" :session="session" />
       </div>
     </div>
     
@@ -43,10 +43,10 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame: 5,
+      limitGame: 15,
       session:1,
       message:'',
-      popupDisplay:false,
+      popupDisplay:true,
       currentGame:true,
       gameOver:false
     }

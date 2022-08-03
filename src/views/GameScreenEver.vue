@@ -14,9 +14,9 @@
       <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">J'ai déjà suivant</button>
       <p class="message">{{message}}</p>
     </div>
-    <div class="game__score"  v-show="gameOver">
+    <div class="game__score"  v-if="gameOver">
       <div class="game__score__inner">
-        <ScorePanel :session="session" />
+        <ScorePanel :limitGame="limitGame" :session="session" />
       </div>
     </div>
     <PopupRulesEver v-if="popupDisplay" />

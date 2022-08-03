@@ -22,7 +22,7 @@
               {{message}}
             </p>
             </div>
-              {{score}}
+              <!-- {{score}} -->
           </div>
         </div>
     
@@ -70,7 +70,8 @@ export default {
         anime({
           targets:vm.$refs.message,
           opacity: [0,1],
-          duration:10,
+          scale: [0.5,1],
+          duration:800,
           delay:2500
         })       
       }

@@ -1,9 +1,10 @@
 <template> 
     <div class="score">
         <p class="score__text">Votre Score : {{score}}</p>
-        <p class="score__subtext">Bonnes réponses parfaites : {{perfectWin}}</p>
-        <p class="score__subtext">Bonnes réponses : {{win}}</p>
-        <p class="score__subtext">Mauvaises réponses : {{lost}}</p>
+        <p class="score__subtext" v-if="perfectWin >= 1">Tu as trouvé {{answerFound}} bonnes réponses dont {{perfectWin}} réponses parfaites !</p>
+        <p class="score__subtext" v-else-if="win > 1 && perfectWin ==0">Tu as trouvé {{answerFound}} bonnes réponses</p>
+        <p class="score__subtext" v-else>Tu n'as trouvé aucune réponse... Coup dur !</p>
+
         <div class="radio__list">
             <div class="radio__element">
                 <input type="radio" id="rapideNew" name="lengthGameRatherNewGame" value="15">
@@ -33,9 +34,10 @@
 
     export default {
         name: 'ScorePanel',
-        props:["scoreStatus"],
+        props:["limitGame"],
         data(){
             return{
+                answerFound:0
             }
         },
         computed:{
@@ -46,6 +48,10 @@
                 const valueLength = document.querySelector('input[name="lengthGameRatherNewGame"]:checked').value;
                 this.emitter.emit("endOfTheGame",valueLength)
             }
+        },
+        beforeMount(){
+            console.log(this.answerFound)
+            this.answerFound = this.limitGame - this.lost
         }
     }
 </script>
