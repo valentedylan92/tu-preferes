@@ -32,6 +32,8 @@ import AnswerPercentageHandler from '@/components/youRather/AnswerPercentageHand
 import ScorePanel from '@/components/ScorePanel.vue'
 import PopupRulesRather from '@/components/youRather/PopupRulesRather.vue'
 import listYouRather from "../listRather.json"
+import { mapActions } from 'pinia'
+import {useScoreStore} from "@/stores/score"
 
 export default {
   name: 'GameScreenRather',
@@ -56,6 +58,8 @@ export default {
     PopupRulesRather
   },
   methods:{
+    ...mapActions(useScoreStore,['resetScore']), 
+
     getNewRandom() {
       this.$refs.buttonNext.disabled = true
       if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
@@ -82,7 +86,7 @@ export default {
         this.ListingRatherCurrent = []
         this.getNewRandom()
         this.ListingRatherCurrent = [this.keyElement]
-        this.emitter.emit('resetScore')
+        this.resetScore()
         this.session =+ 1
       }else{
         this.message = "No more "

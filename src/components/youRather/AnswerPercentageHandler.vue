@@ -22,7 +22,7 @@
               {{message}}
             </p>
             </div>
-
+              {{score}}
           </div>
         </div>
     
@@ -31,6 +31,10 @@
 
 <script>
 import anime from 'animejs'
+import { mapActions } from 'pinia'
+import { mapState} from 'pinia'
+import {useScoreStore} from "@/stores/score"
+
 export default {
   name: 'AnswerPercentageHandler',
 
@@ -49,8 +53,12 @@ export default {
           message:'',
       }
   },
-
+  computed:{
+    ...mapState(useScoreStore,['score']),
+  },
   methods:{
+    ...mapActions(useScoreStore,['incrementWin','incrementPerfectWin','incrementLost']),
+
     revealAnswer(){
       this.checkAnswer(this.answerOne,this.answerTwo)
       const vm = this
@@ -68,15 +76,20 @@ export default {
       }
     },
     handleAnswer(){
+
       if(this.answerOne == this.percentage1){
         this.message = "Réponse Parfaite OMG !"
-        this.emitter.emit('score',"2")
+        // this.emitter.emit('score',"2")
+        this.incrementPerfectWin()
       }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
         this.message = "Bonne réponse !"
-        this.emitter.emit('score',"1")
+        // this.emitter.emit('score',"1")
+        this.incrementWin()
       }else{
         this.message = "Mauvaise réponse :( !"
-        this.emitter.emit('score',"0")
+        this.incrementLost()
+        // this.emitter.emit('score',"0")
+        // store.increment()
       }
     },
     checkAnswer(value1,value2){
@@ -93,10 +106,11 @@ export default {
     const answerElemTwo = this.$refs.answerTwo
     if (answerElemOne === document.activeElement) {
       this.answerTwo = 100 - this.answerOne
+      this.$refs.button.disabled = false
     } else if (answerElemTwo === document.activeElement) {
       this.answerOne = 100 - this.answerTwo
+      this.$refs.button.disabled = false
     }
-    this.$refs.button.disabled = false
   }
 }
 

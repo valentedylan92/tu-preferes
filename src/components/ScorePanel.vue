@@ -27,47 +27,25 @@
 </template>
 
 <script>
+    import { mapState} from 'pinia'
+    import {useScoreStore} from "@/stores/score"
+
+
     export default {
         name: 'ScorePanel',
         props:["scoreStatus"],
         data(){
             return{
-                score:0,
-                win:0,
-                perfectWin:0,
-                lost:0
             }
         },
+        computed:{
+            ...mapState(useScoreStore,['score','win','perfectWin','lost']),
+        },
         methods:{
-            handleScore(valueData){
-                if(valueData == '0'){
-                    this.lost += 1
-                }else if(valueData == '1'){
-                    this.win += 1
-                    this.score += 1
-                }else{
-                    this.perfectWin += 1
-                    this.score += 2
-                }
-            },
             hideScore(){
                 const valueLength = document.querySelector('input[name="lengthGameRatherNewGame"]:checked').value;
                 this.emitter.emit("endOfTheGame",valueLength)
             }
-        },
-        mounted () {
-             this.emitter.on('score', data => {
-                console.log(data)
-                this.handleScore(data)
-                
-            })
-            this.emitter.on('resetScore', data => {
-                console.log(data)
-                this.lost = 0
-                this.win = 0
-                this.perfectWin = 0
-                this.score = 0
-            })
-        },
+        }
     }
 </script>
