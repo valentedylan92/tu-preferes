@@ -33,7 +33,7 @@ export default {
     },
     mounted(){
 
-      if(this.title.length > 150){
+      if(this.title.length > 100){
         this.$refs.title.classList.add('small')
       }
       this.initAnimation()  

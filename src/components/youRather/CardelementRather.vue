@@ -3,8 +3,7 @@
       <div class="cardRather__inner">
         <div class="cardRather__intro">
           <h2 class="cardRather__title">TU PRÉFÈRES {{lengthGame}} / {{limitGame}}</h2>
-          <h3 class="cardRather__subtitle">Sur un total de {{(elementRather.result1+elementRather.result2)}} votes.<br>
-            Quel pourcentage a voté pour : 
+          <h3 class="cardRather__subtitle">Sur un total de {{(elementRather.result1+elementRather.result2)}} votes. Quel pourcentage a voté pour : 
           </h3>
         </div>
         <div class="cardRather__choice">

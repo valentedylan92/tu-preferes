@@ -12,7 +12,7 @@
               <input placeholder="%" class="answer__input" ref="answerTwo" id="#answer2" type="number" v-model="answerTwo" name="answer2">
             </div>
             <div class="answer__column">
-              <button @click="revealAnswer()" class="button">Dévoiler le %</button>
+              <button ref="button" disabled @click="revealAnswer()" class="button">Dévoiler le %</button>
             </div>
 
           </div>
@@ -70,13 +70,13 @@ export default {
     handleAnswer(){
       if(this.answerOne == this.percentage1){
         this.message = "Réponse Parfaite OMG !"
-        this.emitter.emit('score',"PerfectWin")
+        this.emitter.emit('score',"2")
       }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
         this.message = "Bonne réponse !"
-        this.emitter.emit('score',"Win")
+        this.emitter.emit('score',"1")
       }else{
         this.message = "Mauvaise réponse :( !"
-        this.emitter.emit('score',"Lost")
+        this.emitter.emit('score',"0")
       }
     },
     checkAnswer(value1,value2){
@@ -96,6 +96,7 @@ export default {
     } else if (answerElemTwo === document.activeElement) {
       this.answerOne = 100 - this.answerTwo
     }
+    this.$refs.button.disabled = false
   }
 }
 

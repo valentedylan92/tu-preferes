@@ -40,9 +40,9 @@
         },
         methods:{
             handleScore(valueData){
-                if(valueData == 'Lost'){
+                if(valueData == '0'){
                     this.lost += 1
-                }else if(valueData == 'Win'){
+                }else if(valueData == '1'){
                     this.win += 1
                     this.score += 1
                 }else{

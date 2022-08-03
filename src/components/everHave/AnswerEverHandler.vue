@@ -27,8 +27,6 @@ export default {
 
   data(){
       return{
-          // percentage1: Math.round(100*this.element.result1/(this.element.result1+this.element.result2)).toString(),
-          // percentage2:Math.round(100*this.element.result2/(this.element.result1+this.element.result2)).toString(),
           answerSelected: '',
           answerIsShown:false,
           message:'',
@@ -61,13 +59,13 @@ export default {
             
       if(dataAnswer > 50){        
           this.message = "Bonne réponse !"
-          this.emitter.emit('score',"Win")
+          this.emitter.emit('score',"1")
       }else if(dataAnswer == 50){
           this.message = "Ex aequo mais Bonne réponse !"
-          this.emitter.emit('score',"Win")
+          this.emitter.emit('score',"1")
       }else{
           this.message = "Mauvaise réponse !"
-          this.emitter.emit('score',"Lost")
+          this.emitter.emit('score',"0")
       }
     }
   }

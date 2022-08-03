@@ -11,7 +11,7 @@
         :element="listingRatherFinal[keyElement]"
         :key="keyElement"
       />
-      <button id="nextItem" v-if="currentGame" @click="getNewRandom()" class="button">Tu préfères suivant</button>
+      <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">></button>
       <p class="message">{{message}}</p>
     </div>
 
@@ -33,8 +33,6 @@ import ScorePanel from '@/components/ScorePanel.vue'
 import PopupRulesRather from '@/components/youRather/PopupRulesRather.vue'
 import listYouRather from "../listRather.json"
 
-
-
 export default {
   name: 'GameScreenRather',
   data(){
@@ -43,11 +41,11 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame: 15,
+      limitGame: 5,
       session:1,
       message:'',
-      popupDisplay:true,
-      currentGame:false,
+      popupDisplay:false,
+      currentGame:true,
       gameOver:false
     }
   },
@@ -59,7 +57,7 @@ export default {
   },
   methods:{
     getNewRandom() {
-      this.currentGame = false
+      this.$refs.buttonNext.disabled = true
       if(this.listingRatherFinal.length != this.ListingRatherUsed.length){
       this.ListingRatherCurrent.push(this.keyElement);
 
@@ -96,9 +94,9 @@ export default {
     this.ListingRatherCurrent.push(this.keyElement);
     this.emitter.on('updateListing', data => {
       if(this.ListingRatherCurrent.length == this.limitGame){
-        this.gameOver = true
+        setTimeout(() => this.gameOver = true, 4000);
       }else{
-        this.currentGame = true
+        this.$refs.buttonNext.disabled = false
       }
       this.ListingRatherUsed.push(data-1)
     }),
