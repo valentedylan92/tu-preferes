@@ -14,7 +14,7 @@
       <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">J'ai déjà suivant</button>
       <p class="message">{{message}}</p>
     </div>
-    <div class="game__score"  v-show="newGame">
+    <div class="game__score"  v-show="gameOver">
       <div class="game__score__inner">
         <ScorePanel :session="session" />
       </div>
@@ -46,7 +46,7 @@ export default {
       message:'',
       popupDisplay:false,
       currentGame:false,
-      newGame:false
+      gameOver:false
     }
   },
   components: {
@@ -94,13 +94,13 @@ export default {
     this.ListingEverCurrent.push(this.keyElement);
     this.emitter.on('updateListing', data => {
       if(this.ListingEverCurrent.length == this.limitGame){
-        this.newGame = true
+        this.gameOver = true
       }else{
         this.currentGame = true
       }
       this.ListingEverUsed.push(data-1)
     }),
-    this.emitter.on('hideThePopUp', data => {
+    this.emitter.on('hidePopupEver', data => {
         console.log(data)
         this.limitGame = data
         this.popupDisplay = false

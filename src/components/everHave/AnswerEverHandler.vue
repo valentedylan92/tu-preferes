@@ -43,10 +43,12 @@ export default {
   methods:{
     revealAnswer(){
       const vm = this
-      if( !this.answerIsShown){
+      const checkedElement = document.querySelector('input[name="answer"]:checked');
+      if( !this.answerIsShown && checkedElement != null){
+        const valueLength = checkedElement.value;
         this.emitter.emit('updateListing',this.element.id)
         this.answerIsShown = true
-        this.handleAnswer()
+        this.handleAnswer(valueLength)
         anime({
           targets:vm.$refs.message,
           opacity: [0,1],
@@ -55,26 +57,18 @@ export default {
         })       
       }
     },
-    handleAnswer(){
-            const valueLength = document.querySelector('input[name="answer"]:checked').value;
+    handleAnswer(dataAnswer){
             
-      if(valueLength > 50){        
+      if(dataAnswer > 50){        
           this.message = "Bonne réponse !"
           this.emitter.emit('score',"Win")
-      }else if(valueLength == 50){
+      }else if(dataAnswer == 50){
           this.message = "Ex aequo mais Bonne réponse !"
           this.emitter.emit('score',"Win")
       }else{
           this.message = "Mauvaise réponse !"
           this.emitter.emit('score',"Lost")
       }
-    //     this.message = "Réponse Parfaite OMG !"
-    //     this.emitter.emit('score',"PerfectWin")
-    //   }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
-    //   }else{
-    //     this.message = "Mauvaise réponse :( !"
-    //     this.emitter.emit('score',"Lost")
-    //   }
     }
   }
 }

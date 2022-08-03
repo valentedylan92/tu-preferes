@@ -51,7 +51,7 @@
         methods:{
             hidePopup(){
                 const valueLength = document.querySelector('input[name="lengthGameEverInit"]:checked').value;
-                this.emitter.emit("hideThePopUp",valueLength)
+                this.emitter.emit("hidePopupEver",valueLength)
             }
         }
     }
