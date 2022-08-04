@@ -16,7 +16,7 @@
     </div>
     <div class="game__score"  v-if="gameOver">
       <div class="game__score__inner">
-        <ScorePanel :limitGame="limitGame" :session="session" />
+        <EndPanel :limitGame="limitGame" :session="session" />
       </div>
     </div>
     <PopupRulesEver v-if="popupDisplay" />
@@ -28,7 +28,7 @@
 import CardelementEver from '@/components/everHave/CardelementEver.vue'
 import PopupRulesEver from '@/components/everHave/PopupRulesEver.vue'
 // import AnswerEverHandler from '@/components/everHave/AnswerEverHandler.vue'
-import ScorePanel from '@/components/ScorePanel.vue'
+import EndPanel from '@/components/EndPanel.vue'
 import listYouEver from "../listEver.json"
 
 
@@ -52,7 +52,7 @@ export default {
   components: {
     CardelementEver,
     // AnswerEverHandler,
-    ScorePanel,
+    EndPanel,
     PopupRulesEver
   },
   methods:{

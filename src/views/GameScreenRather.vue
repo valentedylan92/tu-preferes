@@ -1,5 +1,8 @@
 <template>
   <div class="game__container">
+    <div class="game__score game__left"  >
+        <ScorePanel :limitGame="limitGame" />
+    </div>
     <div class="game__inner">
       <CardelementRather 
         :elementRather="listingRatherFinal[keyElement]"
@@ -11,25 +14,29 @@
         :element="listingRatherFinal[keyElement]"
         :key="keyElement"
       />
-      <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">></button>
       <p class="message">{{message}}</p>
     </div>
+    <div class="game__right">
+      <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">></button>
 
-    <div class="game__score"  v-if="gameOver">
-      <div class="game__score__inner">
-        <ScorePanel :limitGame="limitGame" :session="session" />
+    </div>
+
+    <div class="game__end"  v-if="gameOver">
+      <div class="game__end__inner">
+        <EndPanel :limitGame="limitGame" />
       </div>
     </div>
-    
+
     <PopupRulesRather v-if="popupDisplay" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import ScorePanel from '@/components/ScorePanel.vue'
+import EndPanel from '@/components/EndPanel.vue'
 import CardelementRather from '@/components/youRather/CardelementRather.vue'
 import AnswerPercentageHandler from '@/components/youRather/AnswerPercentageHandler.vue'
-import ScorePanel from '@/components/ScorePanel.vue'
 import PopupRulesRather from '@/components/youRather/PopupRulesRather.vue'
 import listYouRather from "../listRather.json"
 import { mapActions } from 'pinia'
@@ -43,10 +50,9 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame: 15,
-      session:1,
+      limitGame: 1,
       message:'',
-      popupDisplay:true,
+      popupDisplay:false,
       currentGame:true,
       gameOver:false
     }
@@ -54,6 +60,7 @@ export default {
   components: {
     CardelementRather,
     AnswerPercentageHandler,
+    EndPanel,
     ScorePanel,
     PopupRulesRather
   },

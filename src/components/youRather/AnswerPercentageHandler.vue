@@ -72,7 +72,7 @@ export default {
           opacity: [0,1],
           scale: [0.5,1],
           duration:800,
-          delay:2500
+          delay:2100
         })       
       }
     },
@@ -80,17 +80,13 @@ export default {
 
       if(this.answerOne == this.percentage1){
         this.message = "Réponse Parfaite OMG !"
-        // this.emitter.emit('score',"2")
         this.incrementPerfectWin()
       }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
         this.message = "Bonne réponse !"
-        // this.emitter.emit('score',"1")
         this.incrementWin()
       }else{
         this.message = "Mauvaise réponse :( !"
         this.incrementLost()
-        // this.emitter.emit('score',"0")
-        // store.increment()
       }
     },
     checkAnswer(value1,value2){

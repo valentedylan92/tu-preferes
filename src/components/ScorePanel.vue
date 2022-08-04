@@ -1,58 +1,39 @@
-<template> 
-    <div class="score">
-        <p class="score__text">Score final : {{score}}</p>
-
-        <p class="score__subtext" v-if="perfectWin >= 1">Tu as trouvé {{answerFound}} bonne(s) réponse(s) dont {{perfectWin}} réponse(s) parfaite(s) !</p>
-        <p class="score__subtext" v-else-if="win > 1 && perfectWin ==0">Tu as trouvé {{answerFound}} bonne(s) réponse(s)</p>
-        <p class="score__subtext" v-else>Tu n'as trouvé aucune réponse... Coup dur !</p>
-        
-        <div class="radio__list">
-            <div class="radio__element">
-                <input type="radio" id="rapideNew" name="lengthGameRatherNewGame" value="15">
-                <label for="rapideNew">Rapide(15)</label>
-            </div>
-            <div class="radio__element">
-                <input type="radio" id="moyenneNew" name="lengthGameRatherNewGame" value="30" checked>
-                <label for="moyenneNew">Moyenne(30)</label>
-            </div>
-            <div class="radio__element">
-                <input type="radio" id="longueNew" name="lengthGameRatherNewGame" value="45">
-                <label for="longueNew">Longue(45)</label>
-            </div>
-            <div class="radio__element">
-                <input type="radio" id="completeNew" name="lengthGameRatherNewGame" value="361">
-                <label for="completeNew">Complète(361)</label>
-            </div>
+<template>
+    <div class="score"  ref="container">
+        <div id="score-current" class="score__element">
+            <p class="score__text">Partie en cours <br> Score : {{score}}</p>
         </div>
-        <button id="newGame" @click="hideScore()" class="button">Nouvelle partie</button>
+        <div id="score-board" class="score__element">
+        </div>
+
     </div>
 </template>
 
 <script>
-    import { mapState} from 'pinia'
-    import {useScoreStore} from "@/stores/score"
+import { mapState} from 'pinia'
+import {useScoreStore} from "@/stores/score"
 
-
-    export default {
-        name: 'ScorePanel',
-        props:["limitGame"],
-        data(){
-            return{
-                answerFound:0
-            }
-        },
-        computed:{
-            ...mapState(useScoreStore,['score','win','perfectWin','lost']),
-        },
-        methods:{
-            hideScore(){
-                const valueLength = document.querySelector('input[name="lengthGameRatherNewGame"]:checked').value;
-                this.emitter.emit("endOfTheGame",valueLength)
-            }
-        },
-        beforeMount(){
-            console.log(this.answerFound)
-            this.answerFound = this.limitGame - this.lost
+export default {
+    name:"ScorePanel",
+    data(){
+        return{
+            currentSession: 1
         }
+    },
+    computed:{
+        ...mapState(useScoreStore,['score']),
+    },
+    mounted(){
+        this.emitter.on("storeCurrentScore", data => {
+            console.log(data)
+            let element = document.createElement('p'); // is a node
+            element.classList.add('score__text')
+            element.innerHTML = 'Partie ' +  this.currentSession + ' : ' + this.score;
+            document.querySelector("#score-board").appendChild(element)
+            this.currentSession += 1
+        })  
+
     }
+
+}
 </script>
