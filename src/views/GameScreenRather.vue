@@ -18,11 +18,11 @@
     </div>
     <div class="game__right">
       <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">></button>
-        <iframe id="twitch-chat-embed"
+        <!-- <iframe id="twitch-chat-embed"
               src="https://www.twitch.tv/embed/kowab/chat?parent=valentedylan92.github.io"
               height="500"
               width="350">
-      </iframe>
+      </iframe> -->
     </div>
 
     <div class="game__end"  v-if="gameOver">
@@ -54,9 +54,9 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame: 1,
+      limitGame: 15,
       message:'',
-      popupDisplay:false,
+      popupDisplay:true,
       currentGame:true,
       gameOver:false
     }
