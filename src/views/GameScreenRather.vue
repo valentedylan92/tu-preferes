@@ -18,7 +18,11 @@
     </div>
     <div class="game__right">
       <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">></button>
-
+        <iframe id="twitch-chat-embed"
+              src="https://www.twitch.tv/embed/kowab/chat?parent=valentedylan92.github.io"
+              height="500"
+              width="350">
+      </iframe>
     </div>
 
     <div class="game__end"  v-if="gameOver">
