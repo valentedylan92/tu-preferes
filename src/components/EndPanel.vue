@@ -8,7 +8,7 @@
         
         <div class="radio__list">
             <div class="radio__element">
-                <input type="radio" id="rapideNew" name="lengthGameRatherNewGame" value="1">
+                <input type="radio" id="rapideNew" name="lengthGameRatherNewGame" value="15">
                 <label for="rapideNew">Rapide(15)</label>
             </div>
             <div class="radio__element">
