@@ -1,10 +1,11 @@
 <template> 
     <div class="score">
-        <p class="score__text">Votre Score : {{score}}</p>
-        <p class="score__subtext" v-if="perfectWin >= 1">Tu as trouvé {{answerFound}} bonnes réponses dont {{perfectWin}} réponses parfaites !</p>
-        <p class="score__subtext" v-else-if="win > 1 && perfectWin ==0">Tu as trouvé {{answerFound}} bonnes réponses</p>
-        <p class="score__subtext" v-else>Tu n'as trouvé aucune réponse... Coup dur !</p>
+        <p class="score__text">Score final : {{score}}</p>
 
+        <p class="score__subtext" v-if="perfectWin >= 1">Tu as trouvé {{answerFound}} bonne(s) réponse(s) dont {{perfectWin}} réponse(s) parfaite(s) !</p>
+        <p class="score__subtext" v-else-if="win > 1 && perfectWin ==0">Tu as trouvé {{answerFound}} bonne(s) réponse(s)</p>
+        <p class="score__subtext" v-else>Tu n'as trouvé aucune réponse... Coup dur !</p>
+        
         <div class="radio__list">
             <div class="radio__element">
                 <input type="radio" id="rapideNew" name="lengthGameRatherNewGame" value="15">

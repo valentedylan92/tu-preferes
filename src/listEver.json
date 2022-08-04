@@ -674,128 +674,134 @@
     {
         "id":113,
         "proposition":"Fait des graffitis",
-        "result1":15,
+        "result1":16,
         "result2":48
     },
     {
         "id":114,
         "proposition":"Fait un bain de minuit (donc nu.e dans l'eau durant la nuit)",
-        "result1":30,
+        "result1":31,
         "result2":32
     },
     {
         "id":115,
         "proposition":"Fait caca dans la nature",
         "result1":37,
-        "result2":24
+        "result2":25
     },
     {
         "id":116,
         "proposition":"Changé le pneu / la roue d'une voiture",
         "result1":25,
-        "result2":36
+        "result2":37
     },
     {
         "id":117,
         "proposition":"Eu une insolation",
-        "result1":28,
+        "result1":29,
         "result2":32
     },
     {
         "id":118,
         "proposition":"Eu une cartouche R4 ou quelque chose de similaire pour avoir plein de jeux sur une même cartouche et TRICHER",
-        "result1":35,
+        "result1":36,
         "result2":27
     },
     {
         "id":119,
         "proposition":"Acheté un skin dans un jeu vidéo avec des vrais euros de la vraie vie",
-        "result1":39,
+        "result1":40,
         "result2":24
     },
     {
         "id":120,
         "proposition":"Eu le crâne rasé",
-        "result1":15,
+        "result1":16,
         "result2":48
     },
     {
         "id":121,
         "proposition":"Cru au Père Noël après mes 8 ans",
-        "result1":13,
+        "result1":14,
         "result2":39
     },
     {
         "id":122,
         "proposition":"Joué à un MEUPORG",
         "result1":40,
-        "result2":17
+        "result2":18
     },
     {
         "id":123,
         "proposition":"Fait de la randonnée",
-        "result1":48,
+        "result1":50,
         "result2":8
     },
     {
         "id":124,
         "proposition":"Capturé délicatement un insecte présent chez moi pour le relâcher dans la nature avec volupté",
-        "result1":50,
+        "result1":52,
         "result2":6
     },
     {
         "id":125,
         "proposition":"Fait de l'acupuncture",
         "result1":7,
-        "result2":50
+        "result2":52
     },
     {
         "id":126,
         "proposition":"Suivi avec assiduité une émission de télé-réalité",
         "result1":35,
-        "result2":24
+        "result2":26
     },
     {
         "id":127,
         "proposition":"Gagné un jeu concours / giveaway ",
         "result1":46,
-        "result2":10
+        "result2":12
     },
     {
         "id":128,
         "proposition":"Fait un maquillage un peu artistique (même si approximatif)",
-        "result1":14,
+        "result1":19,
         "result2":39
     },
     {
         "id":129,
         "proposition":"Subi du harcelement scolaire",
-        "result1":37,
-        "result2":19
+        "result1":38,
+        "result2":20
     },
     {
         "id":130,
         "proposition":"Fait du scooter / de la moto",
-        "result1":28,
+        "result1":30,
         "result2":25
     },
     {
         "id":131,
         "proposition":"Vécu plus d'un mois à l'étranger ",
-        "result1":13,
-        "result2":29
+        "result1":15,
+        "result2":40
     },
     {
         "id":132,
         "proposition":"Dansé le Madison",
-        "result1":32,
-        "result2":18
+        "result1":33,
+        "result2":20
     },
     {
         "id":133,
         "proposition":"Fait du montage vidéo",
-        "result1":32,
-        "result2":13
+        "result1":39,
+        "result2":15
+    },
+    {
+        "id":134,
+        "proposition":"Bloqué quelqu'un sur les réseaux sociaux",
+        "result1":46,
+        "result2":5
     }
 
 ]
