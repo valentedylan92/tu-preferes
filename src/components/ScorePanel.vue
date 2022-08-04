@@ -3,6 +3,7 @@
         <div id="score-current" class="score__element">
             <p class="score__text">Partie en cours <br> Score : {{score}}</p>
         </div>
+        <hr>
         <div id="score-board" class="score__element">
         </div>
 
