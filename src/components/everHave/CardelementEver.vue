@@ -3,12 +3,17 @@
       <div class="cardEver__inner">
         <div class="cardEver__intro">
           <h2 class="cardEver__title">J'AI DÉJÀ {{this.lengthGame}} / {{this.limitGame}}</h2>
-          <h3 class="cardEver__subtitle">Sur un total de {{(this.elementEver.result1+this.elementEver.result2)}} votes.</h3>
+          <h3 class="cardEver__subtitle">Sur un total de {{(elementEver.result1+this.elementEver.result2)}} votes.</h3>
         </div>
         <h3 class="choiceEver__title">{{elementEver.proposition}}</h3>
+        <div class="result__container">
+          <div v-for="n in this.elementEver.result1" :key="n" class="result1__element result__element"></div>
+          <div v-for="n in this.elementEver.result2" :key="n" class="result2__element result__element"></div>
+
+        </div>
         <div class="cardEver__choice">
               <ChoiceElement
-                :result="this.elementEver.result1"
+                :result="elementEver.result1"
                 :percentage="percentage1"
                 title="J'ai déjà"
                 keyChoice="1"
@@ -16,7 +21,7 @@
                 imgIcon="number-1"
               />
               <ChoiceElement
-                :result="this.elementEver.result2"
+                :result="elementEver.result2"
                 :percentage="percentage2"
                 title="Je n'ai jamais"
                 keyChoice="2"
@@ -27,6 +32,11 @@
         <AnswerEverHandler 
           :element="elementEver"
         />
+ 
+
+
+
+        
 
       </div>
     </div>

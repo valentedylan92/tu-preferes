@@ -66,4 +66,24 @@
     }
 }
 
+.result__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 950px;
+    flex-wrap: wrap;
+
+}
+.result__element{
+    width: 50px;
+    height:50px;
+}
+.result1__element{
+    background: $primary-color;
+}
+.result2__element{
+    background: $secondary-color;
+}
+
+
 

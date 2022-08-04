@@ -2,7 +2,7 @@
         <div class="answer">
           <div class="answer__row">
             <div class="answer__column">
-              <button @click="revealAnswer()" class="button">Dévoiler le %</button>
+              <button @click="revealAnswer()" class="button">Validez</button>
             </div>
           </div>
           <div class="answer__row">

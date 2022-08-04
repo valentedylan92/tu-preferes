@@ -16,7 +16,7 @@
     </div>
     <div class="game__score"  v-if="gameOver">
       <div class="game__score__inner">
-        <EndPanel :limitGame="limitGame" :session="session" />
+        <EndPanel :limitGame="limitGame" />
       </div>
     </div>
     <PopupRulesEver v-if="popupDisplay" />
