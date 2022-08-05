@@ -112,6 +112,7 @@ export default {
     }
   },
   mounted(){
+    this.resetScoreEver()
     this.ListingEverCurrent.push(this.keyElement);
     this.emitter.on('updateListingEver', data => {
       if(this.ListingEverCurrent.length == this.limitGame){
