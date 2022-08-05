@@ -72,17 +72,42 @@
     flex-direction: row;
     max-width: 950px;
     flex-wrap: wrap;
+    margin: 20px 0 40px;
 
 }
 .result__element{
-    width: 50px;
-    height:50px;
+    width: 60px;
+    height:30px;
+    margin:10px;
+    // background: #ccc;
 }
-.result1__element{
-    background: $primary-color;
-}
-.result2__element{
-    background: $secondary-color;
+
+
+.stat{
+    width: 100%;
+    margin: 10px 0 0;
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    &__column{
+        margin: 0 15px;
+    }
+    &__color{
+        width: 30px;
+        height: 30px;
+        &#color1{
+            background: $primary-color;
+        }
+        &#color2{
+            background: $secondary-color;
+        }
+    }
+    &__number{
+        font-size: 20px;
+        margin: 10px 0;
+    }
 }
 
 

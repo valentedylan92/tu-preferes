@@ -1,5 +1,13 @@
 <template>
   <div class="game__container">
+    <div class="game__left"  >
+      <nav>
+        <router-link to="/">&lt; Choix du jeu</router-link>  
+      </nav>
+      <div class="game__score"  >
+        <ScorePanelEver :limitGame="limitGame" />
+      </div>
+    </div>
     <div class="game__inner">
       <CardelementEver 
         :elementEver="listingEverFinal[keyElement]"
@@ -7,16 +15,26 @@
         :lengthGame="ListingEverCurrent.length"
         :limitGame="limitGame"
       />
-      <!-- <AnswerEverHandler 
-        :element="listingEverFinal[keyElement]"
-        :key="keyElement"
-      /> -->
-      <button id="newGame" v-if="currentGame" @click="getNewRandom()" class="button">J'ai déjà suivant</button>
       <p class="message">{{message}}</p>
     </div>
-    <div class="game__score"  v-if="gameOver">
-      <div class="game__score__inner">
-        <EndPanel :limitGame="limitGame" />
+    <div class="game__right">
+      <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">&gt;</button>
+      <div class="stat">
+            <div class="stat__row">
+              <div class="stat__column">
+                <div id="color1" class="stat__color"></div>
+                <p id="stat1" class="stat__number">0</p>
+              </div>
+              <div class="stat__column">
+                <div id="color2" class="stat__color"></div>
+                <p id="stat2" class="stat__number">0</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__end"  v-if="gameOver">
+      <div class="game__end__inner">
+        <EndPanelEver :limitGame="limitGame" />
       </div>
     </div>
     <PopupRulesEver v-if="popupDisplay" />
@@ -27,9 +45,12 @@
 // @ is an alias to /src
 import CardelementEver from '@/components/everHave/CardelementEver.vue'
 import PopupRulesEver from '@/components/everHave/PopupRulesEver.vue'
+import ScorePanelEver from '@/components/everHave/ScorePanelEver.vue'
 // import AnswerEverHandler from '@/components/everHave/AnswerEverHandler.vue'
-import EndPanel from '@/components/EndPanel.vue'
+import EndPanelEver from '@/components/everHave/EndPanelEver.vue'
 import listYouEver from "../listEver.json"
+import { mapActions } from 'pinia'
+import {useScoreStoreEver} from "@/stores/scoreEver"
 
 
 
@@ -42,22 +63,23 @@ export default {
       ListingEverUsed : [],
       ListingEverCurrent: [],
       limitGame: 15,
-      session:1,
       message:'',
       popupDisplay:true,
-      currentGame:false,
+      currentGame:true,
       gameOver:false
     }
   },
   components: {
     CardelementEver,
-    // AnswerEverHandler,
-    EndPanel,
+    EndPanelEver,
+    ScorePanelEver,
     PopupRulesEver
   },
   methods:{
+    ...mapActions(useScoreStoreEver,['resetScoreEver']), 
+
     getNewRandom() {
-      this.currentGame = false
+      this.$refs.buttonNext.disabled = true
       if(this.listingEverFinal.length != this.ListingEverUsed.length){
       this.ListingEverCurrent.push(this.keyElement);
 
@@ -82,10 +104,9 @@ export default {
         this.ListingEverCurrent = []
         this.getNewRandom()
         this.ListingEverCurrent = [this.keyElement]
-        this.emitter.emit('resetScore')
-        this.session =+ 1
+        this.resetScoreEver()
       }else{
-        this.message = "No more "
+        this.message = "No more"
       }
 
     }
@@ -94,9 +115,11 @@ export default {
     this.ListingEverCurrent.push(this.keyElement);
     this.emitter.on('updateListing', data => {
       if(this.ListingEverCurrent.length == this.limitGame){
-        this.gameOver = true
+        // this.$refs.buttonNext.disabled = true
+        setTimeout(() => this.gameOver = true, 4500);
       }else{
-        this.currentGame = true
+        // this.$refs.buttonNext.disabled = false
+        setTimeout(() => this.$refs.buttonNext.disabled = false, 3000);
       }
       this.ListingEverUsed.push(data-1)
     }),
