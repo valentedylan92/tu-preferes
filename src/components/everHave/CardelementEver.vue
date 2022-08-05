@@ -10,6 +10,13 @@
           <PictoEver v-for="n in this.elementEver.result1" :key="n" :class="'result1__element'" />
           <PictoEver v-for="n in this.elementEver.result2" :key="n" :class="'result2__element'" />
         </div>
+          <div class="answer__row">
+          <div class="answer__column">
+            <p ref="message" class="answer__message answer__message--ever">
+              {{message}}
+            </p>
+          </div>
+        </div> 
         <div class="cardEver__choice">
               <ChoiceElement
                 :result="elementEver.result1"
@@ -18,6 +25,7 @@
                 keyChoice="1"
                 colorBar="primary"
                 imgIcon="number-1"
+                @click="revealAnswer(elementEver.result1)"
               />
               <ChoiceElement
                 :result="elementEver.result2"
@@ -26,11 +34,13 @@
                 keyChoice="2"
                 colorBar="secondary"
                 imgIcon="number-2"
+                @click="revealAnswer(elementEver.result2)"
               />
-            <AnswerEverHandler 
+            <!-- <AnswerEverHandler 
               :element="elementEver"
-            />
-        </div>   
+            /> -->
+        </div>
+      
       </div>
     </div>
 </template>
@@ -39,14 +49,17 @@
 
 import ChoiceElement from '@/components/everHave/ChoiceElement.vue'
 import PictoEver from '@/components/everHave/PictoEver.vue'
-import AnswerEverHandler from '@/components/everHave/AnswerEverHandler.vue'
+// import AnswerEverHandler from '@/components/everHave/AnswerEverHandler.vue'
+
 import anime from 'animejs'
+import { mapActions } from 'pinia'
+import {useScoreStoreEver} from "@/stores/scoreEver"
 
 
 export default {
   name: 'cardEverelementEver',
   components: {
-    AnswerEverHandler,
+    // AnswerEverHandler,
     PictoEver,
     ChoiceElement
   },
@@ -57,7 +70,86 @@ export default {
     return {
       percentage1: Math.round(100*this.elementEver.result1/(this.elementEver.result1+this.elementEver.result2)).toString(),
       percentage2:Math.round(100*this.elementEver.result2/(this.elementEver.result1+this.elementEver.result2)).toString(),
+      answerSelected: '',
+      answerIsShown:false,
+      message:''
     } 
+  },
+  methods:{
+    ...mapActions(useScoreStoreEver,['incrementWinEver','incrementPerfectWinEver','incrementLostEver']),
+
+    revealAnswer(event,valueToCheck){
+      console.log(event)
+      const vm = this
+      if( !this.answerIsShown){
+        const valueLength = valueToCheck;
+        this.emitter.emit('updateListingEver',this.elementEver.id)
+        this.answerIsShown = true
+        // this.handleAnswer(valueLength)
+        // setTimeout(() => this.handleAnswer(valueLength), 2100);
+
+        anime({
+          targets:'.result1__element path',
+          fill: '#fef677',
+          duration: 100,
+          delay: anime.stagger(40),
+          complete: function() {
+              anime({
+              targets:'.result2__element path',
+              fill: '#3dffc6',
+              duration: 100,
+              delay: anime.stagger(40),
+              complete: function() {
+                vm.handleAnswer(valueLength)
+                anime({
+                    targets:vm.$refs.message,
+                    opacity: [0,1],
+                    scale: [0.5,1],
+                    duration:800,
+                })  
+              }
+            })
+            anime({
+              targets:'#stat2',
+              round: 1,
+              textContent:  ["0",vm.elementEver.result2],
+              duration: vm.elementEver.result2*40,
+              easing: 'linear',
+            })
+          }
+        })
+        anime({
+          targets:'#stat1',
+          round: 1,
+          textContent:  ["0",vm.elementEver.result1],
+          duration: vm.elementEver.result1*40,
+          easing: 'linear',
+        })
+        anime({
+          targets:'.choiceEver__element',
+          scale:[1,0],
+          duration: 10,
+          easing: 'linear',
+        })
+
+        
+             
+      }
+    },
+    handleAnswer(dataAnswer){
+            
+      if(dataAnswer > 50){        
+          this.message = "Bonne réponse !"
+          this.incrementWinEver()
+      }else if(dataAnswer == 50){
+          this.message = "Ex aequo mais Bonne réponse !"
+          this.incrementWinEver()
+      }else{
+          this.message = "Mauvaise réponse !"
+          this.incrementLostEver()
+      }
+    }
+
   },
   mounted(){
       anime({

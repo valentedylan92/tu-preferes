@@ -6,8 +6,7 @@
         width: 100%;
     }
     &__element{
-        margin: 0px;
-        margin-bottom: 20px;
+        margin: 0px 15px 20px;
         background: white;
         border-radius: 20px;
         width: 100%;
@@ -18,8 +17,19 @@
         align-items: center;
         font-size: 15px;
         transition: transform 0.2s;
+        box-sizing: border-box;
+        cursor: pointer;
+        border: 8px solid $primary-color;
         &:hover{
-            transform: scale(1.05);        
+            transform: scale(1.1);        
+            background: $primary-color;
+        }
+        &-2{          
+            border: 8px solid $secondary-color;       
+            &:hover{
+                background: $secondary-color;   
+            }
+    
         }
        
     }
@@ -75,9 +85,9 @@
         appearance: none;
     }
 }
-.choiceEver__radio:checked + .choiceEver__label {
-    background:$primary-color;
-}
-.choiceEver__radio:checked + .choiceEver__label-2 {
-    background:$secondary-color;
-}
+// .choiceEver__radio:checked + .choiceEver__label {
+//     background:$primary-color;
+// }
+// .choiceEver__radio:checked + .choiceEver__label-2 {
+//     background:$secondary-color;
+// }
