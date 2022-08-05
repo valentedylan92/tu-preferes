@@ -17,11 +17,12 @@
             </p>
           </div>
         </div> 
+
         <div class="cardEver__choice">
               <ChoiceElement
                 :result="elementEver.result1"
                 :percentage="percentage1"
-                title="J'ai déjà"
+                title="TEAM J'ai déjà"
                 keyChoice="1"
                 colorBar="primary"
                 imgIcon="number-1"
@@ -30,7 +31,7 @@
               <ChoiceElement
                 :result="elementEver.result2"
                 :percentage="percentage2"
-                title="Je n'ai jamais"
+                title="TEAM Je n'ai jamais"
                 keyChoice="2"
                 colorBar="secondary"
                 imgIcon="number-2"
@@ -40,6 +41,13 @@
               :element="elementEver"
             /> -->
         </div>
+        <div class="answer__row">
+          <div class="answer__column">
+            <p id="question" class="answer__message answer__message--ever">
+              Quel TEAM a eu le + de votes 
+            </p>
+          </div>
+        </div> 
       
       </div>
     </div>
@@ -131,7 +139,13 @@ export default {
           scale:[1,0],
           duration: 10,
           easing: 'linear',
-        })   
+        })
+        anime({
+          targets:'#question',
+          opacity:0,
+          duration: 10,
+          easing: 'linear',
+        })      
       }
     },
     handleAnswer(dataAnswer){
