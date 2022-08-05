@@ -10,7 +10,7 @@
                 (Vous avez une marge d'erreur de 5%)
             </p>
             <p class="popup__text">
-                Vous gagnerez 1 point par bonne réponse et 2 point par bonne réponse parfaite.<br>
+                Vous gagnerez 1 point par bonne réponse <br>
             </p>
             <p class="popup__text">
                 BONNE CHANCE À VOUS !

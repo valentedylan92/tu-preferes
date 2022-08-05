@@ -7,8 +7,8 @@
         </div>
         <h3 class="choiceEver__title">{{elementEver.proposition}}</h3>
         <div class="result__container">
-          <PictoEver v-for="n in this.elementEver.result1" :key="n" :class="'result1__element result__element'" />
-          <PictoEver v-for="n in this.elementEver.result2" :key="n" :class="'result2__element result__element'" />
+          <PictoEver v-for="n in this.elementEver.result1" :key="n" :class="'result1__element'" />
+          <PictoEver v-for="n in this.elementEver.result2" :key="n" :class="'result2__element'" />
         </div>
         <div class="cardEver__choice">
               <ChoiceElement
