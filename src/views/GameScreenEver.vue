@@ -18,7 +18,7 @@
       <p class="message">{{message}}</p>
     </div>
     <div class="game__right">
-      <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">&gt;</button>
+      <button ref="buttonNextEver" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">&gt;</button>
       <div class="stat">
             <div class="stat__row">
               <div class="stat__column">
@@ -62,9 +62,9 @@ export default {
       listingEverFinal: listYouEver,
       ListingEverUsed : [],
       ListingEverCurrent: [],
-      limitGame: 15,
+      limitGame: 3,
       message:'',
-      popupDisplay:true,
+      popupDisplay:false,
       currentGame:true,
       gameOver:false
     }
@@ -79,7 +79,7 @@ export default {
     ...mapActions(useScoreStoreEver,['resetScoreEver']), 
 
     getNewRandom() {
-      this.$refs.buttonNext.disabled = true
+      this.$refs.buttonNextEver.disabled = true
       if(this.listingEverFinal.length != this.ListingEverUsed.length){
       this.ListingEverCurrent.push(this.keyElement);
 
@@ -113,13 +113,11 @@ export default {
   },
   mounted(){
     this.ListingEverCurrent.push(this.keyElement);
-    this.emitter.on('updateListing', data => {
+    this.emitter.on('updateListingEver', data => {
       if(this.ListingEverCurrent.length == this.limitGame){
-        // this.$refs.buttonNext.disabled = true
         setTimeout(() => this.gameOver = true, 4500);
       }else{
-        // this.$refs.buttonNext.disabled = false
-        setTimeout(() => this.$refs.buttonNext.disabled = false, 3000);
+        setTimeout(() => this.$refs.buttonNextEver.disabled = false, 3000);
       }
       this.ListingEverUsed.push(data-1)
     }),
@@ -128,8 +126,8 @@ export default {
         this.limitGame = data
         this.popupDisplay = false
     }),
-    this.emitter.on('endOfTheGame', data => {
-        console.log(data)
+    this.emitter.on('endOfTheGameEver', data => {
+        console.log(data + "EOTG")
         if(data=="361"){
           this.ListingEverUsed = []
         }
@@ -139,9 +137,16 @@ export default {
     })
   },
   beforeMount(){
+    // this.emitter.off('updateListingEver')
     const newNumber = Math.round(Math.random()*(this.listingEverFinal.length-1));
     this.keyElement = newNumber
+  },
+  beforeUnmount(){
+      this.emitter.off('endOfTheGameEver')
+      this.emitter.off('updateListingEver')
+      this.emitter.off('hidePopupEver')
   }
+
 
 }
 </script>

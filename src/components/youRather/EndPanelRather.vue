@@ -47,7 +47,7 @@
         methods:{
             hideScore(){
                 const valueLength = document.querySelector('input[name="lengthGameRatherNewGame"]:checked').value;
-                this.emitter.emit("endOfTheGame",valueLength)
+                this.emitter.emit("endOfTheGameRather",valueLength)
             }
         },
         beforeMount(){
@@ -55,7 +55,7 @@
             this.answerFound = this.limitGame - this.lostRather
         },
         mounted(){
-            this.emitter.emit("storeCurrentScore")
+            this.emitter.emit("storeCurrentScoreRather")
         }
     }
 </script>

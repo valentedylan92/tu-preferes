@@ -44,7 +44,7 @@
         methods:{
             hideScore(){
                 const valueLength = document.querySelector('input[name="lengthGameEverNewGame"]:checked').value;
-                this.emitter.emit("endOfTheGame",valueLength)
+                this.emitter.emit("endOfTheGameEver",valueLength)
             }
         },
         beforeMount(){
@@ -52,7 +52,7 @@
             this.answerFound = this.limitGame - this.lostEver
         },
         mounted(){
-            this.emitter.emit("storeCurrentScore")
+            this.emitter.emit("storeCurrentScoreEver")
         }
     }
 </script>

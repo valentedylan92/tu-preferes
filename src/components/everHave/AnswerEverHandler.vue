@@ -39,10 +39,6 @@ export default {
   },
   mounted(){
     console.log(this.element.result1,this.element.result2)
-      this.emitter.on('answerSend', data => {
-        console.log(data)
-        this.answerSelected = data
-      })
   },
   methods:{
     ...mapActions(useScoreStoreEver,['incrementWinEver','incrementPerfectWinEver','incrementLostEver']),
@@ -52,7 +48,7 @@ export default {
       const checkedElement = document.querySelector('input[name="answer"]:checked');
       if( !this.answerIsShown && checkedElement != null){
         const valueLength = checkedElement.value;
-        this.emitter.emit('updateListing',this.element.id)
+        this.emitter.emit('updateListingEver',this.element.id)
         this.answerIsShown = true
         // this.handleAnswer(valueLength)
         // setTimeout(() => this.handleAnswer(valueLength), 2100);

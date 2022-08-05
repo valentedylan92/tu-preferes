@@ -25,7 +25,7 @@ export default {
         ...mapState(useScoreStoreRather,['scoreRather']),
     },
     mounted(){
-        this.emitter.on("storeCurrentScore", data => {
+        this.emitter.on("storeCurrentScoreRather", data => {
             console.log(data)
             let element = document.createElement('p'); // is a node
             element.classList.add('score__text')
@@ -34,6 +34,9 @@ export default {
             this.currentSession += 1
         })  
 
+    },
+    beforeUnmount(){
+        this.emitter.off("storeCurrentScoreRather")
     }
 
 }

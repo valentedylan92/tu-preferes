@@ -58,7 +58,7 @@ export default {
       this.checkAnswer(this.answerOne,this.answerTwo)
       const vm = this
       if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown && this.answerIsCorrect){
-        this.emitter.emit('updateListing',this.element.id)
+        this.emitter.emit('updateListingRather',this.element.id)
         this.answerIsShown = true
         this.emitter.emit('launchTheAnimation',"launched")
         setTimeout(() => this.handleAnswer(), 2100);

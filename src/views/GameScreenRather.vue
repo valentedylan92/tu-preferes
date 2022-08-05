@@ -54,9 +54,9 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame: 15,
+      limitGame: 3,
       message:'',
-      popupDisplay:true,
+      popupDisplay:false,
       currentGame:true,
       gameOver:false
     }
@@ -106,7 +106,7 @@ export default {
   },
   mounted(){
     this.ListingRatherCurrent.push(this.keyElement);
-    this.emitter.on('updateListing', data => {
+    this.emitter.on('updateListingRather', data => {
       if(this.ListingRatherCurrent.length == this.limitGame){
         setTimeout(() => this.gameOver = true, 4000);
       }else{
@@ -119,7 +119,7 @@ export default {
         this.limitGame = data
         this.popupDisplay = false
     })
-    this.emitter.on('endOfTheGame', data => {
+    this.emitter.on('endOfTheGameRather', data => {
         console.log(data)
         if(data=="361"){
           this.ListingRatherUsed = []
@@ -132,6 +132,11 @@ export default {
   beforeMount(){
     const newNumber = Math.round(Math.random()*(this.listingRatherFinal.length-1));
     this.keyElement = newNumber
+  },
+  beforeUnmount(){
+    this.emitter.off('endOfTheGameRather')
+    this.emitter.off('updateListingRather')
+    this.emitter.off('hideThePopUp')
   }
 
 }
