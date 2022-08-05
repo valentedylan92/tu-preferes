@@ -37,9 +37,6 @@ export default {
           secondStat:this.element.result2.toString(),
       }
   },
-  mounted(){
-    console.log(this.element.result1,this.element.result2)
-  },
   methods:{
     ...mapActions(useScoreStoreEver,['incrementWinEver','incrementPerfectWinEver','incrementLostEver']),
 
