@@ -25,7 +25,7 @@
                 keyChoice="1"
                 colorBar="primary"
                 imgIcon="number-1"
-                @click="revealAnswer(elementEver.result1)"
+                @click="revealAnswer(percentage1)"
               />
               <ChoiceElement
                 :result="elementEver.result2"
@@ -34,7 +34,7 @@
                 keyChoice="2"
                 colorBar="secondary"
                 imgIcon="number-2"
-                @click="revealAnswer(elementEver.result2)"
+                @click="revealAnswer(percentage2)"
               />
             <!-- <AnswerEverHandler 
               :element="elementEver"
@@ -70,6 +70,7 @@ export default {
     return {
       percentage1: Math.round(100*this.elementEver.result1/(this.elementEver.result1+this.elementEver.result2)).toString(),
       percentage2:Math.round(100*this.elementEver.result2/(this.elementEver.result1+this.elementEver.result2)).toString(),
+      total:'',
       answerSelected: '',
       answerIsShown:false,
       message:''
@@ -78,11 +79,11 @@ export default {
   methods:{
     ...mapActions(useScoreStoreEver,['incrementWinEver','incrementPerfectWinEver','incrementLostEver']),
 
-    revealAnswer(event,valueToCheck){
-      console.log(event)
+    revealAnswer(valueToCheck){
       const vm = this
       if( !this.answerIsShown){
         const valueLength = valueToCheck;
+        console.log(valueLength)
         this.emitter.emit('updateListingEver',this.elementEver.id)
         this.answerIsShown = true
         // this.handleAnswer(valueLength)
@@ -130,10 +131,7 @@ export default {
           scale:[1,0],
           duration: 10,
           easing: 'linear',
-        })
-
-        
-             
+        })   
       }
     },
     handleAnswer(dataAnswer){
