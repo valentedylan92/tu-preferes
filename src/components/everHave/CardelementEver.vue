@@ -30,20 +30,13 @@
             <AnswerEverHandler 
               :element="elementEver"
             />
-        </div>
- 
-
-
-
-        
-
+        </div>   
       </div>
     </div>
 </template>
 
 <script>
 
-// import anime from 'animejs'
 import ChoiceElement from '@/components/everHave/ChoiceElement.vue'
 import PictoEver from '@/components/everHave/PictoEver.vue'
 import AnswerEverHandler from '@/components/everHave/AnswerEverHandler.vue'

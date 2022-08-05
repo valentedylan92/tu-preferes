@@ -58,16 +58,13 @@
         border-radius: 20px;
         box-sizing: border-box;
         cursor: pointer;
-
+        border: 10px solid $primary-color;       
         &:hover{
-            // border: 10px solid $primary-color;  
-            // border: 10px solid $primary-color;       
-            background: $primary-color;
-            color:white       
+            background: $primary-color;   
         }
         &-2{
+            border: 10px solid $secondary-color;
             &:hover{
-                // border: 10px solid $secondary-color;
                 background: $secondary-color;
                 color:white
             }

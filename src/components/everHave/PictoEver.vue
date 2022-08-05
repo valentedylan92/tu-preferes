@@ -2,7 +2,7 @@
 <div class="result__element">
     <svg class="picto__crocs" x="0px" y="0px"
         viewBox="0 0 409.7 191.9" style="enable-background:new 0 0 409.7 191.9;" xml:space="preserve">
-    <path style="fill:#fff;" d="M47.4,1.5l110.1,76.7c5.4,3.7,8.7,9.6,9.1,16.1l0,0c0.8,15-9.9,28.1-24.7,30.4l0,0
+    <path ref="pathSVG" style="fill:#fff;" d="M47.4,1.5l110.1,76.7c5.4,3.7,8.7,9.6,9.1,16.1l0,0c0.8,15-9.9,28.1-24.7,30.4l0,0
         c-7.1,1.1-14.4-0.6-20.4-4.7l-103.1-73c-3.7-2.6-4.8-7.6-2.4-11.5L35.3,4.1C37.9-0.1,43.4-1.3,47.4,1.5z M246.5,39.4
         c2.4-2.4,2.7-6.2,0.3-8.7l-14.2-14.8c-3.2-3.4-8.4-3.7-12-0.7c-15.6,12.9-52.4,35.6-63.6,42.2c-1.6,0.9-1.6,3.2,0,4.2
         c9.2,5.6,17.2,14.8,20.3,20.7c0.7,1.3,2.3,1.9,3.7,1.2C191.1,78.1,228.4,57.9,246.5,39.4z M400.2,113.3
@@ -24,7 +24,17 @@
     
 </template>
 <script>
+import anime from 'animejs'
+
 export default {
     name: 'PictoEver',
+    mounted(){
+        const vm = this
+         anime({
+              targets: vm.$refs.pathSVG,
+              fill: '#ffffff',
+              duration: 0,
+        })
+    }
 }
 </script>

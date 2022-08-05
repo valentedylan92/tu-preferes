@@ -6,8 +6,8 @@
                 Le but du jeu est de voir si vous connaissez bien la communauté dont vous faites partie.
             </p>
             <p class="popup__text">
-                Vous retrouverez ici l'ensemble des "J'ai déjà" proposé cette année et votre but sera de déterminer , selon vous , le pourcentage des réponses votées.<br>
-                (Vous avez une marge d'erreur de 5%)
+                Chaque "J'ai déjà" proposé sera illustré par un groupement de Crocs, chacune de ces Crocs représentant 1 vote.<br>
+                Votre but sera donc de sélectionner laquel de ces 2 team a obtenu le plus de votes.
             </p>
             <p class="popup__text">
                 Vous gagnerez 1 point par bonne réponse <br>
