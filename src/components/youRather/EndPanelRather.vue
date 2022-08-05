@@ -1,9 +1,9 @@
 <template> 
     <div class="end">
-        <p class="end__text">Score final : {{score}}</p>
+        <p class="end__text">Score final : {{scoreRather}}</p>
 
-        <p class="end__subtext" v-if="perfectWin >= 1">Tu as trouvé {{answerFound}} bonne(s) réponse(s) sur {{limitGame}}<br>dont {{perfectWin}} réponse(s) parfaite(s) !</p>
-        <p class="end__subtext" v-else-if="win > 1 && perfectWin ==0">Tu as trouvé {{answerFound}} bonne(s) réponse(s)</p>
+        <p class="end__subtext" v-if="perfectWinRather >= 1">Tu as trouvé {{answerFound}} bonne(s) réponse(s) sur {{limitGame}}<br>dont {{perfectWinRather}} réponse(s) parfaite(s) !</p>
+        <p class="end__subtext" v-else-if="winRather > 1 && perfectWinRather ==0">Tu as trouvé {{answerFound}} bonne(s) réponse(s)</p>
         <p class="end__subtext" v-else>Tu n'as trouvé aucune réponse... Coup dur !</p>
         
         <div class="radio__list">
@@ -30,11 +30,11 @@
 
 <script>
     import { mapState} from 'pinia'
-    import {useScoreStore} from "@/stores/score"
+    import {useScoreStoreRather} from "@/stores/scoreRather"
 
 
     export default {
-        name: 'EndPanel',
+        name: 'EndPanelRather',
         props:["limitGame"],
         data(){
             return{
@@ -42,20 +42,20 @@
             }
         },
         computed:{
-            ...mapState(useScoreStore,['score','win','perfectWin','lost']),
+            ...mapState(useScoreStoreRather,['scoreRather','winRather','perfectWinRather','lostRather']),
         },
         methods:{
             hideScore(){
                 const valueLength = document.querySelector('input[name="lengthGameRatherNewGame"]:checked').value;
-                this.emitter.emit("endOfTheGame",valueLength)
+                this.emitter.emit("endOfTheGameRather",valueLength)
             }
         },
         beforeMount(){
             console.log(this.answerFound)
-            this.answerFound = this.limitGame - this.lost
+            this.answerFound = this.limitGame - this.lostRather
         },
         mounted(){
-            this.emitter.emit("storeCurrentScore")
+            this.emitter.emit("storeCurrentScoreRather")
         }
     }
 </script>

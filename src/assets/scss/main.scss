@@ -1,8 +1,9 @@
 @import 'utils/normalize';
 @import 'utils/variable';
 
-@import 'views/App';
-@import 'views/GameScreen';
+@import 'views/app';
+@import 'views/gameScreen';
+@import 'views/homePage';
 
 @import 'components/cardElements';
 @import 'components/choiceEver';

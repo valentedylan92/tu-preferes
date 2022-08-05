@@ -29,8 +29,8 @@
                     <label for="longue">Longue(45)</label>
                 </div>
                 <div class="radio__element">
-                    <input type="radio" id="complete" name="lengthGameEverInit" value="361">
-                    <label for="complete">Complète(361)</label>
+                    <input type="radio" id="complete" name="lengthGameEverInit" value="135">
+                    <label for="complete">Complète(135)</label>
                 </div>
             </div>
 

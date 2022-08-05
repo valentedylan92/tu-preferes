@@ -22,7 +22,6 @@
               {{message}}
             </p>
             </div>
-              <!-- {{score}} -->
           </div>
         </div>
     
@@ -32,8 +31,7 @@
 <script>
 import anime from 'animejs'
 import { mapActions } from 'pinia'
-import { mapState} from 'pinia'
-import {useScoreStore} from "@/stores/score"
+import {useScoreStoreRather} from "@/stores/scoreRather"
 
 export default {
   name: 'AnswerPercentageHandler',
@@ -53,20 +51,18 @@ export default {
           message:'',
       }
   },
-  computed:{
-    ...mapState(useScoreStore,['score']),
-  },
   methods:{
-    ...mapActions(useScoreStore,['incrementWin','incrementPerfectWin','incrementLost']),
+    ...mapActions(useScoreStoreRather,['incrementWinRather','incrementPerfectWinRather','incrementLostRather']),
 
     revealAnswer(){
       this.checkAnswer(this.answerOne,this.answerTwo)
       const vm = this
       if(this.answerOne + this.answerTwo == 100 && !this.answerIsShown && this.answerIsCorrect){
-        this.emitter.emit('updateListing',this.element.id)
+        this.emitter.emit('updateListingRather',this.element.id)
         this.answerIsShown = true
         this.emitter.emit('launchTheAnimation',"launched")
-        this.handleAnswer()
+        setTimeout(() => this.handleAnswer(), 2100);
+        // this.handleAnswer()
         anime({
           targets:vm.$refs.message,
           opacity: [0,1],
@@ -80,13 +76,13 @@ export default {
 
       if(this.answerOne == this.percentage1){
         this.message = "Réponse Parfaite OMG !"
-        this.incrementPerfectWin()
+        this.incrementPerfectWinRather()
       }else if(this.answerOne >= (this.percentage1-5) && this.answerOne <= (this.percentage1+5) && this.answerTwo >= (this.percentage2-5) && this.answerTwo <= (this.percentage2+5)){
         this.message = "Bonne réponse !"
-        this.incrementWin()
+        this.incrementWinRather()
       }else{
         this.message = "Mauvaise réponse :( !"
-        this.incrementLost()
+        this.incrementLostRather()
       }
     },
     checkAnswer(value1,value2){

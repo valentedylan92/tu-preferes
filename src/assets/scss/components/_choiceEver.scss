@@ -12,10 +12,11 @@
         border-radius: 20px;
         width: 100%;
         box-sizing: border-box;
-        max-width: 470px;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 15px;
         transition: transform 0.2s;
         &:hover{
             transform: scale(1.05);        
@@ -59,11 +60,16 @@
         cursor: pointer;
 
         &:hover{
-            border: 10px solid $primary-color;        
+            // border: 10px solid $primary-color;  
+            // border: 10px solid $primary-color;       
+            background: $primary-color;
+            color:white       
         }
         &-2{
             &:hover{
-                border: 10px solid $secondary-color;
+                // border: 10px solid $secondary-color;
+                background: $secondary-color;
+                color:white
             }
         }
     }
@@ -73,8 +79,8 @@
     }
 }
 .choiceEver__radio:checked + .choiceEver__label {
-    border: 10px solid $primary-color;
+    background:$primary-color;
 }
 .choiceEver__radio:checked + .choiceEver__label-2 {
-    border: 10px solid $secondary-color;
+    background:$secondary-color;
 }

@@ -1,7 +1,12 @@
 <template>
   <div class="game__container">
-    <div class="game__score game__left"  >
-        <ScorePanel :limitGame="limitGame" />
+    <div class="game__left"  >
+      <nav>
+        <router-link to="/">&lt; Choix du jeu</router-link>  
+      </nav>
+      <div class="game__score"  >
+          <ScorePanelRather :limitGame="limitGame" />
+      </div>
     </div>
     <div class="game__inner">
       <CardelementRather 
@@ -18,16 +23,11 @@
     </div>
     <div class="game__right">
       <button ref="buttonNext" id="nextItem" disabled v-if="currentGame" @click="getNewRandom()" class="button">></button>
-        <!-- <iframe id="twitch-chat-embed"
-              src="https://www.twitch.tv/embed/kowab/chat?parent=valentedylan92.github.io"
-              height="500"
-              width="350">
-      </iframe> -->
     </div>
 
     <div class="game__end"  v-if="gameOver">
       <div class="game__end__inner">
-        <EndPanel :limitGame="limitGame" />
+        <EndPanelRather :limitGame="limitGame" />
       </div>
     </div>
 
@@ -37,14 +37,14 @@
 
 <script>
 // @ is an alias to /src
-import ScorePanel from '@/components/ScorePanel.vue'
-import EndPanel from '@/components/EndPanel.vue'
+import ScorePanelRather from '@/components/youRather/ScorePanelRather.vue'
+import EndPanelRather from '@/components/youRather/EndPanelRather.vue'
 import CardelementRather from '@/components/youRather/CardelementRather.vue'
 import AnswerPercentageHandler from '@/components/youRather/AnswerPercentageHandler.vue'
 import PopupRulesRather from '@/components/youRather/PopupRulesRather.vue'
 import listYouRather from "../listRather.json"
 import { mapActions } from 'pinia'
-import {useScoreStore} from "@/stores/score"
+import {useScoreStoreRather} from "@/stores/scoreRather"
 
 export default {
   name: 'GameScreenRather',
@@ -54,9 +54,9 @@ export default {
       listingRatherFinal: listYouRather,
       ListingRatherUsed : [],
       ListingRatherCurrent: [],
-      limitGame: 15,
+      limitGame: 3,
       message:'',
-      popupDisplay:true,
+      popupDisplay:false,
       currentGame:true,
       gameOver:false
     }
@@ -64,12 +64,12 @@ export default {
   components: {
     CardelementRather,
     AnswerPercentageHandler,
-    EndPanel,
-    ScorePanel,
+    EndPanelRather,
+    ScorePanelRather,
     PopupRulesRather
   },
   methods:{
-    ...mapActions(useScoreStore,['resetScore']), 
+    ...mapActions(useScoreStoreRather,['resetScoreRather']), 
 
     getNewRandom() {
       this.$refs.buttonNext.disabled = true
@@ -97,8 +97,7 @@ export default {
         this.ListingRatherCurrent = []
         this.getNewRandom()
         this.ListingRatherCurrent = [this.keyElement]
-        this.resetScore()
-        this.session =+ 1
+        this.resetScoreRather()
       }else{
         this.message = "No more "
       }
@@ -107,7 +106,7 @@ export default {
   },
   mounted(){
     this.ListingRatherCurrent.push(this.keyElement);
-    this.emitter.on('updateListing', data => {
+    this.emitter.on('updateListingRather', data => {
       if(this.ListingRatherCurrent.length == this.limitGame){
         setTimeout(() => this.gameOver = true, 4000);
       }else{
@@ -120,7 +119,7 @@ export default {
         this.limitGame = data
         this.popupDisplay = false
     })
-    this.emitter.on('endOfTheGame', data => {
+    this.emitter.on('endOfTheGameRather', data => {
         console.log(data)
         if(data=="361"){
           this.ListingRatherUsed = []
@@ -133,6 +132,11 @@ export default {
   beforeMount(){
     const newNumber = Math.round(Math.random()*(this.listingRatherFinal.length-1));
     this.keyElement = newNumber
+  },
+  beforeUnmount(){
+    this.emitter.off('endOfTheGameRather')
+    this.emitter.off('updateListingRather')
+    this.emitter.off('hideThePopUp')
   }
 
 }

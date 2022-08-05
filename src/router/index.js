@@ -1,18 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomePage from '@/views/HomePage.vue'
 import GameScreenRather from '@/views/GameScreenRather.vue'
 import GameScreenEver from '@/views/GameScreenEver.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'GameScreenRather',
-    component: GameScreenRather
+    name: 'HomePage',
+    component: HomePage
   },
   {
     path: '/jai-deja',
     name: 'GameScreenEver',
     component: GameScreenEver
   },
+  {
+    path: '/tu-preferes',
+    name: 'GameScreenRather',
+    component: GameScreenRather
+  }
 ]
 
 const router = createRouter({

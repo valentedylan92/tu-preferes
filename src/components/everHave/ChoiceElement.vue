@@ -24,15 +24,6 @@ export default {
       return{
         valueChecked : ""
       }
-    },
-
-    methods:{
-        sendAnswer(){
-            // const valueLength = document.querySelector('input[name="answer"]:checked').value;
-            // console.log(document.querySelector('input[name="answer"]:checked'))
-            this.emitter.emit("answerSend",this.valueChecked)
-        }
-    }
-    
+    }    
 }
 </script>
