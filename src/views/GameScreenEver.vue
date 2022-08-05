@@ -62,9 +62,9 @@ export default {
       listingEverFinal: listYouEver,
       ListingEverUsed : [],
       ListingEverCurrent: [],
-      limitGame: 15,
+      limitGame: 3,
       message:'',
-      popupDisplay:true,
+      popupDisplay:false,
       currentGame:true,
       gameOver:false
     }

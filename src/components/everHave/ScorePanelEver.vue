@@ -12,7 +12,9 @@
 
 <script>
 import { mapState} from 'pinia'
+import { mapActions} from 'pinia'
 import {useScoreStoreEver} from "@/stores/scoreEver"
+import {useBoardHistoryStore} from "@/stores/boardHistory"
 
 export default {
     name:"ScorePanelEver",
@@ -23,15 +25,19 @@ export default {
     },
     computed:{
         ...mapState(useScoreStoreEver,['scoreEver']),
+        ...mapState(useBoardHistoryStore,['sessionEver','scoreHistoryEver'])
+    },
+    methods:{
+        ...mapActions(useBoardHistoryStore,['addScoreHistoryEver'])
     },
     mounted(){
         this.emitter.on("storeCurrentScoreEver", data => {
             console.log(data)
             let element = document.createElement('p'); // is a node
             element.classList.add('score__text')
-            element.innerHTML = 'Partie ' +  this.currentSession + ' : ' + this.scoreEver;
+            element.innerHTML = 'Partie ' +  this.sessionEver + ' : ' + this.scoreEver;
             document.querySelector("#score-board").appendChild(element)
-            this.currentSession += 1
+            this.addScoreHistoryEver(this.sessionEver,this.scoreEver)
         })  
 
     },

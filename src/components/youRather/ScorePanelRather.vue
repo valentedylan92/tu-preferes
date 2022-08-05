@@ -12,7 +12,9 @@
 
 <script>
 import { mapState} from 'pinia'
+import { mapActions} from 'pinia'
 import {useScoreStoreRather} from "@/stores/scoreRather"
+import {useBoardHistoryStore} from "@/stores/boardHistory"
 
 export default {
     name:"ScorePanelRather",
@@ -23,15 +25,20 @@ export default {
     },
     computed:{
         ...mapState(useScoreStoreRather,['scoreRather']),
+        ...mapState(useBoardHistoryStore,['sessionRather','scoreHistoryRather'])
+
+    },
+    methods:{
+        ...mapActions(useBoardHistoryStore,['addScoreHistoryRather'])
     },
     mounted(){
         this.emitter.on("storeCurrentScoreRather", data => {
             console.log(data)
             let element = document.createElement('p'); // is a node
             element.classList.add('score__text')
-            element.innerHTML = 'Partie ' +  this.currentSession + ' : ' + this.scoreRather;
+            element.innerHTML = 'Partie ' +  this.sessionRather + ' : ' + this.scoreRather;
             document.querySelector("#score-board").appendChild(element)
-            this.currentSession += 1
+            this.addScoreHistoryRather(this.sessionRather,this.scoreRather)
         })  
 
     },
